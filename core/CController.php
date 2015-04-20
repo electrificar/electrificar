@@ -73,31 +73,6 @@ class CController {
     function display ($tmpl){
     	global $environment;
     	
-    	if($environment == 'guest'){
-	    	//aquí cargo el catálogo siempre que estemos en guest
-	    	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/CCategory.php");
-	    	$category	= new CCategory($this->conn);
-	    	$catalogo = $category->cargar_arbol();
-	    	
-	    	$this->layout->assign('catalogo', $catalogo);
-	    	
-	    	$num_elementos = 0;
-	    	$precio_total  = 0;
-	    	if($_SESSION['cesta']!=null){
-	    		foreach($_SESSION['cesta'] as $key=>$producto_cesta){
-	    			if($producto_cesta->id_producto!=null){
-	    				$num_elementos ++;
-	    				$precio_total += to_float($producto_cesta->precio)*$producto_cesta->cantidad;
-	    			}else{
-	    				unset($_SESSION['cesta'][$key]);
-	    			}
-	    		}
-	    	}
-	    	
-	    	$this->layout->assign('productos_comprados', $num_elementos);
-	    	$this->layout->assign('total_productos_comprados', to_display_float($precio_total));
-    	}
-    	
         // Desconecto antes de pintar
     	$this->conn->disconnect();
 

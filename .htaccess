@@ -26,52 +26,8 @@
     RewriteRule ^tpl/(.*)$ /tpl_guest/$1 [L]
 
     #usuario
-    RewriteRule ^buscar-producto/$ /guest/index.php?controller=category&action=search_product&%{QUERY_STRING} [L]
-    RewriteRule ^calcular-precio-personalizado/$ /guest/index.php?controller=products&action=calculate_price&%{QUERY_STRING} [L]
-    RewriteRule ^guardar-cesta/$ /guest/index.php?controller=products&action=update_cesta&%{QUERY_STRING} [L]
-    RewriteRule ^iniciar-sesion/$ /guest/index.php?controller=profile&action=frm_login&%{QUERY_STRING} [L]
-    RewriteRule ^recordar-password/$ /guest/index.php?controller=profile&action=remember_password&%{QUERY_STRING} [L]
-    RewriteRule ^recordando-password/$ /guest/index.php?controller=profile&action=remembering_password&%{QUERY_STRING} [L]
-    RewriteRule ^iniciando-sesion/$ /guest/index.php?controller=profile&action=do_login&%{QUERY_STRING} [L]
-    RewriteRule ^crear-usuario/$ /guest/index.php?controller=profile&action=frm_profile&%{QUERY_STRING} [L]
-    RewriteRule ^creando-usuario/$ /guest/index.php?controller=profile&action=update_profile&%{QUERY_STRING} [L]
-    RewriteRule ^activar-usuario/$ /guest/index.php?controller=profile&action=activate_user&%{QUERY_STRING} [L]
-    RewriteRule ^mi-cuenta/$ /guest/index.php?controller=profile&action=my_profile&%{QUERY_STRING} [L]
-    RewriteRule ^mis-pedidos/$ /guest/index.php?controller=profile&action=my_orders&%{QUERY_STRING} [L]
-    RewriteRule ^cerrar-sesion/$ /guest/index.php?controller=profile&action=close_session&%{QUERY_STRING} [L]
-    RewriteRule ^mis-compras/$ /guest/index.php?controller=cart&action=display_cart&%{QUERY_STRING} [L]
-    RewriteRule ^actualizar-carro/$ /guest/index.php?controller=cart&action=remove_from_cart&%{QUERY_STRING} [L]
-    RewriteRule ^formulario-pago/$ /guest/index.php?controller=cart&action=pay_form&%{QUERY_STRING} [L]
-    RewriteRule ^pagar/$ /guest/index.php?controller=cart&action=payment&%{QUERY_STRING} [L]
-    RewriteRule ^tutoriales/$ /guest/index.php?controller=tutorial&action=get_tutoriales&%{QUERY_STRING} [L]
-    RewriteRule ^descargar-tutorial/(.*)$ /comun/dw.php?key=$1&%{QUERY_STRING} [L]
-    RewriteRule ^contacto/$ /guest/index.php?controller=home&action=form_contacto&%{QUERY_STRING} [L]
-    RewriteRule ^contactando/$ /guest/index.php?controller=home&action=send_contact&%{QUERY_STRING} [L]
-    RewriteRule ^notificacion-tpv/$ /guest/index.php?controller=cart&action=tpv_notification&%{QUERY_STRING} [L]
-    RewriteRule ^compra-realizada/$ /guest/index.php?controller=cart&action=tpv_ok&%{QUERY_STRING} [L]
-    RewriteRule ^error-pago/$ /guest/index.php?controller=cart&action=tpv_ko&%{QUERY_STRING} [L]
-    RewriteRule ^comentar-producto/$ /guest/index.php?controller=products&action=coment_product&%{QUERY_STRING} [L]
-    RewriteRule ^tusadhesivos-personalizados/$ /guest/index.php?controller=products&action=personal_product&%{QUERY_STRING} [L]
-    RewriteRule ^subir-foto-personalizada/$ /guest/index.php?controller=products&action=upload_personal_img&%{QUERY_STRING} [L]
-    RewriteRule ^guardar-cesta-personalizada/$ /guest/index.php?controller=products&action=update_cesta_personalizada&%{QUERY_STRING} [L]
-    RewriteRule ^politica-privacidad/$ /guest/index.php?controller=home&action=privacidad&%{QUERY_STRING} [L]
-    RewriteRule ^sobre-nosotros/$ /guest/index.php?controller=home&action=sobreNosotros&%{QUERY_STRING} [L]
-    RewriteRule ^informacion-entrega/$ /guest/index.php?controller=home&action=informacionEntrega&%{QUERY_STRING} [L]
-    RewriteRule ^condiciones-de-compra/$ /guest/index.php?controller=home&action=condicionesCompra&%{QUERY_STRING} [L]
-    
-    
-
-    #web
-	RewriteRule ^buscador/$ /guest/index.php?controller=category&action=search_product&%{QUERY_STRING} [L]
-	RewriteRule ^buscador/(.*)/$ /guest/index.php?controller=products&action=display_product&producto=$1&categoria=buscador&category=buscador&%{QUERY_STRING} [L]
-    RewriteRule ^(.*)/(.*)/(.*)/$ /guest/index.php?controller=products&action=display_product&categoria=$2&producto=$3&category=$1&%{QUERY_STRING} [L]
-    RewriteRule ^(.*)/(.*)/$ /guest/index.php?controller=category&action=display_products&url=$2&category=$1&%{QUERY_STRING} [L]
-
-  	#RewriteRule ^/(.*)/(.*)/(.*)/(.*)/(.*)/$ /guest/index.php?controller=article&action=display_article&nivel1=$1&nivel2=$2&nivel3=$3&nivel4=$4&nivel5=$5&%{QUERY_STRING} [L]
-	#RewriteRule ^(.*)/(.*)/(.*)/(.*)/$ /guest/index.php?controller=article&action=display_article&nivel1=$1&nivel2=$2&nivel3=$3&nivel4=$4&%{QUERY_STRING} [L]
-	#RewriteRule ^(.*)/(.*)/(.*)/$ /guest/index.php?controller=article&action=display_article&nivel1=$1&nivel2=$2&nivel3=$3&%{QUERY_STRING} [L]
-	#RewriteRule ^buscador/(.*)/$ /guest/index.php?controller=article&action=display_article&nivel1=$1&nivel2=$2&%{QUERY_STRING} [L]
-	#RewriteRule ^(.*)/(.*)/$ /guest/index.php?controller=article&action=display_article&nivel1=$1&nivel2=$2&%{QUERY_STRING} [L]
+    RewriteRule ^home/$ /guest/index.php?controller=home&action=home&%{QUERY_STRING} [L]
+    RewriteRule ^inicio/$ /guest/index.php?controller=home&action=home2&%{QUERY_STRING} [L]
 
 </IfModule>
 
