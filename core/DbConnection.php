@@ -24,7 +24,7 @@ class DbConnection {
 			$this->site = "localhost"; 
 			$this->user = "root";
 			$this->passwd = "lubina";
-			$this->database = "tusadhesivos";
+			$this->database = "electrificar";
 	}
 	
 	function connect (){

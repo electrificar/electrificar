@@ -14,11 +14,16 @@
 	ErrorDocument 404 /404.html 
 
     # Redirecciones
-    RewriteRule ^admin/do_logout$ /admin/index.php?controlador=perfil&action=do_logout&%{QUERY_STRING} [L]
-    RewriteRule ^admin/logout$ /admin/index.php?controlador=perfil&action=do_logout&%{QUERY_STRING} [L]
-    RewriteRule ^admin/login$ /admin/index.php?controlador=perfil&action=do_login&%{QUERY_STRING} [L]
-    RewriteRule ^admin/home$ /admin/index.php?controlador=perfil&action=home&%{QUERY_STRING} [L]
-    RewriteRule ^admin/$ /admin/index.php?controlador=perfil&action=frm_login&%{QUERY_STRING} [L]
+    RewriteRule ^admin/do_logout/?$ /admin/index.php?controller=perfil&action=do_logout&%{QUERY_STRING} [L]
+    RewriteRule ^admin/logout/?$ /admin/index.php?controller=perfil&action=do_logout&%{QUERY_STRING} [L]
+    RewriteRule ^admin/login/?$ /admin/index.php?controller=perfil&action=do_login&%{QUERY_STRING} [L]
+    RewriteRule ^admin/home/?$ /admin/index.php?controller=home&action=home&%{QUERY_STRING} [L]
+    RewriteRule ^admin/$ /admin/index.php?controller=perfil&action=frm_login&%{QUERY_STRING} [L]
+    
+    RewriteRule ^admin/images/(.*)$ /tpl_guest/imgages/$1 [L]
+    RewriteRule ^admin/css/(.*)$ /tpl_admin/css/$1 [L]
+    RewriteRule ^admin/js/(.*)$ /tpl_admin/js/$1 [L]
+    RewriteRule ^admin/fonts/(.*)$ /tpl_admin/fonts/$1 [L]
    
     RewriteRule ^dw$ /comun/dw.php?%{QUERY_STRING} [L]
 

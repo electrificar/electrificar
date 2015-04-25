@@ -11,16 +11,8 @@ class CUsuarios {
         $ack = new ACK();
         $ack->resultado = true;
 
-        $clave      = strtoupper($clave);
-        $clave_orig = $clave;
 
-        //COMPROBAMOS QUE LA CLAVE NO LLEGA CON MAS DE 16 CARACTERES(15 SON LOS MAXIMOS QUE PUEDE TENER UNA CLAVE)
-        //SI LLEGA CON MAS LA CLAVE ESTA ENCRIPTADA Y NO HARIA FALTA VOLVER A ENCRIPTARLA
-        if(strlen($clave)<16){
-            $clave      = encrypt($clave);
-        }
-        //print_r(md5("lubina"));exit;
-		$query = "SELECT * FROM usuarios WHERE LOWER(nif)='".strtolower($usuario)."' AND contrasena='".$clave."' and backend='1'";
+		$query = "SELECT * FROM usuario WHERE LOWER(email)='".strtolower($usuario)."' AND password='".$clave."' and tipo='1'";
 		//print_r($query);exit;
         if( ($arr_reg = $this->conn->load($query)) != null ){
 

@@ -18,13 +18,7 @@
 	
 	//recuperamos la accion del controlador
 	$accion = load_action($_REQUEST['accion']);
-	$controller = $ack->datos;
-	
-	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/CCategory.php");
-	$category	= new CCategory($controller->conn);
-	//////MENU//////
-    $menu = $category->cargar_arbol();
-    $controller->layout->assign('menu', $menu);
+	$controller = $ack->datos;	
 	
 	$controller->layout->assign('SESION_USUARIO', $_SESSION['SESION_USUARIO']);
 	$controller->layout->assign('ID_USUARIO_SESION', encrypt($_SESSION['SESION_ID_USUARIO']));
