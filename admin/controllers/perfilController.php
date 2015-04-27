@@ -28,5 +28,16 @@
                 $this->display('/register/login_form.tpl');
             }
         }
+        
+        function do_logout(){            
+            unset($_SESSION["SESION_ID_USUARIO"]);
+            unset($_SESSION["SESION_USUARIO"]);
+            
+            session_start();
+            session_unset();
+            session_destroy();
+
+            $this->display('/register/login_form.tpl');
+        }
 	}
 ?>

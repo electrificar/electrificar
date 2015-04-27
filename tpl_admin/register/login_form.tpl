@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="app">
+<html lang="en" class="app" style="background-color:#126DA7;">
 <head>  
   <meta charset="utf-8" />
   <title>Electrificar | Panel De Administracion</title>
@@ -20,10 +20,10 @@
 <body class="">
   <section id="content" class="m-t-lg wrapper-md animated fadeInUp">    
     <div class="container aside-xl">
-      <a class="navbar-brand block" href="/admin/" style="font-size:35px;" >E<i class="fa fa-flash"></i>ectrific<i class="fa fa-car"></i>r </a>
+      <a class="navbar-brand block" href="/admin/" style="font-size:35px;color:#d7ecfa;" >E<i class="fa fa-flash"></i>ectrific<i class="fa fa-car"></i>r </a>
       <section class="m-b-lg">
         <header class="wrapper text-center">
-          <strong>Panel de administración</strong>
+          <strong style="color:white;">Panel de administración</strong>
         </header>
         <form action="/admin/login/" method="post" name="login_form" data-validate="parsley">
           <div class="list-group">
@@ -34,7 +34,7 @@
                <input type="password" name="pass" data-required="true" placeholder="Password" class="form-control no-border">
             </div>
           </div>
-          <button type="submit" class="btn btn-lg btn-primary btn-block">Entrar</button>
+          <button type="submit" class="btn-lgn btn btn-lg btn-primary btn-block">Entrar</button>
         </form>
       </section>
     </div>
@@ -43,7 +43,7 @@
   <footer id="footer">
     <div class="text-center padder">
       <p>
-        <small>Electrificar, todos los derechos reservados<br>&copy; 2015</small>
+        <small style="color:white;">Electrificar, todos los derechos reservados<br>&copy; 2015</small>
       </p>
     </div>
   </footer>

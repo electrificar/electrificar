@@ -27,7 +27,7 @@
 </head>
 <body class="">
   <section class="vbox">
-    <header class="bg-white header header-md navbar navbar-fixed-top-xs box-shadow">
+    <header class="bg-primary header header-md navbar navbar-fixed-top-xs box-shadow">
       <div class="navbar-header aside-md dk">
         <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
           <i class="fa fa-bars"></i>
@@ -43,15 +43,18 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <span class="thumb-sm avatar pull-left">
-              <img src="/img/g.png" alt="Miguel">
+              <img src="/admin/images/a0.png" class="dker" alt="Miguel" style="background: none repeat scroll 0px 0px rgba(255, 255, 255, 0.6); padding: 3px;">
             </span>
-            <?=$_SESSION['usuario']['nombre']?> <b class="caret"></b>
+            Javier <b class="caret"></b>
           </a>
-          <ul class="dropdown-menu animated fadeInRight">            
-            <li>
-              <a href="/administracion/logout/" data-toggle="ajaxModal" >Desconectar</a>
-            </li>
-          </ul>
+          <ul class="dropdown-menu animated fadeInRight">
+			<li><a href="/admin/editar-perfil/"
+				data-toggle="ajaxModal"><i class="fa fa-gear"></i> Mi perfil</a>
+			</li>
+			<li><a href="/admin/logout/" data-toggle="ajaxModal"><i
+					class="fa fa-sign-out"></i> Desconectar</a>
+			</li>
+		</ul>
         </li>
       </ul>      
     </header>
