@@ -2,6 +2,8 @@
 
 {include file="../common/sidebar.tpl"}
 
+<link rel="stylesheet" href="/admin/css/jquery.range.css">
+
 <section id="content">
 	<section class="vbox">
 		<section class="scrollable padder">
@@ -19,7 +21,8 @@
                   Datos de vehículo
                 </header>
                 <div class="panel-body">
-                  <form method="get" class="form-horizontal">
+                  <form method="post" action="/admin/guardar-vehiculo/" class="form-horizontal" data-validate="parsley">
+                  	<input type="hidden" name="id_zona" value="1" />
                   	<div class="row m-t-xl">
                               <div class="col-xs-12 text-center">
                                 <div class="inline">
@@ -36,25 +39,25 @@
                     <div class="form-group">
                       <label class="col-sm-2 control-label">Marca</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control">
+                        <input type="text" data-required="true" placeholder="Renault" name="marca" class="form-control">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="input-id-1" class="col-sm-2 control-label">Modelo</label>
                       <div class="col-sm-10">
-                        <input type="text" id="input-id-1" class="form-control">
+                        <input type="text" data-required="true" placeholder="Twizzy" name="modelo" id="input-id-1" class="form-control">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="input-id-1" class="col-sm-2 control-label">Matrícula</label>
                       <div class="col-sm-10">
-                        <input type="text" id="input-id-1" class="form-control">
+                        <input type="text" data-required="true" data-parsley-minlength="7" maxlength="7" name="matricula" id="input-id-1" class="form-control">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="input-id-1" class="col-sm-2 control-label">Bastidor</label>
                       <div class="col-sm-10">
-                        <input type="text" id="input-id-1" class="form-control">
+                        <input type="text" data-required="true" data-parsley-minlength="20" maxlength="20" name="bastidor" id="input-id-1" class="form-control">
                       </div>
                     </div>
                     <div class="line line-dashed b-b line-lg pull-in"></div>
@@ -62,27 +65,27 @@
                       <label class="col-sm-2 control-label">Peso</label>
                       <div class="col-sm-10">
                         <div class="input-group m-b">
-                          <input type="text" class="form-control">
+                          <input type="text" maxlength="4" name="peso" class="form-control">
                           <span class="input-group-addon">Kg</span>
                         </div>
                       </div>
                       <label class="col-sm-2 control-label">Ancho</label>
                       <div class="col-sm-10">
                         <div class="input-group m-b">
-                          <input type="text" class="form-control">
+                          <input type="text" maxlength="4" name="ancho" class="form-control">
                           <span class="input-group-addon">Cm</span>
                         </div>
                       </div>
                       <label class="col-sm-2 control-label">Largo</label>
                       <div class="col-sm-10">
                         <div class="input-group m-b">
-                          <input type="text" class="form-control">
+                          <input type="text" maxlength="4" name="largo" class="form-control">
                           <span class="input-group-addon">Cm</span>
                         </div>
                       </div>
                       <label class="col-sm-2 control-label">Plazas</label>
                       <div class="col-sm-10">
-                        <input class="slider slider-horizontal form-control" type="text" value="" data-slider-min="1" data-slider-max="5" data-slider-step="1" data-slider-value="2" data-slider-orientation="horizontal" >
+                        <input type="hidden" data-required="true" name="numero_plazas" id="plazas" class="slider-input" value="" />
                       </div>
                     </div>
                     <div class="line line-dashed b-b line-lg pull-in"></div>
@@ -90,14 +93,14 @@
                       <label class="col-sm-2 control-label">Mantenimiento</label>
                       <div class="col-sm-10">
                         <label class="switch">
-                          <input type="checkbox">
+                          <input name="mantenimiento" value="1" data-required="true" type="checkbox">
                           <span></span>
                         </label>
                       </div>
                       <label class="col-sm-2 control-label">Disponible</label>
                       <div class="col-sm-10">
                         <label class="switch">
-                          <input type="checkbox">
+                          <input name="disponible" value="1" data-required="true" type="checkbox">
                           <span></span>
                         </label>
                       </div>

@@ -24,7 +24,7 @@
 	  <script src="/admin/js/parsley/parsley.min.js"></script>
 	  <script src="/admin/js/parsley/parsley.extend.js"></script>
 	  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-	   <script src="/admin/js/slider/bootstrap-slider.js"></script>
-	   <script src="/admin/js/charts/easypiechart/jquery.easy-pie-chart.js"></script>
+	  <script src="/admin/js/jquery.range.js"></script>
+	  <script src="/admin/js/charts/easypiechart/jquery.easy-pie-chart.js"></script>
 	</body>
 </html>

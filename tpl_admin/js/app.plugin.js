@@ -2,6 +2,16 @@
 
   $(function(){
  	
+  $('#plazas').jRange({
+	    from: 1,
+	    to: 5,
+	    step: 1,
+	    scale: [1,2,3,4,5],
+	    format: '%d',
+	    width: 255,
+	    showLabels: false
+	});  
+	  
 	// sparkline
 	var sr, sparkline = function($re){
 		$(".sparkline").each(function(){
