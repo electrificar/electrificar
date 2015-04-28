@@ -1,7 +1,7 @@
 {include file="../common/header.tpl"}
 
 {include file="../common/sidebar.tpl"}
-
+<link rel="stylesheet" href="/admin/js/slider/slider.css" type="text/css" />
 <section id="content">
 	<section class="vbox">
     	<section class="scrollable padder">
@@ -9,6 +9,9 @@
             	<h3 class="m-b-none">
             		<i class="fa fa-car"></i>
             		Vehículos
+            		<a title="Añadir vehículo" style="width:40px;font-size:20px;" class="pull-right btn btn-rounded btn-sm btn-icon btn-default" href="/admin/añadir-vehiculo/">
+            			<i class="fa fa-plus"></i>
+            		</a>
             	</h3>
             </div>
             <div class="row">
