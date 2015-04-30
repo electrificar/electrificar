@@ -25,7 +25,9 @@ class Vehiculo {
             
             if(!$res){
             	$ack->resultado = false;
-            	$ack->mensaje = "Ha ocurrido un problema al guardar los datos en seccion, consulte a su administrador.";
+            	$ack->mensaje = "Ha ocurrido un problema al guardar el vehículo.";
+            }else{
+            	$ack->mensaje = "Datos guardados correctamente.";
             }
         }
         
@@ -49,6 +51,35 @@ class Vehiculo {
             $ack->resultado = false;
             $ack->mensaje   = "Se ha producido un error al obtener productos, ponte en contacto con tu administrador";
         }
+        return $ack;
+    }
+    
+ 	function remove_vehicle ($id_vehiculo){
+        global $log;
+        $ack = new ACK();
+        $ack->resultado = true;
+    
+        $query = "select * from vehiculo where id_vehiculo='".$id_vehiculo."'";
+        $arr_res = $this->conn->load ($query);
+        if(sizeof($arr_res)>0){
+        
+            // Primero elimino el objeto principal
+            $query = "delete from vehiculo where id_vehiculo='".$id_vehiculo."'";
+            $res = $this->conn->remove ($query);
+        
+            if($res==true){
+               unlink($_SERVER['DOCUMENT_ROOT']."/repositorio/".$arr_res->imagen);
+               $ack->mensaje   = "Vehículo borrado correctamente.";
+            }
+        
+            $ack->id = $arr_res[0]->$id_vehiculo;
+        } else {
+            $ack->resultado = false;
+            $ack->mensaje   = "No se ha localizado el vehículo, consulte a su administrador";
+            $ack->id        = $id_valoraciones;
+        }
+    
+    
         return $ack;
     }
 }

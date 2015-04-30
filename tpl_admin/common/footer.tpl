@@ -26,5 +26,8 @@
 	  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 	  <script src="/admin/js/jquery.range.js"></script>
 	  <script src="/admin/js/charts/easypiechart/jquery.easy-pie-chart.js"></script>
+	  <script src="/admin/js/datepicker/bootstrap-datepicker.js"></script>
+	  <script src="/admin/js/comun.js"></script>
+	  <div id='centro_notificaciones' style="float: right; width: 70%; margin-right: 65px;">{$notifications}</div>
 	</body>
 </html>

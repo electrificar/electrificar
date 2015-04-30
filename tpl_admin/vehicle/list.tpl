@@ -59,142 +59,48 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>Renault Twizzy001</td>
-								<td>9355 GJS</td>
-								<td>
-									<div
-										class="progress progress-xs active m-t-xs m-b-none">
-										<div class="progress-bar bg-success" data-toggle="tooltip"
-											data-original-title="80%" style="width: 80%"></div>
-									</div>
-								</td>
-								<td>01/01/2016</td>
-								<td class="text-center">
-									<a data-toggle="class" href="#">
-										<i class="fa fa-check text-success text-active"></i>
-										<i class="fa fa-times text-danger text"></i>
-									</a>
-								</td>
-								<td class="text-center">
-									<a data-toggle="class" href="#">
-										<i class="fa fa-check text-success text-active"></i>
-										<i class="fa fa-times text-danger text"></i>
-									</a>
-								</td>
-								<td class="text-center">
-									<div class="btn-group">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-											class="fa fa-gear"></i> </a>
-										<ul class="dropdown-menu pull-right">
-											<li><a href="#">Editar vehículo <i class="fa fa-edit"></i></a></li>
-											<li><a href="#">Borrar vehículo <i class="fa fa-trash"></i></a></li>
-										</ul>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Renault Twizzy002</td>
-								<td>8923 HZN</td>
-								<td>
-									<div
-										class="progress progress-xs active m-t-xs m-b-none">
-										<div class="progress-bar bg-info" data-toggle="tooltip"
-											data-original-title="60%" style="width: 60%"></div>
-									</div>
-								</td>
-								<td>23/11/2015</td>
-								<td class="text-center">
-									<a data-toggle="class" href="#">
-										<i class="fa fa-check text-success text"></i>
-										<i class="fa fa-times text-danger text-active"></i>
-									</a>
-								</td>
-								<td class="text-center">
-									<a data-toggle="class" href="#">
-										<i class="fa fa-check text-success text-active"></i>
-										<i class="fa fa-times text-danger text"></i>
-									</a>
-								</td>
-								<td class="text-center">
-									<div class="btn-group">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-											class="fa fa-gear"></i> </a>
-										<ul class="dropdown-menu pull-right">
-											<li><a href="#">Editar vehículo <i class="fa fa-edit"></i></a></li>
-											<li><a href="#">Borrar vehículo <i class="fa fa-trash"></i></a></li>
-										</ul>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Renault Twizzy003</td>
-								<td>4781 FDW</td>
-								<td>
-									<div
-										class="progress progress-xs active m-t-xs m-b-none">
-										<div class="progress-bar bg-warning" data-toggle="tooltip"
-											data-original-title="30%" style="width: 30%"></div>
-									</div>
-								</td>
-								<td>12/12/2015</td>
-								<td class="text-center">
-									<a data-toggle="class" href="#">
-										<i class="fa fa-check text-success text-active"></i>
-										<i class="fa fa-times text-danger text"></i>
-									</a>
-								</td>
-								<td class="text-center">
-									<a data-toggle="class" href="#">
-										<i class="fa fa-check text-success text"></i>
-										<i class="fa fa-times text-danger text-active"></i>
-									</a>
-								</td>
-								<td class="text-center">
-									<div class="btn-group">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-											class="fa fa-gear"></i> </a>
-										<ul class="dropdown-menu pull-right">
-											<li><a href="#">Editar vehículo <i class="fa fa-edit"></i></a></li>
-											<li><a href="#">Borrar vehículo <i class="fa fa-trash"></i></a></li>
-										</ul>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Renault Twizzy004</td>
-								<td>1257 HCD</td>
-								<td>
-									<div
-										class="progress progress-xs active m-t-xs m-b-none">
-										<div class="progress-bar bg-danger" data-toggle="tooltip"
-											data-original-title="10%" style="width: 10%"></div>
-									</div>
-								</td>
-								<td title="Seguro caducado" style="cursor:help;" class="bg-danger">23/04/2015</td>
-								<td class="text-center">
-									<a data-toggle="class" href="#">
-										<i class="fa fa-check text-success text"></i>
-										<i class="fa fa-times text-danger text-active"></i>
-									</a>
-								</td>
-								<td class="text-center">
-									<a data-toggle="class" href="#">
-										<i class="fa fa-check text-success text-active"></i>
-										<i class="fa fa-times text-danger text"></i>
-									</a>
-								</td>
-								<td class="text-center">
-									<div class="btn-group">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-											class="fa fa-gear"></i> </a>
-										<ul class="dropdown-menu pull-right">
-											<li><a href="#">Editar vehículo <i class="fa fa-edit"></i></a></li>
-											<li><a href="#">Borrar vehículo <i class="fa fa-trash"></i></a></li>
-										</ul>
-									</div>
-								</td>
-							</tr>
+							{if $vehicles!=null}
+								{foreach from=$vehicles key=cid item=vehicle}
+									<tr>
+										<td><img style="width: 40px; border: 2px solid rgb(238, 238, 238); border-radius: 40px;" src="/repositorio/{$vehicle->imagen}" />{$vehicle->marca} {$vehicle->modelo}{$vehicle->id_vehiculo}</td>
+										<td>{$vehicle->matricula}</td>
+										<td>
+											<div
+												class="progress progress-xs active m-t-xs m-b-none">
+												<div class="progress-bar bg-{$vehicle->carga}" data-toggle="tooltip"
+													data-original-title="{$vehicle->porcentaje_carga}" style="width: {$vehicle->porcentaje_carga}"></div>
+											</div>
+										</td>
+										<td {if $vehicle->seguro_pasado}title="Seguro caducado" style="cursor:help;" style="color:red;" class="bg-danger"{/if}>{$vehicle->fecha_vigencia_seguro}</td>
+										<td class="text-center">
+											<a data-toggle="class" href="#">
+												<i class="fa fa-check text-success text{if !$vehicle->disponible}-active{/if}"></i>
+												<i class="fa fa-times text-danger text{if $vehicle->disponible}-active{/if}"></i>
+											</a>
+										</td>
+										<td class="text-center">
+											<a data-toggle="class" href="#">
+												<i class="fa fa-check text-success text{if !$vehicle->mantenimiento}-active{/if}"></i>
+												<i class="fa fa-times text-danger text{if $vehicle->mantenimiento}-active{/if}"></i>
+											</a>
+										</td>
+										<td class="text-center">
+											<div class="btn-group">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+													class="fa fa-gear"></i> </a>
+												<ul class="dropdown-menu pull-right">
+													<li><a href="/admin/editar-vehiculo/{$vehicle->id_vehiculo}/">Editar vehículo <i class="fa fa-edit"></i></a></li>
+													<li><a href="/admin/borrar-vehiculo/{$vehicle->id_vehiculo}/">Borrar vehículo <i class="fa fa-trash"></i></a></li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+								{/foreach}
+							{else}
+								<tr>
+									<td style="text-align:center;" colspan="7">No hay vehículos dados de alta</td>
+								</tr>
+							{/if}
 						</tbody>
 					</table>
 					</section>

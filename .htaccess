@@ -20,6 +20,8 @@
     #vehiculos
     RewriteRule ^admin/vehiculos/?$ /admin/index.php?controller=vehiculo&action=list_vehicles&%{QUERY_STRING} [L]
     RewriteRule ^admin/añadir-vehiculo/?$ /admin/index.php?controller=vehiculo&action=frm_vehicle&%{QUERY_STRING} [L]
+    RewriteRule ^admin/editar-vehiculo/(.*)/?$ /admin/index.php?controller=vehiculo&action=frm_vehicle&id_vehiculo=$1%{QUERY_STRING} [L]
+    RewriteRule ^admin/borrar-vehiculo/(.*)/?$ /admin/index.php?controller=vehiculo&action=delete_vehicle&id_vehiculo=$1%{QUERY_STRING} [L]
     RewriteRule ^admin/guardar-vehiculo/?$ /admin/index.php?controller=vehiculo&action=update_vehicle&%{QUERY_STRING} [L]
     
     #usuarios
