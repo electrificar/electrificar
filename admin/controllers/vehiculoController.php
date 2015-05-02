@@ -11,6 +11,29 @@
         	//filtros a aplicar
         	$filtros = array();       
         	
+        	//si viene que apliquemos filtros
+        	if(isset($_REQUEST['filtrar'])){
+
+        		//por si hay que filtrar por matricula
+        		if($_REQUEST['matricula']){
+        			anade_filtrado($filtros, "matricula", $_REQUEST['matricula'], "like");
+        		}
+        		
+        		//filtro por disponibilidad
+        		if($_REQUEST['disponible'] == 'on'){
+        			anade_filtrado($filtros, "disponible", 1, "=");
+        		}else{
+        			anade_filtrado($filtros, "disponible", 0, "=");
+        		}
+        		
+        		//filtro por mantenimiento
+        		if($_REQUEST['mantenimiento'] == 'on'){
+        			anade_filtrado($filtros, "mantenimiento", 1, "=");
+        		}else{
+        			anade_filtrado($filtros, "mantenimiento", 0, "=");
+        		}
+        	}
+        	
         	//obtengo los vehículos
         	$ack_vehiculos = $Vehiculo->get_vehiculos($filtros);
         	
@@ -45,6 +68,7 @@
         	}
         	
         	//asocio las variables a la vista
+        	$this->layout->assign("filtros", $_REQUEST);
         	$this->layout->assign("vehicles", $vehiculos);
         	$this->layout->assign("vehicle", "active");
         	

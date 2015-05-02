@@ -96,7 +96,6 @@ class DbConnection {
 	}
 
 	function stor($datos,$tabla,$indices=null){
-		
 		if($datos==null || sizeof($datos)==0){
 			die ("Los parametros enviados a stor para la tabla ".$tabla." están vacíos");
 		}
@@ -104,7 +103,7 @@ class DbConnection {
 	    if($campos==null || sizeof($campos)==0){
 			die ("La tabla enviada ".$tabla." no existe en el modelo o no tiene campos");
 		}
-	    
+	    $get = new stdClass();
 	    $get->null=false;
 	    $get->insert=false;
 	    $cont_primary=0;
@@ -166,6 +165,7 @@ class DbConnection {
 		            $ind=false;
 		            if($row->COLUMN_KEY == "PRI"){
 		            	foreach($datos as $row2=>$valor){
+		            		$primary[$cont_primary] = new stdClass();
 		                    if($row->COLUMN_NAME == $row2){
 		                        if(!isset($valor) || $valor == ""){
 		                            $ind=false;

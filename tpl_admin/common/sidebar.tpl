@@ -91,8 +91,8 @@
                         </li>
                     	</ul>
                     </li>
-                    <li class="">
-                      <a class="auto" href="#">
+                    <li class="{$zone}">
+                      <a class="auto" href="/admin/zonas/">
                         <span class="pull-right text-muted">
                           <i class="i i-circle-sm-o text"></i>
                           <i class="i i-circle-sm text-active"></i>

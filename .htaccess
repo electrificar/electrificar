@@ -27,7 +27,12 @@
     #usuarios
     
   	#zonas
-  	
+  	RewriteRule ^admin/zonas/?$ /admin/index.php?controller=zona&action=list_zonas&%{QUERY_STRING} [L]
+    RewriteRule ^admin/añadir-zona/?$ /admin/index.php?controller=zona&action=frm_zona&%{QUERY_STRING} [L]
+    RewriteRule ^admin/editar-zona/(.*)/?$ /admin/index.php?controller=zona&action=frm_zona&id_zona=$1%{QUERY_STRING} [L]
+    RewriteRule ^admin/borrar-zona/(.*)/?$ /admin/index.php?controller=zona&action=delete_zona&id_vehiculo=$1%{QUERY_STRING} [L]
+    RewriteRule ^admin/guardar-zona/?$ /admin/index.php?controller=zona&action=update_zona&%{QUERY_STRING} [L]
+    
   	#tarifas
   	
   	#incidencias

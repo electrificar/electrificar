@@ -20,16 +20,17 @@
 					<header class="panel-heading header-busqueda"> 
 						<span class="label bg-danger pull-right m-t-xs">1 Alquilado</span> 
 						<h4><i class="fa fa-search"></i> Búsqueda</h4>
-						<form role="form" class="form-inline">
+						<form id="vehicles-filter" role="form" class="form-inline" method="post" action="/admin/vehiculos/">
+							<input type="hidden" name="filtrar" value="true" />
 		                    <div class="form-group">
 		                      <label for="exampleInputEmail2" class="sr-only">Matrícula</label>
-		                      <input type="email" placeholder="Matrícula" id="exampleInputEmail2" class="form-control">
+		                      <input type="text" placeholder="Matrícula" value="{$filtros['matricula']}" name="matricula" class="form-control">
 		                    </div>
 		                    <div class="form-group sfb">
 		                      <label class="col-sm-6 control-label lfb">Disponible</label>
 		                      <div class="col-sm-5">
 		                        <label class="switch no-mb">
-		                          <input type="checkbox">
+		                          <input {if $filtros['disponible'] == 'on'}checked{/if} name="disponible" type="checkbox">
 		                          <span></span>
 		                        </label>
 		                      </div>
@@ -38,12 +39,15 @@
 		                      <label class="col-sm-6 control-label lfb">Mantenimiento</label>
 		                      <div class="col-sm-5">
 		                        <label class="switch no-mb">
-		                          <input type="checkbox">
+		                          <input {if $filtros['mantenimiento'] == 'on'}checked{/if} name="mantenimiento" type="checkbox">
 		                          <span></span>
 		                        </label>
 		                      </div>
 		                    </div>
-		                    <a data-toggle="modal" class="btn btn-success bfb" href="#modal-form"><i class="fa fa-refresh"></i> Buscar</a>
+		                    <a data-toggle="modal" class="btn btn-success bfb" href="javascript:$('#vehicles-filter').submit()"><i class="fa fa-refresh"></i> Buscar</a>
+		                    {if $filtros['filtrar']!=null}
+		                    	<a data-toggle="modal" class="btn btn-danger bfb" href="/admin/vehiculos/"><i class="fa fa-cross"></i> Borrar filtros</a>
+		                    {/if}
 		            	</form>
 					</header>
 					<table class="table table-striped m-b-none">
