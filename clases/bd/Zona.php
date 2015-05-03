@@ -126,5 +126,23 @@ class Zona {
     
         return $ack;
     }
+    
+    function get_puntos_carga($id_zona){
+        $ack = new ACK();
+        $ack->resultado = true;
+        // Primero añadiremos los filtros
+        $filtros = componer_filtro ($arr_filtros);
+    
+        if(strpos($limit, "Limit -")) $limit="";
+        $query = "SELECT * FROM punto_carga where id_zona = '".$id_zona."'";
+        // print $query;
+        if( ($arr_reg = $this->conn->load($query)) != null ){
+            $ack->datos = $arr_reg;
+        } else {
+            $ack->resultado = false;
+            $ack->mensaje   = "Se ha producido un error al obtener productos, ponte en contacto con tu administrador";
+        }
+        return $ack;
+    }
 }
 ?>

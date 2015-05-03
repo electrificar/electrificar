@@ -126,20 +126,36 @@
         	die();
         }
         
-        function delete_zona(){
+        function list_plug(){
         	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/zona.php");
         	
         	$zona = new zona($this->conn);
         	
-        	//borro el vehículo
-        	$ack_borrado = $zona->remove_vehicle($_REQUEST['id_zona']);
+        	$ack_pc = $zona->get_puntos_carga($_REQUEST['id_zona']);
         	
-        	//añado notificación
-        	$this->add_notification($ack_borrado);
+        	if($ack_pc->resultado){
+        		$puntos_carga = $ack_pc->datos;
+        	}else{
+        		$puntos_carga = array();
+        	}
         	
-        	//redirijo
-        	header("location: /admin/zonas/");
-        	die();
+        	
+        	$this->layout->assign("id_zona", $_REQUEST['id_zona']);
+        	$this->layout->assign("puntos_carga", $puntos_carga);
+        	//si todo sale bien o es un nuevo vehículo
+        	$this->layout->assign("zone", "active");//variable de activación de menú
+        	$this->display('/puntos_carga/list.tpl');//cargo la vista
+        }
+        
+        function frm_plug(){
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/zona.php");
+        	$zona = new zona($this->conn);
+        	
+        	
+        	$this->layout->assign("id_zona", $_REQUEST['id_zona']);
+        	//si todo sale bien o es un nuevo vehículo
+        	$this->layout->assign("zone", "active");//variable de activación de menú
+        	$this->display('/puntos_carga/frm_punto_carga.tpl');//cargo la vista
         }
 	}
 ?>

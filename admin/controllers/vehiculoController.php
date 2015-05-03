@@ -82,7 +82,9 @@
          */
         function frm_vehicle(){
         	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Vehiculo.php");
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Zona.php");
         	$Vehiculo = new Vehiculo($this->conn);
+        	$Zona	  = new Zona($this->conn);
         	
         	//si viene id_vehiculo es que estoy editando
         	if(isset($_REQUEST['id_vehiculo'])){
@@ -112,6 +114,14 @@
 	        	}        	
 	        	
 	        	$this->layout->assign("vehiculo", $vehiculo);
+        	}
+        	
+        	$ack_zonas = $Zona->get_zonas(array());
+        	
+        	if($ack_zonas->resultado){
+        		$this->layout->assign("zonas", $ack_zonas->datos);//variable de activación de menú	
+        	}else{
+        		$this->layout->assign("zonas", array());//variable de activación de menú
         	}
         	
         	//si todo sale bien o es un nuevo vehículo
