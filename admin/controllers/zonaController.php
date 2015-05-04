@@ -157,5 +157,36 @@
         	$this->layout->assign("zone", "active");//variable de activación de menú
         	$this->display('/puntos_carga/frm_punto_carga.tpl');//cargo la vista
         }
+        
+        function update_punto_carga(){
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Zona.php");
+        	
+        	$zona = new Zona($this->conn);
+        	
+        	//si no viene mantenimiento es que lo han desactivado
+        	if(!isset($_REQUEST['ocupado'])){
+        		$_REQUEST['ocupado'] = '\0';
+        	}else{
+        		$_REQUEST['ocupado'] = true;
+        	}
+        	
+        	//si no viene la disponibilidad es que lo han desactivado
+        	if(!isset($_REQUEST['disponible'])){
+        		$_REQUEST['disponible'] = '\0';
+        	}else{
+        		$_REQUEST['disponible'] = true;
+        	}
+        	
+        	if(is_null($_REQUEST['id_punto_carga']) || $_REQUEST['id_punto_carga'] == ''){
+        		unset($_REQUEST['id_punto_carga']);
+        	}
+        	
+        	$ack_pc = $zona->update_punto_de_carga($_REQUEST);
+        	
+        	$this->add_notification($ack_pc);
+        	
+        	header("location: /admin/zona/".$_REQUEST['id_zona']."/puntos-de-carga/");
+        	die();	
+        }
 	}
 ?>

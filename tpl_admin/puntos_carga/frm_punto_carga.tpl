@@ -18,98 +18,55 @@
             </div>
 			<section class="panel panel-default">
                 <header class="panel-heading font-bold">
-                  Datos de vehículo
+                  Datos del punto de carga
                 </header>
                 <div class="panel-body">
-                  <form enctype="multipart/form-data" method="post" action="/admin/guardar-vehiculo/" class="form-horizontal" data-validate="parsley">
-                  	<input type="hidden" name="id_vehiculo" value="{$vehiculo->id_vehiculo}" />
+                  <form enctype="multipart/form-data" method="post" action="/admin/guardar-punto-de-carga/" class="form-horizontal" data-validate="parsley">
+                  	<input type="hidden" name="id_zona" value="{$id_zona}" />
+                  	<input type="hidden" name="id_punto_carga" value="{$punto_carga->id_punto_carga}" />
                   	<input type="file" style="display:none;" name="imagen" id="imagen"/>
                     <div class="form-group">
-                      <label class="col-sm-3 control-label">Fecha vigencia seguro</label>
-                      <div class="col-sm-3">
-                        <input value="{$vehiculo->fecha_vigencia_seguro}" name="fecha_vigencia_seguro" class="input-sm input-s datepicker-input form-control" size="16" type="text" value="" data-date-format="dd/mm/yyyy" >
+                      <label class="col-sm-2 control-label">Nombre</label>
+                      <div class="col-sm-10">
+                        <input type="text" value="{$punto_carga->marca}" data-required="true" placeholder="" name="nombre" class="form-control">
                       </div>
-                      <label class="col-sm-2 control-label">Mantenimiento</label>
+                    </div>
+                    <div class="form-group">
+                      <label for="input-id-1" class="col-sm-2 control-label">Direccion</label>
+                      <div class="col-sm-10">
+                        <input type="text" value="{$punto_carga->modelo}" data-required="true" placeholder="" name="direccion" id="input-id-1" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="input-id-1" class="col-sm-2 control-label">Latitud</label>
+                      <div class="col-sm-10">
+                        <input type="text" value="{$punto_carga->matricula}" data-required="true" data-parsley-minlength="7" maxlength="7" name="latitud" id="input-id-1" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="input-id-1" class="col-sm-2 control-label">Longitud</label>
+                      <div class="col-sm-10">
+                        <input type="text" value="{$punto_carga->bastidor}" data-required="true" data-parsley-minlength="20" maxlength="20" name="longitud" id="input-id-1" class="form-control">
+                      </div>
+                    </div>
+                    <label class="col-sm-2 control-label">Ocupado</label>
                       <div class="col-sm-1">
                         <label class="switch">
-                          <input name="mantenimiento" {if $vehiculo->mantenimiento}checked{/if} type="checkbox">
+                          <input name="ocupado" {if $punto_carga->ocupado}checked{/if} type="checkbox">
                           <span></span>
                         </label>
                       </div>
                       <label class="col-sm-1 control-label">Disponible</label>
                       <div class="col-sm-1">
                         <label class="switch">
-                          <input name="disponible" {if $vehiculo->disponible}checked{/if} type="checkbox">
+                          <input name="disponible" {if $punto_carga->disponible}checked{/if} type="checkbox">
                           <span></span>
                         </label>
                       </div>
-                    </div>
-                    <div class="line line-dashed b-b line-lg pull-in"></div>
                     <div class="form-group">
-                      <label class="col-sm-2 control-label">Zona</label>
-                      <div class="col-sm-10">
-                        <select class="form-control m-b" data-required="true" name="id_zona">
-                          <option value="">Seleccione</option>
-                          {foreach from=$zonas key=cid item=zona}
-                          	<option {if $zona->id_zona == $vehiculo->id_zona}selected{/if} value="{$zona->id_zona}">Zona {$zona->id_zona}</option>
-                          {/foreach}
-                        </select>
-                      </div>
-                      <label class="col-sm-2 control-label">Marca</label>
-                      <div class="col-sm-10">
-                        <input type="text" value="{$vehiculo->marca}" data-required="true" placeholder="Renault" name="marca" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="input-id-1" class="col-sm-2 control-label">Modelo</label>
-                      <div class="col-sm-10">
-                        <input type="text" value="{$vehiculo->modelo}" data-required="true" placeholder="Twizy" name="modelo" id="input-id-1" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="input-id-1" class="col-sm-2 control-label">Matrícula</label>
-                      <div class="col-sm-10">
-                        <input type="text" value="{$vehiculo->matricula}" data-required="true" data-parsley-minlength="7" maxlength="7" name="matricula" id="input-id-1" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="input-id-1" class="col-sm-2 control-label">Bastidor</label>
-                      <div class="col-sm-10">
-                        <input type="text" value="{$vehiculo->bastidor}" data-required="true" data-parsley-minlength="20" maxlength="20" name="bastidor" id="input-id-1" class="form-control">
-                      </div>
-                    </div>
-                    <div class="line line-dashed b-b line-lg pull-in"></div>
-                    <div class="form-group">
-                      <label class="col-sm-2 control-label">Peso</label>
-                      <div class="col-sm-10">
-                        <div class="input-group m-b">
-                          <input type="text" value="{$vehiculo->peso}" maxlength="4" name="peso" class="form-control">
-                          <span class="input-group-addon">Kg</span>
-                        </div>
-                      </div>
-                      <label class="col-sm-2 control-label">Ancho</label>
-                      <div class="col-sm-10">
-                        <div class="input-group m-b">
-                          <input type="text" value="{$vehiculo->ancho}" maxlength="4" name="ancho" class="form-control">
-                          <span class="input-group-addon">Cm</span>
-                        </div>
-                      </div>
-                      <label class="col-sm-2 control-label">Largo</label>
-                      <div class="col-sm-10">
-                        <div class="input-group m-b">
-                          <input type="text" value="{$vehiculo->largo}" maxlength="4" name="largo" class="form-control">
-                          <span class="input-group-addon">Cm</span>
-                        </div>
-                      </div>
-                      <label class="col-sm-2 control-label">Plazas</label>
-                      <div class="col-sm-10">
-                        <input type="hidden" value="{$vehiculo->numero_plazas}" data-required="true" name="numero_plazas" id="plazas" class="slider-input" />
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="col-sm-4 col-sm-offset-2">
+                      <div class="col-sm-3">
+                      	<button type="submit" class="btn btn-primary">Guardar</button>
                         <button type="button" onclick="document.location='/admin/vehiculos/'" class="btn btn-default">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Guardar</button>
                       </div>
                     </div>
                   </form>

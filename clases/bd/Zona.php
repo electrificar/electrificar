@@ -144,5 +144,33 @@ class Zona {
         }
         return $ack;
     }
+    
+	function update_punto_de_carga ($datos){
+        $ack = new ACK();
+        $ack->resultado = true;
+        $tabla='punto_carga';
+        
+        //COMPROBAR ARRAY DE DATOS, SI ESTA VACIO O NO.
+        if($datos==null || sizeof($datos)==0){
+        	$ack->resultado = false;
+            $ack->mensaje ="Los parametros enviados para la tabla ".$tabla." están vacíos";
+        }
+       
+        if(!$ack->resultado){
+            print_r($ack->mensaje);
+        }else{
+            $res = $this->conn->stor($datos,$tabla);
+            
+            if(!$res){
+            	$ack->resultado = false;
+            	$ack->mensaje = "Ha ocurrido un problema al guardar el punto de carga.";
+            }else{
+            	$ack->mensaje = "Datos guardados correctamente.";
+            }
+        }
+        
+        return $ack;
+        
+    }
 }
 ?>
