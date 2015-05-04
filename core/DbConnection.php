@@ -21,7 +21,7 @@ class DbConnection {
 	
 	
 	function DbConnection(){
-			$this->site = "localhost"; 
+			$this->site = "127.0.0.1"; 
 			$this->user = "root";
 			$this->passwd = "lubina";
 			$this->database = "electrificar";
