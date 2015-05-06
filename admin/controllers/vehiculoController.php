@@ -131,20 +131,25 @@
         
         function update_vehicle(){
         	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Vehiculo.php");
-        	
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Zona.php");
         	$Vehiculo = new Vehiculo($this->conn);
+        	$zona	  = new Zona($this->conn);
         	
         	//parseo la fecha a ingles
         	$_REQUEST['fecha_vigencia_seguro'] = convertir_fecha_ingles($_REQUEST['fecha_vigencia_seguro']);
         	
         	//si no viene mantenimiento es que lo han desactivado
         	if(!isset($_REQUEST['mantenimiento'])){
-        		$_REQUEST['mantenimiento'] = '\0';
+        		$_REQUEST['mantenimiento'] = '0';
+        	}else{
+        		$_REQUEST['mantenimiento'] = '1';
         	}
         	
         	//si no viene la disponibilidad es que lo han desactivado
         	if(!isset($_REQUEST['disponible'])){
-        		$_REQUEST['disponible'] = '\0';
+        		$_REQUEST['disponible'] = '0';
+        	}else{
+        		$_REQUEST['disponible'] = '1';
         	}
         	
         	//si viene imagen, guardo
@@ -154,9 +159,15 @@
         	
         	//inserto/actualizo en base de datos
         	$ackVehiculo = $Vehiculo->update_vehiculo($_REQUEST);
-        	
         	//añado una notificacion
         	$this->add_notification($ackVehiculo);
+        	
+        	//actualizo la zona
+        	$datosZona = array();
+        	$datosZona['id_zona'] 			   = $_REQUEST['id_zona'];
+        	$datosZona['num_vehiculos_zona']   = $zona->getTotalVehiculos($_REQUEST['id_zona']);
+        	
+        	$ack_zona = $zona->update_zona($datosZona);
         	
         	//redirijo
         	header("location: /admin/vehiculos/");

@@ -36,6 +36,8 @@
     RewriteRule ^admin/zona/(.*)/puntos-de-carga/?$ /admin/index.php?controller=zona&action=list_plug&id_zona=$1%{QUERY_STRING} [L]
     RewriteRule ^admin/zona/(.*)/añadir-punto-de-carga/?$ /admin/index.php?controller=zona&action=frm_plug&id_zona=$1%{QUERY_STRING} [L]
     RewriteRule ^admin/guardar-punto-de-carga/?$ /admin/index.php?controller=zona&action=update_punto_carga&%{QUERY_STRING} [L]
+    RewriteRule ^admin/zona/(.*)/editar-punto-de-carga/(.*)/?$ /admin/index.php?controller=zona&action=frm_plug&id_zona=$1&id_punto_carga=$2%{QUERY_STRING} [L]
+    RewriteRule ^admin/zona/(.*)/eliminar-punto-de-carga/(.*)/?$ /admin/index.php?controller=zona&action=delete_plug&id_zona=$1&id_punto_carga=$2%{QUERY_STRING} [L]
     
   	#tarifas
   	

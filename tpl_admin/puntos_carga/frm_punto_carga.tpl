@@ -28,25 +28,25 @@
                     <div class="form-group">
                       <label class="col-sm-2 control-label">Nombre</label>
                       <div class="col-sm-10">
-                        <input type="text" value="{$punto_carga->marca}" data-required="true" placeholder="" name="nombre" class="form-control">
+                        <input type="text" value="{$punto_carga->nombre}" data-required="true" placeholder="" name="nombre" class="form-control">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="input-id-1" class="col-sm-2 control-label">Direccion</label>
                       <div class="col-sm-10">
-                        <input type="text" value="{$punto_carga->modelo}" data-required="true" placeholder="" name="direccion" id="input-id-1" class="form-control">
+                        <input type="text" value="{$punto_carga->direccion}" data-required="true" placeholder="" name="direccion" id="input-id-1" class="form-control">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="input-id-1" class="col-sm-2 control-label">Latitud</label>
                       <div class="col-sm-10">
-                        <input type="text" value="{$punto_carga->matricula}" data-required="true" data-parsley-minlength="7" maxlength="7" name="latitud" id="input-id-1" class="form-control">
+                        <input type="text" value="{$punto_carga->latitud}" data-required="true" name="latitud" id="input-id-1" class="form-control">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="input-id-1" class="col-sm-2 control-label">Longitud</label>
                       <div class="col-sm-10">
-                        <input type="text" value="{$punto_carga->bastidor}" data-required="true" data-parsley-minlength="20" maxlength="20" name="longitud" id="input-id-1" class="form-control">
+                        <input type="text" value="{$punto_carga->longitud}" data-required="true" name="longitud" id="input-id-1" class="form-control">
                       </div>
                     </div>
                     <label class="col-sm-2 control-label">Ocupado</label>
@@ -66,7 +66,7 @@
                     <div class="form-group">
                       <div class="col-sm-3">
                       	<button type="submit" class="btn btn-primary">Guardar</button>
-                        <button type="button" onclick="document.location='/admin/vehiculos/'" class="btn btn-default">Cancelar</button>
+                        <button type="button" onclick="document.location='/admin/zona/{$id_zona}/puntos-de-carga/'" class="btn btn-default">Cancelar</button>
                       </div>
                     </div>
                   </form>

@@ -183,5 +183,14 @@
     	  content: '<div class="overlay">Zona {$zona->id_zona}</div>'
     	});
       {/if}
+
+   	  {foreach from=$puntos_carga key=cid item=punto_carga}
+	      	map.addMarker({
+	    	  lat: {$punto_carga->latitud},
+	    	  lng: {$punto_carga->longitud},
+	    	  title: '{$punto_carga->nombre}',
+	    	  icon: "http://cdn.flaticon.com/png/32/62809.png"
+	    	});
+      {/foreach}   
     });
   </script>

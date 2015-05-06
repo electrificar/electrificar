@@ -83,8 +83,8 @@
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
 													class="fa fa-gear"></i> </a>
 												<ul class="dropdown-menu pull-right">
-													<li><a href="/admin/editar-punto-de-carga/{$punto_carga->id_punto_carga}/">Editar punto carga <i class="fa fa-edit"></i></a></li>
-													<li><a href="/admin/borrar-punto-de-carga/{$punto_carga->id_punto_carga}/">Borrar punto carga <i class="fa fa-trash"></i></a></li>
+													<li><a href="/admin/zona/{$id_zona}/editar-punto-de-carga/{$punto_carga->id_punto_carga}/">Editar punto carga <i class="fa fa-edit"></i></a></li>
+													<li><a href="/admin/zona/{$id_zona}/eliminar-punto-de-carga/{$punto_carga->id_punto_carga}">Borrar punto carga <i class="fa fa-trash"></i></a></li>
 												</ul>
 											</div>
 										</td>

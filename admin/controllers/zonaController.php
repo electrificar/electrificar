@@ -39,8 +39,8 @@
          * Formulario de adición/modificación de vehículo
          */
         function frm_zona(){
-        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/zona.php");
-        	$zona = new zona($this->conn);
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Zona.php");
+        	$Zona = new Zona($this->conn);
         	
         	//si viene id_zona es que estoy editando
         	if(isset($_REQUEST['id_zona'])){
@@ -48,7 +48,7 @@
         		//filtro el vehículo para encontrarlo
 	        	$filtros = array();       
 	        	anade_filtrado($filtros, "id_zona", $_REQUEST['id_zona'], "=");
-	        	$ack_zonas = $zona->get_zonas($filtros);
+	        	$ack_zonas = $Zona->get_zonas($filtros);
 	        	
 	        	//si lo encuentro
 	        	if($ack_zonas->resultado){
@@ -72,6 +72,12 @@
 	        			}else{
 	        				$zona->longitudes[] = $coor;
 	        			}
+	        		}
+	        		
+	        		$ack_puntos_carga = $Zona->get_puntos_carga($filtros);
+	        		
+	        		if($ack_puntos_carga->resultado){
+	        			$this->layout->assign("puntos_carga", $ack_puntos_carga->datos);
 	        		}
 	        		
 	        	}else{
@@ -131,7 +137,29 @@
         	
         	$zona = new zona($this->conn);
         	
-        	$ack_pc = $zona->get_puntos_carga($_REQUEST['id_zona']);
+        	$filtros = array();
+        	anade_filtrado($filtros, "id_zona", $_REQUEST['id_zona'], "=");
+        	
+        	//si viene que apliquemos filtros
+        	if(isset($_REQUEST['filtrar'])){
+
+        		//por si hay que filtrar por matricula
+        		if($_REQUEST['direccion']){
+        			anade_filtrado($filtros, "direccion", $_REQUEST['direccion'], "like");
+        		}
+        		
+        		//filtro por disponibilidad
+        		if($_REQUEST['disponible'] == 'on'){
+        			anade_filtrado($filtros, "disponible", 1, "=");
+        		}
+        		
+        		//filtro por mantenimiento
+        		if($_REQUEST['ocupado'] == 'on'){
+        			anade_filtrado($filtros, "ocupado", 1, "=");
+        		}
+        	}
+        	
+        	$ack_pc = $zona->get_puntos_carga($filtros);
         	
         	if($ack_pc->resultado){
         		$puntos_carga = $ack_pc->datos;
@@ -140,6 +168,7 @@
         	}
         	
         	
+        	$this->layout->assign("filtros", $_REQUEST);
         	$this->layout->assign("id_zona", $_REQUEST['id_zona']);
         	$this->layout->assign("puntos_carga", $puntos_carga);
         	//si todo sale bien o es un nuevo vehículo
@@ -151,6 +180,35 @@
         	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/zona.php");
         	$zona = new zona($this->conn);
         	
+        	//si viene id_zona es que estoy editando
+        	if(isset($_REQUEST['id_punto_carga'])){
+        		
+        		//filtro el vehículo para encontrarlo
+	        	$filtros = array();       
+	        	anade_filtrado($filtros, "id_zona", $_REQUEST['id_zona'], "=");
+	        	anade_filtrado($filtros, "id_punto_carga", $_REQUEST['id_punto_carga'], "=");
+	        	$ack_punto_carga = $zona->get_puntos_carga($filtros);
+	        	
+	        	//si lo encuentro
+	        	if($ack_punto_carga->resultado){
+	        		//me guardo el vehículo y parseo la fecha
+	        		$puntoCarga 				= $ack_punto_carga->datos[0];
+	        	}else{
+	        		//si no lo encuentro, genero una notificacion
+	        		$ack_puntoCarga = new ACK();
+	        		$ack_puntoCarga->resultado = false;
+	        		$ack_puntoCarga->mensaje	  = "El punto de Carga no existe";
+	        		
+	        		//la añado
+	        		$this->add_notification($ack_zonas);
+	        		
+	        		//redirijo el listado
+	        		header("location: /admin/zona/".$_REQUEST['id_zona']."/puntos-de-carga/");
+	        		die();
+	        	}        	
+	        	
+	        	$this->layout->assign("punto_carga", $puntoCarga);
+        	}
         	
         	$this->layout->assign("id_zona", $_REQUEST['id_zona']);
         	//si todo sale bien o es un nuevo vehículo
@@ -165,14 +223,14 @@
         	
         	//si no viene mantenimiento es que lo han desactivado
         	if(!isset($_REQUEST['ocupado'])){
-        		$_REQUEST['ocupado'] = '\0';
+        		$_REQUEST['ocupado'] = '0';
         	}else{
         		$_REQUEST['ocupado'] = true;
         	}
         	
         	//si no viene la disponibilidad es que lo han desactivado
         	if(!isset($_REQUEST['disponible'])){
-        		$_REQUEST['disponible'] = '\0';
+        		$_REQUEST['disponible'] = '0';
         	}else{
         		$_REQUEST['disponible'] = true;
         	}
@@ -183,10 +241,33 @@
         	
         	$ack_pc = $zona->update_punto_de_carga($_REQUEST);
         	
+        	//actualizo la zona
+        	$datosZona = array();
+        	$datosZona['id_zona'] = $_REQUEST['id_zona'];
+        	$datosZona['num_puntos_carga']	  = $zona->getTotalPuntosCarga($_REQUEST['id_zona']);
+        	
+        	$ack_zona = $zona->update_zona($datosZona);
+        	
         	$this->add_notification($ack_pc);
         	
         	header("location: /admin/zona/".$_REQUEST['id_zona']."/puntos-de-carga/");
         	die();	
+        }
+        
+		function delete_plug(){
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Zona.php");
+        	
+        	$zona = new Zona($this->conn);
+        	
+        	//borro el vehículo
+        	$ack_borrado = $zona->delete_plug($_REQUEST['id_punto_carga'], $_REQUEST['id_zona']);
+        	
+        	//añado notificación
+        	$this->add_notification($ack_borrado);
+        	
+        	//redirijo
+        	header("location: /admin/zona/".$_REQUEST['id_zona']."/puntos-de-carga/");
+        	die();
         }
 	}
 ?>

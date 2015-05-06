@@ -49,7 +49,6 @@ class Zona {
             $ack->datos = $arr_reg;
         } else {
             $ack->resultado = false;
-            $ack->mensaje   = "Se ha producido un error al obtener productos, ponte en contacto con tu administrador";
         }
         return $ack;
     }
@@ -64,7 +63,7 @@ class Zona {
 	        $filtros = componer_filtro ($arr_filtros);
 	    
 	        if(strpos($limit, "Limit -")) $limit="";
-	        $query = "SELECT count(*) as total FROM zona where id_zona in (select id_zona from punto_carga where id_zona = '".$id_zona."')";
+	        $query = "SELECT count(*) as total FROM punto_carga where id_zona in (select id_zona from zona where id_zona = '".$id_zona."')";
 	        // print $query;
 	        if( ($arr_reg = $this->conn->load($query)) != null ){
 	            $total = $arr_reg[0]->total;
@@ -88,7 +87,7 @@ class Zona {
 	        $filtros = componer_filtro ($arr_filtros);
 	    
 	        if(strpos($limit, "Limit -")) $limit="";
-	        $query = "SELECT count(*) as total FROM zona where id_zona in (select id_zona from vehiculo where id_zona = '".$id_zona."')";
+	        $query = "SELECT count(*) as total FROM vehiculo where id_zona in (select id_zona from zona where id_zona = '".$id_zona."')";
 	        // print $query;
 	        if( ($arr_reg = $this->conn->load($query)) != null ){
 	            $total = $arr_reg[0]->total;
@@ -103,23 +102,23 @@ class Zona {
     	return $total;
     }
     
- 	function remove_zona ($id_zona){
+ 	function delete_plug ($id_punto_carga, $id_zona){
         global $log;
         $ack = new ACK();
         $ack->resultado = true;
     
-        $query = "select * from zona where id_zona='".$id_zona."'";
+        $query = "select * from punto_carga where id_punto_carga='".$id_punto_carga."' and id_zona = '".$id_zona."'";
         $arr_res = $this->conn->load ($query);
         if(sizeof($arr_res)>0){
         
             // Primero elimino el objeto principal
-            $query = "delete from zona where id_zona='".$id_zona."'";
+            $query = "delete from punto_carga where id_punto_carga='".$id_punto_carga."'";
             $res = $this->conn->remove ($query);        
         
-            $ack->id = $arr_res[0]->$id_zona;
+            $ack->id = $arr_res[0]->id_punto_carga;
         } else {
             $ack->resultado = false;
-            $ack->mensaje   = "No se ha localizado el vehículo, consulte a su administrador";
+            $ack->mensaje   = "No se ha localizado el punto de carga, consulte a su administrador";
             $ack->id        = $id_valoraciones;
         }
     
@@ -127,20 +126,19 @@ class Zona {
         return $ack;
     }
     
-    function get_puntos_carga($id_zona){
+    function get_puntos_carga($arr_filtros){
         $ack = new ACK();
         $ack->resultado = true;
         // Primero añadiremos los filtros
         $filtros = componer_filtro ($arr_filtros);
     
         if(strpos($limit, "Limit -")) $limit="";
-        $query = "SELECT * FROM punto_carga where id_zona = '".$id_zona."'";
+        $query = "SELECT * FROM punto_carga ".$filtros." ".get_order ("id_zona","asc")." ".$limit; // + filtros
         // print $query;
         if( ($arr_reg = $this->conn->load($query)) != null ){
             $ack->datos = $arr_reg;
         } else {
             $ack->resultado = false;
-            $ack->mensaje   = "Se ha producido un error al obtener productos, ponte en contacto con tu administrador";
         }
         return $ack;
     }
