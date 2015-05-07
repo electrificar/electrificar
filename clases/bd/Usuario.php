@@ -42,7 +42,7 @@ class Usuario {
             $clave      = encrypt($clave);
         }
         //print_r(md5("lubina"));exit;
-		$query = "SELECT * FROM usuarios WHERE LOWER(email)='".strtolower($usuario)."' AND contrasena='".$clave."' and activado='S'";
+		$query = "SELECT * FROM usuario WHERE LOWER(email)='".strtolower($usuario)."' AND contrasena='".$clave."' and activado='S'";
 		//print_r($query);exit;
         if( ($arr_reg = $this->conn->load($query)) != null ){
 
@@ -54,7 +54,7 @@ class Usuario {
 			}
 			
 		} else {
-			$query = "SELECT * FROM usuarios WHERE LOWER(email)='".strtolower($usuario)."' AND contrasena='".$clave."'";
+			$query = "SELECT * FROM usuario WHERE LOWER(email)='".strtolower($usuario)."' AND contrasena='".$clave."'";
 			//print_r($query);exit;
 	        if( ($arr_reg = $this->conn->load($query)) != null ){
 	
@@ -71,49 +71,49 @@ class Usuario {
         return $ack;
 	}
 	
-    // Obtengo los elementos de la tabla usuarios que cumplen el patron de filtros enviado
-    function get_usuarios ($arr_filtros, $limit=null){
+    // Obtengo los elementos de la tabla usuario que cumplen el patron de filtros enviado
+    function get_usuario ($arr_filtros, $limit=null){
         $ack = new ACK();
         $ack->resultado = true;
         // Primero aÃ±adiremos los filtros
         $filtros = componer_filtro ($arr_filtros);
     
         if(strpos($limit, "Limit -")) $limit="";
-        $query = "SELECT * FROM usuarios ".$filtros." ".get_order ("nombre,apellido1","asc")." ".$limit; // + filtros
+        $query = "SELECT * FROM usuario ".$filtros." ".get_order ("nombre,apellido1","asc")." ".$limit; // + filtros
         // print $query;
         if( ($arr_reg = $this->conn->load($query)) != null ){
             $ack->datos = $arr_reg;
         } else {
             $ack->resultado = false;
-            $ack->mensaje   = "Se ha producido un error al obtener usuarios, ponte en contacto con tu administrador";
+            $ack->mensaje   = "Se ha producido un error al obtener usuario, ponte en contacto con tu administrador";
         }
         return $ack;
     }
     
-	// Obtengo los elementos de la tabla usuarios que cumplen el patron de filtros enviado
+	// Obtengo los elementos de la tabla usuario que cumplen el patron de filtros enviado
     function get_nombre_usuario ($id_usuario){
         $ack = new ACK();
         $ack->resultado = true;
     
-        $query = "SELECT nombre FROM usuarios ";
+        $query = "SELECT nombre FROM usuario ";
         // print $query;
         if( ($arr_reg = $this->conn->load($query)) != null ){
             $ack->datos = $arr_reg[0]->nombre;
         } else {
             $ack->resultado = false;
-            $ack->mensaje   = "Se ha producido un error al obtener usuarios, ponte en contacto con tu administrador";
+            $ack->mensaje   = "Se ha producido un error al obtener usuario, ponte en contacto con tu administrador";
         }
         return $ack->datos;
     }
 
-    // Devuelvo el total de elemntos de la tabla usuarios que cumplen el filtro enviado
-    function get_total_usuarios ($arr_filtros){
+    // Devuelvo el total de elemntos de la tabla usuario que cumplen el filtro enviado
+    function get_total_usuario ($arr_filtros){
         $ack = new ACK();
         $ack->resultado = true;
         // Primero aÃ±adiremos los filtros
         $filtros = componer_filtro ($arr_filtros);
     
-        $query = "SELECT COUNT(*) AS TANTOS FROM usuarios ".$filtros; 
+        $query = "SELECT COUNT(*) AS TANTOS FROM usuario ".$filtros; 
         // print $query;
         if( ($arr_reg = $this->conn->load($query)) != null ){
             $ack->datos = $arr_reg[0]->TANTOS;
@@ -124,13 +124,13 @@ class Usuario {
         return $ack->datos[0]->TANTOS;
     }
 
-    // Realizamos la insercion de la tabla usuarios y su modificacion si el indice es distinto de null
-    function update_usuarios2 ($id_usuarios, $nombre, $apellido1, $apellido2, $telefono, $direccion, $poblacion, $pais, $dc_provincia, $codigo_postal, $email, $contrasena, $activado, $fh_alta, $fh_actualizacion, $nif){
+    // Realizamos la insercion de la tabla usuario y su modificacion si el indice es distinto de null
+    function update_usuario2 ($id_usuario, $nombre, $apellido1, $apellido2, $telefono, $direccion, $poblacion, $pais, $dc_provincia, $codigo_postal, $email, $contrasena, $activado, $fh_alta, $fh_actualizacion, $nif){
         $ack = new ACK();
         $ack->resultado = true;
 
         $update = false;
-        $query = "select * from usuarios where id_usuarios='".$id_usuarios."'";
+        $query = "select * from usuario where id_usuario='".$id_usuario."'";
         $res = $this->conn->load($query);
         if(sizeof($res)>0){
             $update = true;
@@ -138,17 +138,17 @@ class Usuario {
 
         if($update==true){
             // update
-            $query = "update usuarios set nombre='".$nombre."', apellido1='".$apellido1."', apellido2='".$apellido2."', telefono='".$telefono."', direccion='".$direccion."', poblacion='".$poblacion."', pais='".$pais."', dc_provincia='".$dc_provincia."', codigo_postal='".$codigo_postal."', email='".$email."', contrasena='".$contrasena."', activado='".$activado."', fh_alta='".$fh_alta."', fh_actualizacion='".$fh_actualizacion."', nif='".$nif."' where id_usuarios='".$id_usuarios."' ";
+            $query = "update usuario set nombre='".$nombre."', apellido1='".$apellido1."', apellido2='".$apellido2."', telefono='".$telefono."', direccion='".$direccion."', poblacion='".$poblacion."', pais='".$pais."', dc_provincia='".$dc_provincia."', codigo_postal='".$codigo_postal."', email='".$email."', contrasena='".$contrasena."', activado='".$activado."', fh_alta='".$fh_alta."', fh_actualizacion='".$fh_actualizacion."', nif='".$nif."' where id_usuario='".$id_usuario."' ";
             // print $query;
             if($this->conn->update($query)==false){
                 $ack->resultado = false;
                 $ack->mensaje   = "No se ha podido actualizar el objeto, contacte con su administrador";
             } else {
-                $ack->id = $id_usuarios;
+                $ack->id = $id_usuario;
             }
         } else {
             // insert
-            $query = "insert into usuarios (id_usuarios, nombre, apellido1, apellido2, telefono, direccion, poblacion, pais, dc_provincia, codigo_postal, email, contrasena, activado, fh_alta, fh_actualizacion, nif) values ('".$id_usuarios."', '".$nombre."', '".$apellido1."', '".$apellido2."', '".$telefono."', '".$direccion."', '".$poblacion."', '".$pais."', '".$dc_provincia."', '".$codigo_postal."', '".$email."', '".$contrasena."', '".$activado."', '".$fh_alta."', '".$fh_actualizacion."', '".$nif."');";
+            $query = "insert into usuario (id_usuario, nombre, apellido1, apellido2, telefono, direccion, poblacion, pais, dc_provincia, codigo_postal, email, contrasena, activado, fh_alta, fh_actualizacion, nif) values ('".$id_usuario."', '".$nombre."', '".$apellido1."', '".$apellido2."', '".$telefono."', '".$direccion."', '".$poblacion."', '".$pais."', '".$dc_provincia."', '".$codigo_postal."', '".$email."', '".$contrasena."', '".$activado."', '".$fh_alta."', '".$fh_actualizacion."', '".$nif."');";
             // print $query;
             $res = $this->conn->insert($query);
             if($res==null){
@@ -162,49 +162,49 @@ class Usuario {
         return $ack;
     }
 
-    // Eliminamos de la tabla usuarios y si hay dependencias caerian en cascada
-    function remove_usuarios ($id_usuarios){
+    // Eliminamos de la tabla usuario y si hay dependencias caerian en cascada
+    function remove_usuario ($id_usuario){
         global $log;
         $ack = new ACK();
         $ack->resultado = true;
     
-        $query = "select * from usuarios where ID_usuarios='".$id_usuarios."'";
+        $query = "select * from usuario where ID_usuario='".$id_usuario."'";
         $arr_res = $this->conn->load ($query);
         if(sizeof($arr_res)>0){
         
             // Primero elimino el objeto principal
-            $query = "delete from usuarios where ID_usuarios='".$id_usuarios."'";
+            $query = "delete from usuario where ID_usuario='".$id_usuario."'";
             $res = $this->conn->remove ($query);
         
             if($res==true){
                 // Aqui pondriamos las dependencias
             }
         
-            $ack->id = $arr_res[0]->ID_usuarios;
+            $ack->id = $arr_res[0]->ID_usuario;
         } else {
             $ack->resultado = false;
-            $ack->mensaje   = "No se ha localizado la usuarios, consulte a su administrador";
-            $ack->id        = $id_usuarios;
+            $ack->mensaje   = "No se ha localizado la usuario, consulte a su administrador";
+            $ack->id        = $id_usuario;
         }
     
         // Escribo las trazas
         if($ack->resultado==true){
-            $log->output ("ELIMINAR_usuarios", $ack->id, "usuarios", "", "", "");
+            $log->output ("ELIMINAR_usuario", $ack->id, "usuario", "", "", "");
         } else {
-            $log->output ("ELIMINAR_usuarios", $ack->id, "usuarios", "", "", "Error: ".$ack->mensaje);
+            $log->output ("ELIMINAR_usuario", $ack->id, "usuario", "", "", "Error: ".$ack->mensaje);
         }
     
         return $ack;
     }
-    // Realizamos la insercion de la tabla usuarios y su modificacion si el indice es distinto de null
-    function update_usuarios ($datos){
+    // Realizamos la insercion de la tabla usuario y su modificacion si el indice es distinto de null
+    function update_usuario ($datos){
         $ack = new ACK();
         $ack->resultado = true;
-        $tabla='usuarios';
+        $tabla='usuario';
         
-        $query = "select * from usuarios where email='".$datos['email']."'";
+        $query = "select * from usuario where email='".$datos['email']."'";
         $arr_res = $this->conn->load ($query);
-        if(sizeof($arr_res)>0 && $datos['id_usuarios']==null){
+        if(sizeof($arr_res)>0 && $datos['id_usuario']==null){
         	$ack->resultado = false;
         	$ack->mensaje = "Email ya registrado, si desea recordar la contraseÃ±a pulse <a href='/recordar-password/'>aqui</a>";
         }else{
@@ -233,7 +233,7 @@ class Usuario {
         $ack->mensaje = "Tu usuario ha sido activado correctamente, ya puedes iniciar sesiÃ³n.";
         
 		// update
-		$query = "update usuarios set activado='S' where id_usuarios='".$id_usuario."' ";
+		$query = "update usuario set activado='S' where id_usuario='".$id_usuario."' ";
 		// print $query;
 		if($this->conn->update($query)==false){
 			$ack->resultado = false;

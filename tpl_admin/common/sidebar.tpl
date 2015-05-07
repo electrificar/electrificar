@@ -60,8 +60,8 @@
                         <span class="font-bold">Vehículos</span>
                       </a>
                     </li>
-                    <li class="">
-                      <a class="auto" href="#">
+                    <li class="{$users}">
+                      <a class="auto" href="javascipt:;">
                         <span class="pull-right text-muted">
                           <i class="i i-circle-sm-o text"></i>
                           <i class="i i-circle-sm text-active"></i>
@@ -70,21 +70,21 @@
                         </i>
                         <span class="font-bold">Usuarios</span>
                       </a>
-                      <ul class="nav dk" style="display: none;">
-                        <li>
-                          <a class="auto" href="layout-color.html">                                                        
+                      <ul class="nav dk" style="{if $users!='active'}display: none;{else}display: block;{/if}">
+                        <li class="{$administradores}">
+                          <a class="auto" href="/admin/usuarios/administracion/">                                                        
                             <i class="fa fa-user"></i>
                             <span>Administración</span>
                           </a>
                         </li>
-                        <li>
-                          <a class="auto" href="layout-hbox.html">
+                        <li class="{$colaboradores}">
+                          <a class="auto" href="/admin/usuarios/colaborador/">
 							<i class="fa fa-wrench"></i>
                             <span>Colaborador</span>
                           </a>
                         </li>
-                        <li>
-                          <a class="auto" href="layout-boxed.html">                                                        
+                        <li class="{$electrificados}">
+                          <a class="auto" href="/admin/usuarios/electrificados/">                                                        
                             <i class="fa fa-street-view"></i>
                             <span>Electrificados</span>
                           </a>

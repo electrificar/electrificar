@@ -18,10 +18,10 @@
 			                	<div class="row">  
 				                  	<div class="col-lg-6">
 				                  		<section class="panel panel-default">
-						                    <div class="panel-body">
+						                    <div class="panel-body" style="background-color:#d7ecfa;">
 						                      <div class="clearfix text-center m-t">
 						                        <div class="inline">
-						                          <div data-animate="1000" data-line-cap="butt" data-size="134" data-scale-color="false" data-track-color="#f5f5f5" data-bar-color="#003E55" data-line-width="5" data-percent="100" class="easypiechart easyPieChart" style="width: 134px; height: 134px; line-height: 134px;">
+						                          <div data-animate="1000" data-line-cap="butt" data-size="134" data-scale-color="false" data-track-color="#f5f5f5" data-bar-color="#177BBB" data-line-width="5" data-percent="100" class="easypiechart easyPieChart" style="width: 134px; height: 134px; line-height: 134px;">
 						                            <div class="thumb-lg">
 						                              <a style="font-size:54px" href="/administracion/la-guinot-<?=url_amigable(strtolower($seccion->dc_seccion))?>/"><i class="fa fa-flash"></i></a>
 						                            </div>
@@ -30,7 +30,7 @@
 						                        </div>                      
 						                      </div>
 						                    </div>
-						                    <footer class="panel-footer bg-info text-center" style="background-color:#003E55">
+						                    <footer class="panel-footer bg-info text-center" style="background-color: rgb(23, 123, 187);">
 						                      <div class="row pull-out">
 						                        <div class="col-xs-6">
 						                          <div class="padder-v">
@@ -38,7 +38,7 @@
 						                            <small class="text-lt">Activos</small>
 						                          </div>
 						                        </div>
-						                        <div class="col-xs-6 dk" style="background-color:#002e45">
+						                        <div class="col-xs-6 dk" style="background-color:#126DA7">
 						                          <div class="padder-v">
 						                            <span class="m-b-xs h3 block text-white">13.456</span>
 						                            <small class="text-lt">Historial</small>
@@ -50,7 +50,7 @@
 				                	</div>
 				                	<div class="col-lg-6">
 				                  		<section class="panel panel-default">
-						                    <div class="panel-body">
+						                    <div class="panel-body" style="background-color: rgb(255, 138, 125);">
 						                      <div class="clearfix text-center m-t">
 						                        <div class="inline">
 						                          <div data-animate="1000" data-line-cap="butt" data-size="134" data-scale-color="false" data-track-color="#f5f5f5" data-bar-color="#F95446" data-line-width="5" data-percent="100" class="easypiechart easyPieChart" style="width: 134px; height: 134px; line-height: 134px;">
