@@ -1,34 +1,5 @@
 {include file="../common/header.tpl"}
-<div class="infobar">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<ol class="breadcrumb pull-left">
-		  			<li><a href="#">Home</a></li>
-		  			<li><a href="#">Featured Cars</a></li>
-		  			<li class="active">Buy</li>
-				</ol>
-
-				<div class="contact pull-right">
-					<div class="contact-item phone">
-						<div class="label"><i class="icon icon-normal-mobile-phone"></i></div><!-- /.label -->
-						<div class="value">123-456-789</div><!-- /.value -->
-					</div><!-- /.phone -->
-
-					<div class="contact-item mail">
-						<div class="label"><i class="icon icon-normal-mail"></i></div><!-- /.label -->
-						<div class="value"><a href="mailto:example@example.com">example@example.com</a></div><!-- /.value -->
-					</div><!-- /.mail -->
-
-					<div class="contact-item opening">
-						<div class="label"><i class="icon icon-normal-clock"></i></div><!-- /.label -->
-						<div class="value">Mon - Sun: 8:00 - 16:00</div><!-- /.value -->
-					</div><!-- /.opening -->
-				</div><!-- /.contact -->
-			</div><!-- /.col-md-12 -->
-		</div><!-- /.row -->
-	</div><!-- /.container -->
-</div><!-- /.infobar -->  <div class="highlighted-wrapper gray">
+<div class="highlighted-wrapper gray">
     <div class="highlighted section">
         <div class="container">
             <div class="row">
@@ -177,17 +148,17 @@
                 <div class="col-md-7 col-sm-7">
                     <div id="slider">
                         <div class="slide active">
-                            <a href="detail.html"><img src="tpl_guest/assets/img/slides/toyota.png" alt="#"></a>
+                            <a href="detail.html"><img src="/tpl_guest/assets/img/slides/toyota.png" alt="#"></a>
                             <div class="color-overlay"></div><!-- /.color-overlay -->
                         </div><!-- /.slide -->
 
                         <div class="slide">
-                            <a href="detail.html"><img src="tpl_guest/assets/img/slides/toyota-1.png" alt="#"></a>
+                            <a href="detail.html"><img src="/tpl_guest/assets/img/slides/toyota-1.png" alt="#"></a>
                             <div class="color-overlay"></div><!-- /.color-overlay -->
                         </div><!-- /.slide -->
 
                         <div class="slide">
-                            <a href="detail.html"><img src="tpl_guest/assets/img/slides/toyota-2.png" alt="#"></a>
+                            <a href="detail.html"><img src="/tpl_guest/assets/img/slides/toyota-2.png" alt="#"></a>
                             <div class="color-overlay"></div><!-- /.color-overlay -->
                         </div><!-- /.slide -->
                     </div><!-- /#slider -->
@@ -384,16 +355,16 @@
             <div class="image-slider">
                 
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota6.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota6.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota7.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota5.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                     </a><!-- /.slide -->
                 
                 <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -433,16 +404,16 @@
             <div class="image-slider">
                 
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota7.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota1.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
                     </a><!-- /.slide -->
                 
                 <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -482,16 +453,16 @@
             <div class="image-slider">
                 
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota5.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota6.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota6.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
                     </a><!-- /.slide -->
                 
                 <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -531,16 +502,16 @@
             <div class="image-slider">
                 
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota7.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota5.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota6.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota6.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                     </a><!-- /.slide -->
                 
                 <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -580,13 +551,13 @@
             <div class="image-slider">
                 
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota5.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
                     </a><!-- /.slide -->
                 
                 <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -626,16 +597,16 @@
             <div class="image-slider">
                 
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota7.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota1.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
                     </a><!-- /.slide -->
                 
                 <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -675,16 +646,16 @@
             <div class="image-slider">
                 
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota5.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota6.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota6.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota7.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
                     </a><!-- /.slide -->
                 
                 <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -724,13 +695,13 @@
             <div class="image-slider">
                 
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota5.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                     </a><!-- /.slide -->
                 
                 <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -790,7 +761,7 @@
                         <div class="wrapper">
                             <div class="picture">
                                 <a href="detail.html">
-                                    <img src="tpl_guest/assets/img/filter/sedan.png" class="cover-me" alt="#">
+                                    <img src="/tpl_guest/assets/img/filter/sedan.png" class="cover-me" alt="#">
                                 </a>
                             </div><!-- /.picture -->
 
@@ -818,7 +789,7 @@
                         <div class="wrapper">
                             <div class="picture">
                                 <a href="detail.html">
-                                    <img src="tpl_guest/assets/img/filter/bike.png" class="cover-me" alt="#">
+                                    <img src="/tpl_guest/assets/img/filter/bike.png" class="cover-me" alt="#">
                                 </a>
                             </div><!-- /.picture -->
 
@@ -843,7 +814,7 @@
                     <div class="category-box col-lg-3 col-md-3 col-sm-6">
                         <div class="wrapper">
                             <div class="picture">
-                                <a href="filter.html"><img src="tpl_guest/assets/img/filter/suv.png" alt="#" class="cover-me"></a>
+                                <a href="filter.html"><img src="/tpl_guest/assets/img/filter/suv.png" alt="#" class="cover-me"></a>
                             </div><!-- /.picture -->
                             
                             <div class="meta">
@@ -870,7 +841,7 @@
                         <div class="wrapper">
                             <div class="picture">
                                 <a href="detail.html">
-                                    <img src="tpl_guest/assets/img/filter/sportcar.png" alt="#" class="cover-me">
+                                    <img src="/tpl_guest/assets/img/filter/sportcar.png" alt="#" class="cover-me">
                                 </a>
                             </div>
                             <div class="meta">
@@ -928,16 +899,16 @@
                 <div class="picture">
                     <div class="image-slider">
                                                                             <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota7.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota1.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
                             </a><!-- /.slide -->
                         
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -980,16 +951,16 @@
                 <div class="picture">
                     <div class="image-slider">
                                                                             <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota5.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota6.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota6.jpg" alt="#">
                             </a><!-- /.slide -->
                         
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -1032,16 +1003,16 @@
                 <div class="picture">
                     <div class="image-slider">
                                                                             <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota6.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota6.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota5.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
                             </a><!-- /.slide -->
                         
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -1084,13 +1055,13 @@
                 <div class="picture">
                     <div class="image-slider">
                                                                             <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota5.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                             </a><!-- /.slide -->
                         
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -1133,16 +1104,16 @@
                 <div class="picture">
                     <div class="image-slider">
                                                                             <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota7.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota1.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+                                <img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
                             </a><!-- /.slide -->
                         
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -1215,7 +1186,7 @@
 					<div class="item">
 						<div class="picture hidden-sm">
 							<a href="detail.html">
-								<img src="tpl_guest/assets/img/review.png" alt="#">
+								<img src="/tpl_guest/assets/img/review.png" alt="#">
 							</a>
 						</div><!-- /.picture -->
 
@@ -1295,7 +1266,7 @@
                         </span><!-- /.hover-inner -->
                     </span><!-- /.hover -->
 
-                    <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                    <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                 </a>
             </div><!-- /.picture -->
         </div><!-- /.picture-wrapper -->
@@ -1325,7 +1296,7 @@
                         </span><!-- /.hover-inner -->
                     </span><!-- /.hover -->
 
-                    <img src="tpl_guest/assets/img/content/toyota7.jpg" alt="#">
+                    <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
                 </a>
             </div><!-- /.picture -->
         </div><!-- /.picture-wrapper -->
@@ -1355,7 +1326,7 @@
                         </span><!-- /.hover-inner -->
                     </span><!-- /.hover -->
 
-                    <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                    <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                 </a>
             </div><!-- /.picture -->
         </div><!-- /.picture-wrapper -->
@@ -1399,7 +1370,7 @@
 					<div class="row">
 						<div class="col-sm-3 col-md-4">
 							<div class="picture">
-								<img src="tpl_guest/assets/img/testimonials-1.png" alt="#">
+								<img src="/tpl_guest/assets/img/testimonials-1.png" alt="#">
 							</div><!-- /.picture -->
 						</div><!-- /.col-md-4 -->
 
@@ -1437,7 +1408,7 @@
 					<div class="row">
 						<div class="col-sm-3 col-md-4">
 							<div class="picture">
-								<img src="tpl_guest/assets/img/testimonials-2.png" alt="#">
+								<img src="/tpl_guest/assets/img/testimonials-2.png" alt="#">
 							</div><!-- /.picture -->
 						</div><!-- /.col-md-4 -->
 
@@ -1574,7 +1545,7 @@
 			<div class="col-sm-2 col-md-2">
 				<div class="partner">
 					<a href="#">
-						<img src="tpl_guest/assets/img/partners/volkswagen.png" alt="#">
+						<img src="/tpl_guest/assets/img/partners/volkswagen.png" alt="#">
 					</a>
 				</div><!-- /.partner -->
 			</div><!-- /.col-md-2 -->
@@ -1582,7 +1553,7 @@
 			<div class="col-sm-2 col-md-2">
 				<div class="partner">
 					<a href="#">
-						<img src="tpl_guest/assets/img/partners/ford.png" alt="#">
+						<img src="/tpl_guest/assets/img/partners/ford.png" alt="#">
 					</a>
 				</div><!-- /.partner -->
 			</div><!-- /.col-md-2 -->
@@ -1590,7 +1561,7 @@
 			<div class="col-sm-2 col-md-2">
 				<div class="partner">
 					<a href="#">
-						<img src="tpl_guest/assets/img/partners/honda.png" alt="#">
+						<img src="/tpl_guest/assets/img/partners/honda.png" alt="#">
 					</a>
 				</div><!-- /.partner -->
 			</div><!-- /.col-md-2 -->
@@ -1598,7 +1569,7 @@
 			<div class="col-sm-2 col-md-2">
 				<div class="partner">
 					<a href="#">
-						<img src="tpl_guest/assets/img/partners/mercedes.png" alt="#">
+						<img src="/tpl_guest/assets/img/partners/mercedes.png" alt="#">
 					</a>
 				</div><!-- /.partner -->
 			</div><!-- /.col-md-2 -->
@@ -1606,7 +1577,7 @@
 			<div class="col-sm-2 col-md-2">
 				<div class="partner">
 					<a href="#">
-						<img src="tpl_guest/assets/img/partners/toyota.png" alt="#">
+						<img src="/tpl_guest/assets/img/partners/toyota.png" alt="#">
 					</a>
 				</div><!-- /.partner -->
 			</div><!-- /.col-md-2 -->
@@ -1614,7 +1585,7 @@
 			<div class="col-sm-2 col-md-2">
 				<div class="partner">
 					<a href="#">
-						<img src="tpl_guest/assets/img/partners/bmw.png" alt="#">
+						<img src="/tpl_guest/assets/img/partners/bmw.png" alt="#">
 					</a>
 				</div><!-- /.partner -->
 			</div><!-- /.col-md-2 -->
@@ -1625,5 +1596,4 @@
         </div><!-- /.container -->
     </div><!-- /.section -->
 </div><!-- /#content -->
-
 {include file="../common/footer.tpl"}
