@@ -4,7 +4,7 @@
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="block random-cars">
 					<div class="title">
-						<h2>Popular Cars</h2>
+						<h2>Coches populares</h2>
 					</div><!-- /.title -->
 
 					<div class="items">
@@ -33,7 +33,7 @@
 
 							        <div class="content-wrapper col-lg-8 col-md-8 col-sm-8 col-xs-8">
 							            <div class="price">$9,799</div>
-							            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vulputate neque. Fusce hendrerit fermentum.</p>
+							            <p>Lorem fistrum torpedo benemeritaar mamaar te voy a borrar el cerito torpedo quietooor benemeritaar.</p>
 							        </div><!-- /.picture-content -->
 							    </div><!-- /.row -->
 							</div><!-- /.teaser-item -->
@@ -64,7 +64,7 @@
 
 							        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 content-wrapper">
 							            <div class="price">$9,799</div>
-							            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vulputate neque. Fusce hendrerit fermentum.</p>
+							            <p>A peich diodeno me cago en tus muelas pupita me cago en tus muelas de la pradera ese hombree de la pradera se calle ustée a gramenawer sexuarl.</p>
 							        </div><!-- /.content-wrapper -->
 							    </div><!-- /.row -->
 							</div><!-- /.teaser-item -->
@@ -76,12 +76,12 @@
 			<div class="col-lg-4 col-md-4 col-sm-6">
 				<div class="block">
 					<div class="title">
-						<h2>Subscribe to Newsletter</h2>
+						<h2>Boletín</h2>
 					</div><!-- /.title -->
 
 					<form method="post">
 						<div class="input-group">						  
-						  <input type="email" class="form-control" placeholder="Your e-mail address" required="required">
+						  <input type="email" class="form-control" placeholder="Tu dirección e-mail" required="required">
 
 					      <span class="input-group-btn">
 					        <button class="btn btn-default" type="button">Submit</button><!-- /.btn -->
@@ -90,43 +90,42 @@
 					</form>
 
 					<br>
-
 					<div class="opening-hours">
 						<div class="day clearfix">
-							<span class="name">Monday</span><span class="hours">07:00 AM - 07:00 PM</span>
+							<span class="name">Lunes</span><span class="hours">09:00 AM - 07:00 PM</span>
 						</div><!-- /.day -->
 
 						<div class="day clearfix">
-							<span class="name">Tuesday</span><span class="hours">07:00 AM - 07:00 PM</span>
+							<span class="name">Martes</span><span class="hours">09:00 AM - 07:00 PM</span>
 						</div><!-- /.day -->
 
 						<div class="day clearfix">
-							<span class="name">Wednesday</span><span class="hours"><i class="icon icon-normal-car"></i> Demonstration drives only</span>
+							<span class="name">Miércoles</span><span class="hours">09:00 AM - 07:00 PM</span>
 						</div><!-- /.day -->
 
 						<div class="day clearfix">
-							<span class="name">Thursday</span><span class="hours">07:00 AM - 07:00 PM</span>
+							<span class="name">Jueves</span><span class="hours">09:00 AM - 07:00 PM</span>
 						</div><!-- /.day -->
 
 						<div class="day clearfix">
-							<span class="name">Friday</span><span class="hours">07:00 AM - 07:00 PM</span>
+							<span class="name">Viernes</span><span class="hours">09:00 AM - 07:00 PM</span>
 						</div><!-- /.day -->
 
 						<div class="day clearfix">
-							<span class="name">Saturday</span><span class="hours">07:00 AM - 02:00 PM</span>
+							<span class="name">Sábado</span><span class="hours">09:00 AM - 02:00 PM</span>
 						</div><!-- /.day -->
 
 						<div class="day clearfix">
-							<span class="name">Sunday</span><span class="hours"><i class="icon icon-normal-door-out"></i> Closed</span>
+							<span class="name">Domingo</span><span class="hours"><i class="icon icon-normal-door-out"></i> Cerrado</span>
 						</div><!-- /.day -->
-					</div><!-- /.opening-hours -->		
+					</div><!-- /.opening-hours -->
 				</div><!-- /.block -->
 			</div><!-- /.col-md-4 -->
 
 			<div class="col-lg-4 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
 				<div class="block">
 					<div class="title center-sm">
-						<h2>Recent from Bazaar</h2>
+						<h2>Coches utilizados recientemente</h2>
 					</div><!-- /.title -->
 
 					<div id="carousel-example-generic" class="carousel slide gallery-grid" data-ride="carousel">
@@ -148,7 +147,7 @@
 						                	</span><!-- /.hover -->
 
 											<img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
-											<span class="badge">Featured</span>
+											<span class="badge">Destacado</span>
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -199,7 +198,7 @@
 						                	</span><!-- /.hover -->
 
 											<img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
-											<span class="badge">Best Price</span>
+											<span class="badge">Mejor precio</span>
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -226,7 +225,7 @@
 						                	</span><!-- /.hover -->
 
 											<img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
-											<span class="badge">Elite Seller</span>
+											<span class="badge">Más alquilado</span>
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -279,7 +278,7 @@
 						                	</span><!-- /.hover -->
 
 											<img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
-											<span class="badge">Quality A+</span>
+											<span class="badge">Calidad A+</span>
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -330,7 +329,7 @@
 						                	</span><!-- /.hover -->
 
 											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
-											<span class="badge">High Rating</span>
+											<span class="badge">Más valorado</span>
 										</a>
 									</div><!-- /.col-md-4 -->
 								</div><!-- /.row -->
@@ -345,7 +344,7 @@
 						                	</span><!-- /.hover -->
 
 											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
-											<span class="badge">Certified</span>
+											<span class="badge">Certificado</span>
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -386,7 +385,7 @@
 						                	</span><!-- /.hover -->
 
 											<img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
-											<span class="badge">Elite Seller</span>
+											<span class="badge">Más alquilado</span>
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -437,7 +436,7 @@
 						                	</span><!-- /.hover -->
 
 											<img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
-											<span class="badge">Best Price</span>
+											<span class="badge">Mejor precio</span>
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -488,7 +487,7 @@
 						                	</span><!-- /.hover -->
 
 											<img src="tpl_guest/assets/img/content/toyota1.jpg" alt="#">
-											<span class="badge">High Quality</span>
+											<span class="badge">Alta calidad</span>
 										</a>
 									</div><!-- /.col-md-4 -->																		
 								</div><!-- /.row -->								
@@ -513,15 +512,17 @@
 			<div class="row">
 				<div class="col-md-12 clearfix">
 					<div class="copyright">
-						&copy; Carat HTML Template<span class="separator">/</span> <a href="http://pragmaticmates.com/">Pragmatic Mates</a> <span class="separator">/</span> All rights reserved
+						&copy; Electrificar<span class="separator"></span><span class="separator">/</span> Todos los derechos reservados
 					</div><!-- /.pull-left -->
 
 					<ul class="nav nav-pills">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Features</a></li>
-						<li><a href="#">Reservation</a></li>
-						<li><a href="#">Our Offer</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Usuarios</a></li>
+						<li><a href="#">Alquileres</a></li>
+						<li><a href="#">Vehículos</a></li>
+						<li><a href="#">Zonas</a></li>
+						<li><a href="#">Tarifas</a></li>
+						<li><a href="#">Contacto</a></li>
 					</ul><!-- /.nav -->
 				</div><!-- /.col-md-12 -->
 			</div><!-- /.row -->

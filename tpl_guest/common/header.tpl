@@ -89,7 +89,7 @@
 							</a>
 						</div><!-- /.logo -->
 
-						<div class="slogan">Car Rental, Dealership,<br>Magazine Template</div><!-- /.slogan -->
+						<div class="slogan">ELECTRIFICAR<br>Alquiler de coches eléctricos<br></div><!-- /.slogan -->
 					</div><!-- /.brand -->
 					
 					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -101,40 +101,61 @@
 
 					<nav class="collapse navbar-collapse navbar-collapse" role="navigation">
 						<ul class="navigation">
-						<li><a href="index.html">Home</a></li>						
-
+						<li><a href="index.html">Inicio</a></li>
+						
 						<li class="menuparent has-regularmenu">
-							<a href="magazine.html">Features</a>
+							<a href="#">Usuarios</a>
 
 							<div class="regularmenu">
 								<ul class="regularmenu-inner">
-									<li><a href="detail.html"><i class="icon icon-normal-car"></i> Car Detail</a></li>
-                                                                        <li><a href="filter.html"><i class="icon icon-normal-magnifier"></i> Search results</a></li>
-                                                                        <li><a href="about.html"><i class="icon icon-normal-profile-checkbox"></i> About</a></li>
-									<li><a href="faq.html"><i class="icon icon-normal-collage-hat"></i> FAQ</a></li>
-									<li><a href="pricing.html"><i class="icon icon-normal-coins"></i> Pricing</a></li>
-									<li><a href="blog.html"><i class="icon icon-normal-question-mark"></i> Blog</a></li>
-									<li><a href="article.html"><i class="icon icon-normal-file-text"></i>Article Detail</a></li>
-									<li><a href="404.html"><i class="icon icon-normal-cog-wheel"></i>Page Not Found</a></li>
+									<li><a href="rental-1.html"><strong>1.</strong> Crear usuario</a></li>
+									<li><a href="rental-1.html"><strong>2.</strong> Editar datos del usuario</a></li>
+								</ul><!-- /.regularmenu-inner -->
+							</div><!-- /.regularmenu -->
+						</li>						
+
+						<li class="menuparent has-regularmenu">
+							<a href="#">Alquileres</a>
+
+							<div class="regularmenu">
+								<ul class="regularmenu-inner">
+									<li><a href="rental-1.html"><strong>1.</strong> Solicitar alquiler</a></li>
+									<li><a href="rental-2.html"><strong>2.</strong> Ver historial de alquileres</a></li>
+								</ul><!-- /.regularmenu-inner -->
+							</div><!-- /.regularmenu -->
+						</li>
+						
+						<li class="menuparent has-regularmenu">
+							<a href="#">Vehículos</a>
+
+							<div class="regularmenu">
+								<ul class="regularmenu-inner">
+									<li><a href="rental-1.html"><strong>1.</strong> Ver flota de vehículos</a></li>
+								</ul><!-- /.regularmenu-inner -->
+							</div><!-- /.regularmenu -->
+						</li>
+						
+						<li class="menuparent has-regularmenu">
+							<a href="#">Zonas</a>
+
+							<div class="regularmenu">
+								<ul class="regularmenu-inner">
+									<li><a href="rental-1.html"><strong>1.</strong> Consultar zonas</a></li>
+								</ul><!-- /.regularmenu-inner -->
+							</div><!-- /.regularmenu -->
+						</li>
+						
+						<li class="menuparent has-regularmenu">
+							<a href="#">Tarifas</a>
+
+							<div class="regularmenu">
+								<ul class="regularmenu-inner">
+									<li><a href="rental-1.html"><strong>1.</strong> Consultar tarifas</a></li>
 								</ul><!-- /.regularmenu-inner -->
 							</div><!-- /.regularmenu -->
 						</li>
 
-						<li class="menuparent has-regularmenu">
-							<a href="#">Reservation</a>
-
-							<div class="regularmenu">
-								<ul class="regularmenu-inner">
-									<li><a href="rental-1.html"><strong>1.</strong> Request Reservation</a></li>
-									<li><a href="rental-2.html"><strong>2.</strong> Select Your Car</a></li>
-									<li><a href="rental-3.html"><strong>3.</strong> Extra Features</a></li>
-									<li><a href="rental-4.html"><strong>4.</strong> Review &amp; Checkout</a></li>
-								</ul><!-- /.regularmenu-inner -->
-							</div><!-- /.regularmenu -->
-						</li>
-
-						<li><a href="magazine.html">Magazine</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="contact.html">Contacto</a></li>
 						</ul><!-- /.nav -->
 					</nav>
 				</div><!-- /.col-md-12 -->
@@ -149,8 +170,8 @@
 		<div class="row">
 			<div class="col-md-12">
 				<ol class="breadcrumb pull-left">
-		  			<li><a href="#">Home</a></li>
-		  			<li><a href="#">Featured Cars</a></li>
+		  			<li><a href="#">Inicio</a></li>
+		  			<li><a href="#">Coches destacados</a></li>
 		  			<li class="active">Buy</li>
 				</ol>
 
@@ -162,12 +183,12 @@
 
 					<div class="contact-item mail">
 						<div class="label"><i class="icon icon-normal-mail"></i></div><!-- /.label -->
-						<div class="value"><a href="mailto:example@example.com">example@example.com</a></div><!-- /.value -->
+						<div class="value"><a href="mailto:example@example.com">contacto@electrificar.com</a></div><!-- /.value -->
 					</div><!-- /.mail -->
 
 					<div class="contact-item opening">
 						<div class="label"><i class="icon icon-normal-clock"></i></div><!-- /.label -->
-						<div class="value">Mon - Sun: 8:00 - 16:00</div><!-- /.value -->
+						<div class="value">Lunes - Sábado: 9:00 - 18:00</div><!-- /.value -->
 					</div><!-- /.opening -->
 				</div><!-- /.contact -->
 			</div><!-- /.col-md-12 -->

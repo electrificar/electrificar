@@ -18,12 +18,12 @@
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Year</span>
+                                    <span class="property">Año</span>
                                     <span class="value">1989</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Manufacturer</span>
+                                    <span class="property">Marca</span>
                                     <span class="value">Toyota industries</span>
                                 </div><!-- /.item -->
 
@@ -38,13 +38,13 @@
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Kilometres</span>
+                                    <span class="property">Kilómetros</span>
                                     <span class="value">120,000 km</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Fuel Type</span>
-                                    <span class="value">Petrol</span>
+                                    <span class="property">Tipo</span>
+                                    <span class="value">Eléctrico</span>
                                 </div><!-- /.item -->
                             </div><!-- /.overview-table -->
                         </div><!-- /.overview -->
@@ -72,23 +72,23 @@
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Kilometres</span>
+                                    <span class="property">Kilómetros</span>
                                     <span class="value">183,000 km</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Fuel Type</span>
-                                    <span class="value">Petrol</span>
+                                    <span class="property">Tipo</span>
+                                    <span class="value">Eléctrico</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Engine</span>
+                                    <span class="property">Motor</span>
                                     <span class="value">4000</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Transmission</span>
-                                    <span class="value">Automatic</span>
+                                    <span class="property">Transmisión</span>
+                                    <span class="value">Automático</span>
                                 </div><!-- /.item -->
                             </div><!-- /.overview-table -->
                         </div><!-- /.overview -->
@@ -116,23 +116,23 @@
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Kilometres</span>
+                                    <span class="property">Kilómetros</span>
                                     <span class="value">50,322km</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Fuel Type</span>
-                                    <span class="value">Petrol</span>
+                                    <span class="property">Tipo</span>
+                                    <span class="value">Eléctrico</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Engine</span>
+                                    <span class="property">Motor</span>
                                     <span class="value">1600</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Transmission</span>
-                                    <span class="value">Automatic</span>
+                                    <span class="property">Transmisión</span>
+                                    <span class="value">Automático</span>
                                 </div><!-- /.item -->
                             </div><!-- /.overview-table -->
                         </div><!-- /.overview -->
@@ -334,7 +334,7 @@
             </div><!-- /.line -->
 
             <div class="heading">
-                <h2>Featured Cars in Shop</h2>
+                <h2>Coches destacados a tu disposición</h2>
             </div><!-- /.heading -->
 
             <div class="line">
@@ -389,7 +389,7 @@
                     <i class="icon icon-normal-dashboard"></i> 2011                </li>
 
                 <li>
-                    <i class="icon icon-normal-car-door"></i> Hybrid                </li>
+                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
 
                 <li>
                     <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
@@ -438,7 +438,7 @@
                     <i class="icon icon-normal-dashboard"></i> 2013                </li>
 
                 <li>
-                    <i class="icon icon-normal-car-door"></i> Fuel                </li>
+                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
 
                 <li>
                     <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
@@ -487,7 +487,7 @@
                     <i class="icon icon-normal-dashboard"></i> 2010                </li>
 
                 <li>
-                    <i class="icon icon-normal-car-door"></i> Fuel                </li>
+                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
 
                 <li>
                     <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
@@ -536,7 +536,7 @@
                     <i class="icon icon-normal-dashboard"></i> 2011                </li>
 
                 <li>
-                    <i class="icon icon-normal-car-door"></i> Hybrid                </li>
+                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
 
                 <li>
                     <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
@@ -582,7 +582,7 @@
                     <i class="icon icon-normal-dashboard"></i> 2013                </li>
 
                 <li>
-                    <i class="icon icon-normal-car-door"></i> Fuel                </li>
+                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
 
                 <li>
                     <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
@@ -631,7 +631,7 @@
                     <i class="icon icon-normal-dashboard"></i> 2013                </li>
 
                 <li>
-                    <i class="icon icon-normal-car-door"></i> Fuel                </li>
+                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
 
                 <li>
                     <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
@@ -680,7 +680,7 @@
                     <i class="icon icon-normal-dashboard"></i> 2011                </li>
 
                 <li>
-                    <i class="icon icon-normal-car-door"></i> Hybrid                </li>
+                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
 
                 <li>
                     <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
@@ -726,7 +726,7 @@
                     <i class="icon icon-normal-dashboard"></i> 2013                </li>
 
                 <li>
-                    <i class="icon icon-normal-car-door"></i> Fuel                </li>
+                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
 
                 <li>
                     <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
@@ -878,7 +878,7 @@
 	<div class="page-header">
 		<div class="page-header-inner">
 			<div class="heading">
-				<h2>Best Deals</h2>
+				<h2>Mejores ofertas</h2>
 			</div><!-- /.heading -->
 
 			<div class="line">
@@ -935,7 +935,7 @@
                             <li>
                                 <i class="icon icon-normal-dashboard"></i> 2013                            </li>
                             <li>
-                                <i class="icon icon-normal-car-door"></i> Fuel                            </li>
+                                <i class="icon icon-normal-car-door"></i> Eléctrico                            </li>
                             <li>
                                 <i class="icon icon-normal-cog-wheel"></i> 1500                            </li>
                         </ul>
@@ -987,7 +987,7 @@
                             <li>
                                 <i class="icon icon-normal-dashboard"></i> 2010                            </li>
                             <li>
-                                <i class="icon icon-normal-car-door"></i> Fuel                            </li>
+                                <i class="icon icon-normal-car-door"></i> Eléctrico                            </li>
                             <li>
                                 <i class="icon icon-normal-cog-wheel"></i> 1500                            </li>
                         </ul>
@@ -1039,7 +1039,7 @@
                             <li>
                                 <i class="icon icon-normal-dashboard"></i> 2010                            </li>
                             <li>
-                                <i class="icon icon-normal-car-door"></i> Fuel                            </li>
+                                <i class="icon icon-normal-car-door"></i> Eléctrico                            </li>
                             <li>
                                 <i class="icon icon-normal-cog-wheel"></i> 1500                            </li>
                         </ul>
@@ -1088,7 +1088,7 @@
                             <li>
                                 <i class="icon icon-normal-dashboard"></i> 2013                            </li>
                             <li>
-                                <i class="icon icon-normal-car-door"></i> Fuel                            </li>
+                                <i class="icon icon-normal-car-door"></i> Eléctrico                            </li>
                             <li>
                                 <i class="icon icon-normal-cog-wheel"></i> 1500                            </li>
                         </ul>
@@ -1140,7 +1140,7 @@
                             <li>
                                 <i class="icon icon-normal-dashboard"></i> 2013                            </li>
                             <li>
-                                <i class="icon icon-normal-car-door"></i> Fuel                            </li>
+                                <i class="icon icon-normal-car-door"></i> Eléctrico                            </li>
                             <li>
                                 <i class="icon icon-normal-cog-wheel"></i> 1500                            </li>
                         </ul>
@@ -1161,23 +1161,23 @@
                         <div id="newsletter" class='block default'>
   <div class="block-inner">
     <div class="block-title">
-      <h3>Subscribe to newsletter</h3>
+      <h3>Newsletter</h3>
     </div>
 
     <form>
       <div class="form-group">
-        <input placeholder="Your e-mail" type="text" name="maker" class="form-control">
+        <input placeholder="Tu e-mail" type="text" name="maker" class="form-control">
       </div>
 
       <div class="form-group">
-        <button class="send btn btn-primary btn-primary-color">Subscribe</button>
+        <button class="send btn btn-primary btn-primary-color">Subscribirse</button>
       </div>
     </form>
   </div>
 </div>                        <div class="latest-reviews block block-shadow white">
 	<div class="block-inner">
 		<div class="block-title">
-			<h3>Latest Reviews</h3>
+			<h3>Últimas críticas</h3>
 		</div><!-- /.block-title -->
 
 		<div class="inner">
@@ -1242,7 +1242,7 @@
 
 	<div class="block-inner">
 		<div class="block-title">
-			<h3>Recent Cars</h3>
+			<h3>Coches recientes</h3>
 		</div><!-- /.block-title -->
 
 		
@@ -1354,7 +1354,7 @@
 			</div>
 
 			<div class="heading">
-				<h2>Our Satisfied Customers</h2>
+				<h2>Nuestros clientes satisfechos</h2>
 			</div><!-- /.heading -->
 
 			<div class="line">
@@ -1462,7 +1462,7 @@
 					</div><!-- /.col-md-5 -->
 
 					<div class="col-xs-12 col-md-7">
-						<h3>Great Prices</h3>
+						<h3>Grandes precios</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque dolor, placerat mattis justo id, convallis porta nulla</p>
 					</div><!-- /.col-md-7 -->
 				</div><!-- /.row -->
@@ -1485,7 +1485,7 @@
 					</div><!-- /.col-md-5 -->
 
 					<div class="col-xs-12 col-md-7">
-						<h3>Wide Selection</h3>
+						<h3>Amplia selección</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque dolor, placerat mattis justo id, convallis porta nulla</p>
 					</div><!-- /.col-md-7 -->
 				</div><!-- /.row -->
@@ -1508,7 +1508,7 @@
 					</div><!-- /.col-md-5 -->
 
 					<div class="col-xs-12 col-md-7">
-						<h3>24/7 Hotline</h3>
+						<h3>24/7 Ayuda</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque dolor, placerat mattis justo id, convallis porta nulla</p>
 					</div><!-- /.col-md-7 -->
 				</div><!-- /.row -->
@@ -1531,7 +1531,7 @@
 
 
                 <div class="heading">
-                    <h2>Our Partners</h2>
+                    <h2>Colaboradores</h2>
                 </div><!-- /.heading -->
 
                 <div class="line">
