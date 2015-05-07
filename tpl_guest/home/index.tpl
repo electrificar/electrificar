@@ -12,20 +12,24 @@
                                     <div class="subtitle">V8, TDi</div>
                                 </div><!-- /.item -->
 
+
                                 <div class="item tags">
                                     <div class="price">$14,986</div>
                                     <div class="type">Sale</div>
                                 </div><!-- /.item -->
+
 
                                 <div class="item line">
                                     <span class="property">Año</span>
                                     <span class="value">1989</span>
                                 </div><!-- /.item -->
 
+
                                 <div class="item line">
                                     <span class="property">Marca</span>
                                     <span class="value">Toyota industries</span>
                                 </div><!-- /.item -->
+
 
                                 <div class="item line">
                                     <span class="property">Stock Number</span>

@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="/tpl_guest/libraries/jslider/bin/jquery.slider.min.css" media="screen, projection">
     <link rel="stylesheet" type="text/css" href="/tpl_guest/assets/css/carat.css" media="screen, projection">
 
+
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,400,700,400italic,700italic" rel="stylesheet" type="text/css"  media="screen, projection">
 
 
