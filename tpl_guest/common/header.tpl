@@ -16,6 +16,9 @@
     <link rel="stylesheet" type="text/css" href="/tpl_guest/libraries/colorbox/colorbox.css" media="screen, projection">
     <link rel="stylesheet" type="text/css" href="/tpl_guest/libraries/jslider/bin/jquery.slider.min.css" media="screen, projection">
     <link rel="stylesheet" type="text/css" href="/tpl_guest/assets/css/carat.css" media="screen, projection">
+    <link rel="stylesheet" href="/admin/css/font-awesome.min.css" type="text/css" />
+  	<link rel="stylesheet" href="/admin/css/icon.css" type="text/css" />
+  	<link rel="stylesheet" href="/admin/css/font.css" type="text/css" />
 
 
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,400,700,400italic,700italic" rel="stylesheet" type="text/css"  media="screen, projection">
@@ -85,8 +88,8 @@
 				<div class="col-md-12 clearfix">
 					<div class="brand">
 						<div class="logo">
-							<a href="index-2.html">
-								<img src="/tpl_guest/assets/img/logo.png" alt="Carat HTML Template">
+							<a style="font-size:26px;" href="/">
+								E<i class="fa fa-flash"></i>ectrific<i class="fa fa-car"></i>r
 							</a>
 						</div><!-- /.logo -->
 
