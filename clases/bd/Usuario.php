@@ -12,7 +12,7 @@ class Usuario {
         $ack->resultado = true;
 
         //print_r(md5("lubina"));exit;
-		$query = "SELECT * FROM usuario WHERE LOWER(email)='".strtolower($usuario)."' AND password='".$clave."' and tipo='1'";
+		$query = "SELECT * FROM usuario WHERE LOWER(email)='".strtolower($usuario)."' AND password='".$clave."' and tipo='1' and activacion=1";
 		//print_r($query);exit;
         if( ($arr_reg = $this->conn->load($query)) != null ){
 			if(sizeof($arr_reg)>0){
@@ -202,29 +202,25 @@ class Usuario {
         $ack->resultado = true;
         $tabla='usuario';
         
-        $query = "select * from usuario where email='".$datos['email']."'";
-        $arr_res = $this->conn->load ($query);
-        if(sizeof($arr_res)>0 && $datos['id_usuario']==null){
+        //COMPROBAR ARRAY DE DATOS, SI ESTA VACIO O NO.
+        if($datos==null || sizeof($datos)==0){
         	$ack->resultado = false;
-        	$ack->mensaje = "Email ya registrado, si desea recordar la contraseÃ±a pulse <a href='/recordar-password/'>aqui</a>";
+            $ack->mensaje ="Los parametros enviados para la tabla ".$tabla." están vacíos";
+        }
+       
+        if(!$ack->resultado){
+            print_r($ack->mensaje);
         }else{
-	        //COMPROBAR ARRAY DE DATOS, SI ESTA VACIO O NO.
-	        if($datos==null || sizeof($datos)==0){
-	            $ack->mensaje ="Los parametros enviados para la tabla ".$tabla." estÃ¡n vacÃ­os";
-	            print_r($ack->mensaje);
-	        }
-	        //COGER CAMPOS DE LA TABLA
-	        $campos = $this->conn->get_table_info($tabla);
-	        
-	        if($ack->resultado==false){
-	            print_r($ack->mensaje);
-	        }else{
-	            $res = $this->conn->stor($datos,$tabla);
-	            $ack->id =  $this->conn->id;
-	        }
+            $res = $this->conn->stor($datos,$tabla);
+            if(!$res){
+            	$ack->resultado = false;
+            	$ack->mensaje = "Ha ocurrido un problema al guardar el usuario.";
+            }else{
+            	$ack->mensaje = "Datos guardados correctamente.";
+            }
         }
         
-	    return $ack;
+        return $ack;
 	}
 	
 	function activate_user($id_usuario){

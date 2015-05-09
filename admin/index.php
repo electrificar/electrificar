@@ -9,8 +9,8 @@
 	$ack = load_controller($_REQUEST["controller"]);
 	if($ack->resultado == false){
 		die('El controlador no existe - 404 not found');
-	} 
-
+	}
+	
 	set_time_limit(0);
     ini_set("max_input_time","200");
     ini_set("upload_max_filesize","50M");

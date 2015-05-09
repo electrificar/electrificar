@@ -15,7 +15,7 @@
 							<i class="fa fa-street-view"></i>
 					{/if}
             		Usuarios {$label_type_user}
-            		<a title="Añadir vehículo" style="width:40px;font-size:20px;" class="pull-right btn btn-rounded btn-sm btn-icon btn-default" href="/admin/añadir-vehiculo/">
+            		<a title="Añadir usuario" style="width:40px;font-size:20px;" class="pull-right btn btn-rounded btn-sm btn-icon btn-default" href="/admin/añadir-usuario/{$type_user}/">
             			<i class="fa fa-plus"></i>
             		</a>
             	</h3>
@@ -27,10 +27,12 @@
 						<h4><i class="fa fa-search"></i> Búsqueda</h4>
 						<form id="usuarios-filter" role="form" class="form-inline" method="post" action="/admin/usuarios/{$type_user}/">
 							<input type="hidden" name="filtrar" value="true" />
-							<div class="form-group">
-		                      <label for="exampleInputEmail2" class="sr-only">Nif</label>
-		                      <input type="text" placeholder="Nif" value="{$filtros['nif']}" name="nif" class="form-control">
-		                    </div>
+							{if $label_type_user=='electrificados'}
+								<div class="form-group">
+			                      <label for="exampleInputEmail2" class="sr-only">Nif</label>
+			                      <input type="text" placeholder="Nif" value="{$filtros['nif']}" name="nif" class="form-control">
+			                    </div>
+		                    {/if}
 		                    <div class="form-group">
 		                      <label for="exampleInputEmail2" class="sr-only">Nombre</label>
 		                      <input type="text" placeholder="Nombre" value="{$filtros['nombre']}" name="nombre" class="form-control">
@@ -63,11 +65,15 @@
 				                        <header class="panel-heading bg-light no-border">
 				                          <div class="clearfix">
 				                            <a class="pull-left thumb-md avatar b-3x m-r" href="#">
-				                              <img src="/admin/images/a1.png">
+				                              {if $usuario->imagen!=null}
+				                              	<img src="/repositorio/{$usuario->imagen}">
+				                              {else}
+				                              	<img src="/admin/images/a1.png">	
+				                              {/if}
 				                            </a>
 				                            <div class="clear">
 				                              <div class="h3 m-t-xs m-b-xs">
-				                                {$usuario->nombre} {$usuario->apellido1} 
+				                                {$usuario->nombre}<br>{$usuario->apellido1} 
 				                                <i style="cursor:help;" title="{if $usuario->activacion}Usuario activo{else}Usuario no activo{/if}" class="fa fa-circle {if $usuario->activacion}text-success{else}text-danger{/if} pull-right text-xs m-t-sm"></i>
 				                              </div>
 				                              <small class="text-muted">Administrador</small>
@@ -75,10 +81,12 @@
 				                          </div>
 				                        </header>
 				                        <div class="list-group no-radius alt">
-				                          <a href="mailto:{$usuario->email}" class="list-group-item">
-				                            <i class="fa fa-info-circle icon-muted"></i>&nbsp;
-				                            {$usuario->nif}
-				                          </a>
+				                        	{if $label_type_user=='electrificados'}
+					                          	<a href="mailto:{$usuario->email}" class="list-group-item">
+					                            	<i class="fa fa-info-circle icon-muted"></i>&nbsp;
+					                            	{$usuario->nif}
+					                          	</a>
+					                         {/if}
 				                          <a href="mailto:{$usuario->email}" class="list-group-item">
 				                            <i class="fa fa-envelope icon-muted"></i>&nbsp;
 				                            {$usuario->email}
@@ -89,11 +97,11 @@
 				                          </a>
 				                          
 				                            <div class="btn-group btn-group-justified">
-							                  <a class="btn btn-primary" href="#">Editar</a>
+							                  <a class="btn btn-primary" href="/admin/editar-usuario/{$type_user}/{$usuario->id_usuario}/">Editar</a>
 											  {if $usuario->activacion}
-							                  	<a class="btn btn-danger" href="#">Desactivar</a>
+							                  	<a class="btn btn-danger" href="/admin/desactivar-usuario/{$type_user}/{$usuario->id_usuario}/">Desactivar</a>
 							                  {else}
-							                  	<a class="btn btn-success" href="#">Activar</a>
+							                  	<a class="btn btn-success" href="/admin/activar-usuario/{$type_user}/{$usuario->id_usuario}/">Activar</a>
 							                  {/if}
 							                </div>
 				                        </div>

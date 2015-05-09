@@ -58,76 +58,88 @@
          * 
          * Formulario de adición/modificación de vehículo
          */
-        function frm_vehicle(){
-        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Vehiculo.php");
-        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Zona.php");
-        	$Vehiculo = new Vehiculo($this->conn);
-        	$Zona	  = new Zona($this->conn);
+        function frm_user(){
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Usuario.php");
+        	$Usuario = new Usuario($this->conn);
         	
         	//si viene id_vehiculo es que estoy editando
-        	if(isset($_REQUEST['id_vehiculo'])){
+        	if(isset($_REQUEST['id_usuario'])){
         		
         		//filtro el vehículo para encontrarlo
 	        	$filtros = array();       
-	        	anade_filtrado($filtros, "id_vehiculo", $_REQUEST['id_vehiculo'], "=");
-	        	$ack_vehiculos = $Vehiculo->get_vehiculos($filtros);
+	        	anade_filtrado($filtros, "id_usuario", $_REQUEST['id_usuario'], "=");
+	        	$ack_usuario = $Usuario->get_usuario($filtros);
 	        	
 	        	//si lo encuentro
-	        	if($ack_vehiculos->resultado){
+	        	if($ack_usuario->resultado){
 	        		//me guardo el vehículo y parseo la fecha
-	        		$vehiculo = $ack_vehiculos->datos[0];
-	        		$vehiculo->fecha_vigencia_seguro = convertir_fecha_espanol($vehiculo->fecha_vigencia_seguro);
+	        		$usuario = $ack_usuario->datos[0];
 	        	}else{
 	        		//si no lo encuentro, genero una notificacion
-	        		$ack_vehiculos = new ACK();
-	        		$ack_vehiculos->resultado = false;
-	        		$ack_vehiculos->mensaje	  = "El vehículo indicado no existe";
+	        		$ack_usuario = new ACK();
+	        		$ack_usuario->resultado = false;
+	        		$ack_usuario->mensaje	  = "El usuario indicado no existe";
 	        		
 	        		//la añado
-	        		$this->add_notification($ack_vehiculos);
+	        		$this->add_notification($ack_usuario);
 	        		
 	        		//redirijo el listado
-	        		header("location: /admin/vehiculos/");
+	        		header("location: /admin/usuarios/".$_REQUEST['type_user_label']."/");
 	        		die();
 	        	}        	
 	        	
-	        	$this->layout->assign("vehiculo", $vehiculo);
+	        	$this->layout->assign("usuario", $usuario);
         	}
         	
-        	$ack_zonas = $Zona->get_zonas(array());
+        	$this->layout->assign("users", "active");
+        	$this->layout->assign($_REQUEST['label_user'], "bg-success");
+        	$this->layout->assign("label_type_user", $_REQUEST['label_user']);
+        	$this->layout->assign("type_user", $_REQUEST['type_user_label']);
+        	$this->layout->assign("type_user_id", $_REQUEST['type_user']);
+        	//cargo la vista
         	
-        	if($ack_zonas->resultado){
-        		$this->layout->assign("zonas", $ack_zonas->datos);//variable de activación de menú	
-        	}else{
-        		$this->layout->assign("zonas", array());//variable de activación de menú
+        	switch($_REQUEST['type_user']){
+        		case 1:
+        			$this->display('/user/frm_admin.tpl');
+        			break;
+        		case 2:
+        			$this->display('/user/frm_colab.tpl');
+        			break;
+        		case 3:
+        			$this->display('/user/frm_electr.tpl');
+        			break;
         	}
-        	
-        	//si todo sale bien o es un nuevo vehículo
-        	$this->layout->assign("vehicle", "active");//variable de activación de menú
-        	$this->display('/vehicle/frm_vehicle.tpl');//cargo la vista
         }
         
-        function update_vehicle(){
-        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Vehiculo.php");
-        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Zona.php");
-        	$Vehiculo = new Vehiculo($this->conn);
-        	$zona	  = new Zona($this->conn);
+        function check_mail(){
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Usuario.php");
+        	$Usuario = new Usuario($this->conn);
         	
-        	//parseo la fecha a ingles
-        	$_REQUEST['fecha_vigencia_seguro'] = convertir_fecha_ingles($_REQUEST['fecha_vigencia_seguro']);
+        	$filtros = array();
+        	anade_filtrado($filtros, "tipo", $_REQUEST['type'], "=");
+        	anade_filtrado($filtros, "email", $_REQUEST['email'], "=");
         	
-        	//si no viene mantenimiento es que lo han desactivado
-        	if(!isset($_REQUEST['mantenimiento'])){
-        		$_REQUEST['mantenimiento'] = '0';
+        	$ack_usuario = $Usuario->get_usuario($filtros);
+
+        	if($ack_usuario->resultado){
+        		die("repetido");
         	}else{
-        		$_REQUEST['mantenimiento'] = '1';
+        		die();
         	}
+        }
+        
+        function update_user(){
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Usuario.php");
+        	$Usuario = new Usuario($this->conn);
         	
-        	//si no viene la disponibilidad es que lo han desactivado
-        	if(!isset($_REQUEST['disponible'])){
-        		$_REQUEST['disponible'] = '0';
+        	//fuerzo el tipo
+        	$_REQUEST['tipo'] = $_REQUEST['type_user'];
+        	
+        	//si no viene la activacion es que lo han desactivado
+        	if(!isset($_REQUEST['activacion'])){
+        		$_REQUEST['activacion'] = '0';
         	}else{
-        		$_REQUEST['disponible'] = '1';
+        		$_REQUEST['activacion'] = '1';
         	}
         	
         	//si viene imagen, guardo
@@ -135,36 +147,36 @@
         		$_REQUEST['imagen'] = uploadFile($_FILES['imagen']);
         	}
         	
+        	if($_REQUEST['id_usuario'] == ''){
+        		unset($_REQUEST['id_usuario']);
+        	}
+        	
         	//inserto/actualizo en base de datos
-        	$ackVehiculo = $Vehiculo->update_vehiculo($_REQUEST);
+        	$ackUsuario = $Usuario->update_usuario($_REQUEST);
         	//añado una notificacion
-        	$this->add_notification($ackVehiculo);
+        	$this->add_notification($ackUsuario);
         	
-        	//actualizo la zona
-        	$datosZona = array();
-        	$datosZona['id_zona'] 			   = $_REQUEST['id_zona'];
-        	$datosZona['num_vehiculos_zona']   = $zona->getTotalVehiculos($_REQUEST['id_zona']);
-        	
-        	$ack_zona = $zona->update_zona($datosZona);
         	
         	//redirijo
-        	header("location: /admin/vehiculos/");
+        	header("location: /admin/usuarios/".$_REQUEST['type_user_label']);
         	die();
         }
         
-        function delete_vehicle(){
-        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Vehiculo.php");
+        function change_status(){
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Usuario.php");
+        	$Usuario = new Usuario($this->conn);
         	
-        	$Vehiculo = new Vehiculo($this->conn);
+        	//fuerzo el tipo
+        	$_REQUEST['tipo'] = $_REQUEST['type_user'];
         	
-        	//borro el vehículo
-        	$ack_borrado = $Vehiculo->remove_vehicle($_REQUEST['id_vehiculo']);
+        	//inserto/actualizo en base de datos
+        	$ackUsuario = $Usuario->update_usuario($_REQUEST);
+        	//añado una notificacion
+        	$this->add_notification($ackUsuario);
         	
-        	//añado notificación
-        	$this->add_notification($ack_borrado);
         	
         	//redirijo
-        	header("location: /admin/vehiculos/");
+        	header("location: /admin/usuarios/".$_REQUEST['type_user_label']);
         	die();
         }
 	}

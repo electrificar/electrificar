@@ -124,7 +124,7 @@
     
     function uploadFile ($arr_file_desc){
         global $repository;
-        require_once ($_SERVER["DOCUMENT_ROOT"].'/lib/wideimage/lib/WideImage.php');
+        //require_once ($_SERVER["DOCUMENT_ROOT"].'/lib/wideimage/lib/WideImage.php');
         
         $dia = date("j");
         $mes = date("n");
@@ -150,15 +150,15 @@
             $new_file_name .= $secuencial;
         }
 
-        if ($extension=="jpg"||$extension=="jpeg"||$extension=="gif"||$extension=="png") {
+        //if ($extension=="jpg"||$extension=="jpeg"||$extension=="gif"||$extension=="png") {
             // Cargo la marca de agua
-            $watermark = WideImage::load($_SERVER["DOCUMENT_ROOT"].'/tpl_guest/images/logo_wm.png');
+          //  $watermark = WideImage::load($_SERVER["DOCUMENT_ROOT"].'/tpl_guest/images/logo_wm.png');
 
-            WideImage::load($arr_file_desc['tmp_name'])
-                ->resize(800, 600)
-                ->merge($watermark, 'right', 'top + 10', 100)
-                ->saveToFile($repository."/".$new_relative_path."/".$new_file_name.".".$file_extension);
-        }else{
+//            WideImage::load($arr_file_desc['tmp_name'])
+  //              ->resize(800, 600)
+    //            ->merge($watermark, 'right', 'top + 10', 100)
+      //          ->saveToFile($repository."/".$new_relative_path."/".$new_file_name.".".$file_extension);
+        //}else{
             if (file_exists($arr_file_desc['tmp_name'])) {
                 if( !copy($arr_file_desc['tmp_name'], $repository."/".$new_relative_path."/".$new_file_name.".".$file_extension) ){
                      //  print "Error, no puedo copiar";
@@ -169,7 +169,7 @@
             } else {
                echo "Error en el envio. Fichero: " . $arr_file_desc['name'];
             }
-        }
+       // }
         //@@
         $new_file_path        = $new_relative_path."/".$new_file_name.".".$file_extension;
         $origen_dir           = $repository."/".substr( $new_file_path, 0, strrpos($new_file_path, "/") )."/";
@@ -177,12 +177,12 @@
         $nombre_sin_extension = substr( $nombre_archivo, 0, strrpos($nombre_archivo, ".") );
         $extension            = substr( $new_file_path, strrpos($new_file_path, ".")+1 );
 
-        //Si es una imagen, hago un thumbnail
+        /*//Si es una imagen, hago un thumbnail
         if ($extension=="jpg"||$extension=="jpeg"||$extension=="gif"||$extension=="png") {
             WideImage::load($origen_dir.$nombre_archivo)
                 ->resize(288, 240)
                 ->saveToFile($repository."/".$new_relative_path.'/'.$new_file_name.'_z.png');
-        }
+        }*/
 
         // Devuelvo [a?o]/[mes]/[dia]/[nombre].[ext]
         return $new_file_path;
