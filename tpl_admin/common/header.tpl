@@ -43,13 +43,17 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <span class="thumb-sm avatar pull-left">
-              <img src="/admin/images/a0.png" class="dker" alt="Miguel" style="background: none repeat scroll 0px 0px rgba(255, 255, 255, 0.6); padding: 3px;">
+              {if $mi_usuario->imagen!=null}
+              	<img src="/repositorio/{$mi_usuario->imagen}" class="dker" alt="{$mi_usuario->nombre}" style="background: none repeat scroll 0px 0px rgba(255, 255, 255, 0.6); padding: 3px;">
+              {else}
+              	<img src="/admin/images/a0.png" class="dker" alt="{$mi_usuario->nombre}" style="background: none repeat scroll 0px 0px rgba(255, 255, 255, 0.6); padding: 3px;">
+              {/if}
+              
             </span>
-            Javier <b class="caret"></b>
+            {$mi_usuario->nombre} <b class="caret"></b>
           </a>
           <ul class="dropdown-menu animated fadeInRight">
-			<li><a href="/admin/editar-perfil/"
-				data-toggle="ajaxModal"><i class="fa fa-gear"></i> Mi perfil</a>
+			<li><a href="/admin/editar-usuario/administracion/{$mi_usuario->id_usuario}/"><i class="fa fa-gear"></i> Mi perfil</a>
 			</li>
 			<li><a href="/admin/logout/" data-toggle="ajaxModal"><i
 					class="fa fa-sign-out"></i> Desconectar</a>

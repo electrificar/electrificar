@@ -22,6 +22,7 @@
 	
 	$controller->layout->assign('SESION_USUARIO', $_SESSION['SESION_USUARIO']);
 	$controller->layout->assign('ID_USUARIO_SESION', encrypt($_SESSION['SESION_ID_USUARIO']));
+	$controller->layout->assign('mi_usuario', $_SESSION['mi_usuario']);
 	
 	$methodVariable = array($controller, $accion);
 	if(is_callable($methodVariable)){

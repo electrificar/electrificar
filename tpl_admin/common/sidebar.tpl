@@ -5,13 +5,17 @@
                 <div class="clearfix wrapper dk nav-user hidden-xs">
                   <div class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <span class="thumb avatar pull-left m-r">                        
-                        <img src="/admin/images/a0.png" class="dker" alt="Miguel" style="background:none repeat scroll 0 0 rgba(10, 133, 193, 0.6);">
+                      <span class="thumb avatar pull-left m-r">        
+                      {if $mi_usuario->imagen!=null}                
+                      	<img src="/repositorio/{$mi_usuario->imagen}" class="dker" alt="Miguel" style="background:none repeat scroll 0 0 rgba(10, 133, 193, 0.6);">
+                      {else}
+                      	<img src="/admin/images/a0.png" class="dker" alt="Miguel" style="background:none repeat scroll 0 0 rgba(10, 133, 193, 0.6);">
+                      {/if}
                         <i class="on md b-black"></i>
                       </span>
                       <span class="hidden-nav-xs clear">
                         <span class="block m-t-xs">
-                          <strong class="font-bold text-lt">Javier</strong> 
+                          <strong class="font-bold text-lt">{$mi_usuario->nombre}</strong> 
                           <b class="caret"></b>
                         </span>
                         <span class="text-muted text-xs block">Administrador</span>
@@ -19,7 +23,7 @@
                     </a>
                     <ul class="dropdown-menu animated fadeInRight m-t-xs">
                     	<li>
-	                        <a href="/admin/editar-perfil/" data-toggle="ajaxModal" ><i class="fa fa-gear"></i> Mi perfil</a>
+	                        <a href="/admin/editar-usuario/administracion/{$mi_usuario->id_usuario}/"><i class="fa fa-gear"></i> Mi perfil</a>
 	                      </li>                      
                      	 <li>
                         	<a href="/admin/logout/" data-toggle="ajaxModal" ><i class="fa fa-sign-out"></i> Desconectar</a>

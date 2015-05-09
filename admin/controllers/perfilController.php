@@ -20,6 +20,10 @@
             if($ack->resultado==true){
             	$_SESSION['SESION_ID_USUARIO']     = $ack->datos->id_usuario;
             	$_SESSION['SESION_USUARIO']        = $ack->datos->nombre." ".$ack->datos->apellido1." ".$ack->datos->apellido2;
+            	$_SESSION['mi_usuario'] 		   = new stdClass();
+            	$_SESSION['mi_usuario']->id_usuario     = $ack->datos->id_usuario;
+            	$_SESSION['mi_usuario']->nombre     	= $ack->datos->nombre;
+            	$_SESSION['mi_usuario']->imagen		    = $ack->datos->imagen;
             	
                 header("Location: /admin/home/");
                 die();

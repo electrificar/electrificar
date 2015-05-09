@@ -97,7 +97,7 @@
                     </div>
                     <div class="form-group">
                       <div class="col-sm-4 col-sm-offset-2">
-                        <button type="button" onclick="document.location='/admin/usuarios/'" class="btn btn-default">Cancelar</button>
+                        <button type="button" onclick="document.location='/admin/usuarios/{$type_user}/'" class="btn btn-default">Cancelar</button>
                         <button type="submit" class="btn btn-primary">Guardar</button>
                       </div>
                     </div>
