@@ -82,6 +82,8 @@
     #usuario
     RewriteRule ^home/$ /guest/index.php?controller=home&action=home&%{QUERY_STRING} [L]
     RewriteRule ^inicio/$ /guest/index.php?controller=home&action=home2&%{QUERY_STRING} [L]
+    RewriteRule ^crear_usuario/$ /guest/index.php?controller=usuario&action=frm_user&%{QUERY_STRING} [L]
+    
 
 </IfModule>
 
