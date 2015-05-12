@@ -107,7 +107,7 @@
                       </a>
                     </li>
                     <li>
-                      <a class="auto" href="#">
+                      <a class="auto" href="/admin/tarifas/">
                         <span class="pull-right text-muted">
                           <i class="i i-circle-sm-o text"></i>
                           <i class="i i-circle-sm text-active"></i>

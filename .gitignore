@@ -1,3 +1,4 @@
 tmp/*
 core/DbConnection.php
 repositorio/*
+.settings/org.eclipse.wst.common.project.facet.core.xml

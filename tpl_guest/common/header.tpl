@@ -112,7 +112,7 @@
 
 							<div class="regularmenu">
 								<ul class="regularmenu-inner">
-									<li><a href="rental-1.html"><strong>1.</strong> Crear usuario</a></li>
+									<li><a href="frm_user.tpl"><strong>1.</strong> Crear usuario</a></li>
 									<li><a href="rental-1.html"><strong>2.</strong> Editar datos del usuario</a></li>
 								</ul><!-- /.regularmenu-inner -->
 							</div><!-- /.regularmenu -->
