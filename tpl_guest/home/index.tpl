@@ -1349,8 +1349,8 @@
 					</div><!-- /.col-md-5 -->
 
 					<div class="col-xs-12 col-md-7">
-						<h3>Grandes precios</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque dolor, placerat mattis justo id, convallis porta nulla</p>
+						<h3>Ecologicos</h3>
+						<p>Contribuye con el planeta de la mejor manera, con coches 0 emisiones</p>
 					</div><!-- /.col-md-7 -->
 				</div><!-- /.row -->
 			</div><!-- /.col-md-4 -->
@@ -1372,8 +1372,8 @@
 					</div><!-- /.col-md-5 -->
 
 					<div class="col-xs-12 col-md-7">
-						<h3>Amplia selección</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque dolor, placerat mattis justo id, convallis porta nulla</p>
+						<h3>Precios</h3>
+						<p>Ofrecemos opciones con tres rangos de precios diferentes para el que mejor se adapte a tus necesidades</p>
 					</div><!-- /.col-md-7 -->
 				</div><!-- /.row -->
 			</div><!-- /.col-md-4 -->
@@ -1395,8 +1395,8 @@
 					</div><!-- /.col-md-5 -->
 
 					<div class="col-xs-12 col-md-7">
-						<h3>24/7 Ayuda</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque dolor, placerat mattis justo id, convallis porta nulla</p>
+						<h3>24/7 Siempre</h3>
+						<p>Con el sistema de alquiler online puedes usar el coche a cualquier hora.</p>
 					</div><!-- /.col-md-7 -->
 				</div><!-- /.row -->
 			</div><!-- /.col-md-4 -->
