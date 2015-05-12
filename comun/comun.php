@@ -43,8 +43,6 @@
     $_min = date("i", $_FECHA_HORA);
     $_seg = date("s", $_FECHA_HORA);
 
-    
-    $dominio_absoluto   = "taller";
     $email_contacto     = "javier.djt@hotmail.es";
     
     //numero de registros por defecto que acata la aplicación
@@ -58,19 +56,18 @@
 	$iva = "21";
 	$iva_aplicable = "1.21";
 	
-	$gastos_envio = "10";
-	$precio_min_envio_free = "30";
+	$tipo_colaboradores = array(
+		 '1' =>array("id_tipo"=>"1","tipo"=>"Limpieza")
+		,'2' =>array("id_tipo"=>"2","tipo"=>"Mecánica")
+		,'3' =>array("id_tipo"=>"3","tipo"=>"Puntos de carga")
+	);
 	
-	$estados_pedido = array();
-	$estados_pedido[1] = "En proceso";
-	$estados_pedido[2] = "Hecho";
-	$estados_pedido[3] = "En proceso de envío";
-	$estados_pedido[4] = "Enviado";
-	$estados_pedido[5] = "Cancelado";
+	$empresas = array(
+		 '1'=>array("id_empresa"=>"1","empresa"=>"Limpiezas Paqui")
+		,'2'=>array("id_empresa"=>"2","empresa"=>"Fast and loud")
+		,'3'=>array("id_empresa"=>"3","empresa"=>"Samsung")
+	);
 	
-	$formas_pago = array();
-	$formas_pago[1] = "Tarjeta de crédito/débito";
-	$formas_pago[2] = "Transferencia bancaria";
-	$formas_pago[3] = "PayPal";
+
 
 ?>

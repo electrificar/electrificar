@@ -90,6 +90,21 @@ class Usuario {
         return $ack;
     }
     
+    function getColaborador($id_usuario){
+    	$ack = new ACK();
+        $ack->resultado = true;
+    
+        $query = "SELECT * FROM colaborador where id_usuario = '".$id_usuario."'";
+        // print $query;
+        if( ($arr_reg = $this->conn->load($query)) != null ){
+            $ack->datos = $arr_reg;
+        } else {
+            $ack->resultado = false;
+            $ack->mensaje   = "Se ha producido un error al obtener usuario, ponte en contacto con tu administrador";
+        }
+        return $ack;
+    }
+    
 	// Obtengo los elementos de la tabla usuario que cumplen el patron de filtros enviado
     function get_nombre_usuario ($id_usuario){
         $ack = new ACK();
@@ -222,6 +237,33 @@ class Usuario {
         
         return $ack;
 	}
+	
+	function update_colaborador ($datos){
+        $ack = new ACK();
+        $ack->resultado = true;
+        $tabla='colaborador';
+        
+        //COMPROBAR ARRAY DE DATOS, SI ESTA VACIO O NO.
+        if($datos==null || sizeof($datos)==0){
+        	$ack->resultado = false;
+            $ack->mensaje ="Los parametros enviados para la tabla ".$tabla." están vacíos";
+        }
+       
+        if(!$ack->resultado){
+            print_r($ack->mensaje);
+        }else{
+            $res = $this->conn->stor($datos,$tabla);
+            //exit;
+            if(!$res){
+            	$ack->resultado = false;
+            	$ack->mensaje = "Ha ocurrido un problema al guardar el usuario.";
+            }else{
+            	$ack->mensaje = "Datos guardados correctamente.";
+            }
+        }
+        
+        return $ack;
+	}	
 	
 	function activate_user($id_usuario){
  		$ack = new ACK();

@@ -66,7 +66,7 @@
 				                          <div class="clearfix">
 				                            <a class="pull-left thumb-md avatar b-3x m-r" href="#">
 				                              {if $usuario->imagen!=null}
-				                              	<img src="/repositorio/{$usuario->imagen}">
+				                              	<img style="width:64px;height:64px;" src="/repositorio/{$usuario->imagen}">
 				                              {else}
 				                              	<img src="/admin/images/a1.png">	
 				                              {/if}
@@ -75,16 +75,29 @@
 				                              <div class="h3 m-t-xs m-b-xs">
 				                                {$usuario->nombre}<br>{$usuario->apellido1} 
 				                                <i style="cursor:help;" title="{if $usuario->activacion}Usuario activo{else}Usuario no activo{/if}" class="fa fa-circle {if $usuario->activacion}text-success{else}text-danger{/if} pull-right text-xs m-t-sm"></i>
+				                                {if $label_type_user=='electrificados'}
+				                                	<i style="cursor:help;" title="{if $usuario->validado}Usuario validado{else}Usuario no validado{/if}" class="fa fa-circle {if $usuario->validado}text-info{else}text-danger{/if} pull-right text-xs m-t-sm"></i>
+				                                {/if}
 				                              </div>
-				                              <small class="text-muted">Administrador</small>
+				                              <small class="text-muted">{$type_user|@ucfirst} {$usuario->tipo_colaborador}</small>
 				                            </div>
 				                          </div>
 				                        </header>
 				                        <div class="list-group no-radius alt">
 				                        	{if $label_type_user=='electrificados'}
-					                          	<a href="mailto:{$usuario->email}" class="list-group-item">
+					                          	<a href="#" class="list-group-item">
 					                            	<i class="fa fa-info-circle icon-muted"></i>&nbsp;
 					                            	{$usuario->nif}
+					                          	</a>
+					                          	<a href="#" class="list-group-item">
+					                            	<i class="fa fa-calendar icon-muted"></i>&nbsp;
+					                            	{$usuario->fecha_permiso}
+					                          	</a>
+					                         {/if}
+					                         {if $label_type_user=='colaboradores'}
+					                          	<a href="#" class="list-group-item">
+					                            	<i class="fa fa-info-circle icon-muted"></i>&nbsp;
+					                            	{$usuario->empresa}
 					                          	</a>
 					                         {/if}
 				                          <a href="mailto:{$usuario->email}" class="list-group-item">
@@ -104,6 +117,11 @@
 							                  	<a class="btn btn-success" href="/admin/activar-usuario/{$type_user}/{$usuario->id_usuario}/">Activar</a>
 							                  {/if}
 							                </div>
+							                {if $label_type_user=='electrificados' && !$usuario->validado}
+								                <div class="btn-group btn-group-justified">
+								                  	<a class="btn btn-info" href="/admin/validar-usuario/{$type_user}/{$usuario->id_usuario}/">Validar</a>
+								                </div>
+							                {/if}
 				                        </div>
 				                      </section>
 				                    </div>
