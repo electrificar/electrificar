@@ -436,7 +436,7 @@
 	function encrypt($text){
 		$iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB);
 		$iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
-		$key = "Javier de Juan";
+		$key = "Javier de Juan  ";
 		$enc = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, $key, $text, MCRYPT_MODE_ECB, $iv));
 		$enc = str_replace("+", "234Z2", $enc);
 		$enc = str_replace("=", "89yhg", $enc);
