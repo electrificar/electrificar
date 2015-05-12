@@ -60,6 +60,11 @@
     RewriteRule ^admin/zona/(.*)/eliminar-punto-de-carga/(.*)/?$ /admin/index.php?controller=zona&action=delete_plug&id_zona=$1&id_punto_carga=$2%{QUERY_STRING} [L]
     
   	#tarifas
+  	RewriteRule ^admin/tarifas/?$ /admin/index.php?controller=tarifa&action=list_tarifas&%{QUERY_STRING} [L]
+	RewriteRule ^admin/añadir-tarifa/?$ /admin/index.php?controller=tarifa&action=frm_tarifa&%{QUERY_STRING} [L]
+	RewriteRule ^admin/editar-tarifa/(.*)/?$ /admin/index.php?controller=tarifa&action=frm_tarifa&id_tarifa=$1%{QUERY_STRING} [L]
+	RewriteRule ^admin/borrar-tarifa/(.*)/?$ /admin/index.php?controller=tarifa&action=delete_tarifa&id_tarifa=$1%{QUERY_STRING} [L]
+  	RewriteRule ^admin/guardar-tarifa/?$ /admin/index.php?controller=tarifa&action=update_tarifa&%{QUERY_STRING} [L]
   	
   	#incidencias
     
