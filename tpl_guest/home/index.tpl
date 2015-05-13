@@ -8,26 +8,26 @@
                         <div class="overview active">
                             <div class="overview-table">
                                 <div class="item title">
-                                    <h3>Toyota Yaris</h3>
-                                    <div class="subtitle">V8, TDi</div>
+                                    <h3>BMW i8</h3>
+                                    <div class="subtitle">Sport</div>
                                 </div><!-- /.item -->
 
 
                                 <div class="item tags">
-                                    <div class="price">$14,986</div>
-                                    <div class="type">Sale</div>
+                                    <div class="price">15€/Hora</div>
+                                    <div class="type">Alquiler</div>
                                 </div><!-- /.item -->
 
 
                                 <div class="item line">
                                     <span class="property">Año</span>
-                                    <span class="value">1989</span>
+                                    <span class="value">2015</span>
                                 </div><!-- /.item -->
 
 
                                 <div class="item line">
                                     <span class="property">Marca</span>
-                                    <span class="value">Toyota industries</span>
+                                    <span class="value">BMW</span>
                                 </div><!-- /.item -->
 
 
@@ -37,18 +37,18 @@
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Condition</span>
-                                    <span class="value">Import</span>
+                                    <span class="property">Numero de Plazas</span>
+                                    <span class="value">Dos personas</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Kilómetros</span>
-                                    <span class="value">120,000 km</span>
+                                    <span class="property">Kilómetros Autonomia</span>
+                                    <span class="value">120km</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
                                     <span class="property">Tipo</span>
-                                    <span class="value">Eléctrico</span>
+                                    <span class="value">Deportivo</span>
                                 </div><!-- /.item -->
                             </div><!-- /.overview-table -->
                         </div><!-- /.overview -->
@@ -56,13 +56,13 @@
                         <div class="overview">
                             <div class="overview-table">
                                 <div class="item title">
-                                    <h3>Toyota Auris</h3>
-                                    <div class="subtitle">V8, TDi</div>
+                                    <h3>Honda EVN</h3>
+                                    <div class="subtitle">Compact</div>
                                 </div><!-- /.item -->
 
                                 <div class="item tags">
-                                    <div class="price">$7,999</div>
-                                    <div class="type">Sale</div>
+                                    <div class="price">7€/Hora</div>
+                                    <div class="type">Alquiler</div>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
@@ -71,42 +71,33 @@
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Condition</span>
-                                    <span class="value">NZ New</span>
+                                    <span class="property">Numero de plazas</span>
+                                    <span class="value">Dos</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Kilómetros</span>
-                                    <span class="value">183,000 km</span>
+                                    <span class="property">Kilómetros Autonomia</span>
+                                    <span class="value">200km</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
                                     <span class="property">Tipo</span>
-                                    <span class="value">Eléctrico</span>
+                                    <span class="value">Compacto</span>
                                 </div><!-- /.item -->
-
-                                <div class="item line">
-                                    <span class="property">Motor</span>
-                                    <span class="value">4000</span>
-                                </div><!-- /.item -->
-
-                                <div class="item line">
-                                    <span class="property">Transmisión</span>
-                                    <span class="value">Automático</span>
-                                </div><!-- /.item -->
+                                
                             </div><!-- /.overview-table -->
                         </div><!-- /.overview -->
 
                         <div class="overview">
                             <div class="overview-table">
                                 <div class="item title">
-                                    <h3>Toyota RAV4</h3>
-                                    <div class="subtitle">V8, TDi</div>
+                                    <h3>Tesla S</h3>
+                                    <div class="subtitle">Sedan</div>
                                 </div><!-- /.item -->
 
                                 <div class="item tags">
-                                    <div class="price">$8,999</div>
-                                    <div class="type">Sale</div>
+                                    <div class="price">10€/Hora</div>
+                                    <div class="type">Alquiler</div>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
@@ -115,28 +106,18 @@
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Condition</span>
-                                    <span class="value">NZ New</span>
+                                    <span class="property">Numero de Plazas</span>
+                                    <span class="value">Cinco</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
-                                    <span class="property">Kilómetros</span>
-                                    <span class="value">50,322km</span>
+                                    <span class="property">Kilómetros de Autonomia</span>
+                                    <span class="value">150km</span>
                                 </div><!-- /.item -->
 
                                 <div class="item line">
                                     <span class="property">Tipo</span>
-                                    <span class="value">Eléctrico</span>
-                                </div><!-- /.item -->
-
-                                <div class="item line">
-                                    <span class="property">Motor</span>
-                                    <span class="value">1600</span>
-                                </div><!-- /.item -->
-
-                                <div class="item line">
-                                    <span class="property">Transmisión</span>
-                                    <span class="value">Automático</span>
+                                    <span class="value">Sedan</span>
                                 </div><!-- /.item -->
                             </div><!-- /.overview-table -->
                         </div><!-- /.overview -->
@@ -152,17 +133,17 @@
                 <div class="col-md-7 col-sm-7">
                     <div id="slider">
                         <div class="slide active">
-                            <a href="detail.html"><img src="/tpl_guest/assets/img/slides/toyota.png" alt="#"></a>
+                            <a href="detail.html"><img src="/tpl_guest/assets/img/slides/BMW-Electric-Car-2.jpg" alt="#"></a>
                             <div class="color-overlay"></div><!-- /.color-overlay -->
                         </div><!-- /.slide -->
 
                         <div class="slide">
-                            <a href="detail.html"><img src="/tpl_guest/assets/img/slides/toyota-1.png" alt="#"></a>
+                            <a href="detail.html"><img src="/tpl_guest/assets/img/slides/honda-evn-ext-610.jpg" alt="#"></a>
                             <div class="color-overlay"></div><!-- /.color-overlay -->
                         </div><!-- /.slide -->
 
                         <div class="slide">
-                            <a href="detail.html"><img src="/tpl_guest/assets/img/slides/toyota-2.png" alt="#"></a>
+                            <a href="detail.html"><img src="/tpl_guest/assets/img/slides/tesla-model-s1.jpg" alt="#"></a>
                             <div class="color-overlay"></div><!-- /.color-overlay -->
                         </div><!-- /.slide -->
                     </div><!-- /#slider -->
@@ -178,138 +159,40 @@
                     <div class="filter-block">
                         <div class="block">
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="#search-sales" data-toggle="tab">Sales</a></li>
-                                <li><a href="#search-rent" data-toggle="tab">Rent</a></li>
+                                <li class="active"><a href="#search-rent" data-toggle="tab">Buscar</a></li>
                             </ul><!-- /.nav -->
-
-                            <div class="content">
-                                <div class="inner">
-                                    <div class="tab-content">
-                                        <div class="tab-pane active" id="search-sales">
-                                            <form method="post" action="http://html.carat.pragmaticmates.com/filter.html">
-                                                <div class="row">
-
-                                                    <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6">
-                                                        <select name="maker" class="form-control">
-                                                            <option>Audi</option>
-                                                            <option>Toyota</option>
-                                                            <option>BMW</option>
-                                                        </select>
-                                                    </div><!-- /.form-group -->
-
-                                                    <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6">
-                                                        <select name="model" class="form-control">
-                                                            <option>Model 1</option>
-                                                            <option>Model 2</option>
-                                                            <option>Model 3</option>
-                                                        </select>
-                                                    </div><!-- /.form-group -->
-
-                                                    <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-6 year-from">
-                                                        <select name="year-from" class="form-control">
-                                                            <option>2009</option>
-                                                            <option>2010</option>
-                                                            <option>2011</option>
-                                                            <option>2012</option>
-                                                            <option>2013</option>
-                                                        </select>
-                                                    </div><!-- /.form-group -->
-
-                                                    <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-6 year-to">
-                                                        <select name="year-to" class="form-control">
-                                                            <option>2009</option>
-                                                            <option>2010</option>
-                                                            <option>2011</option>
-                                                            <option>2012</option>
-                                                            <option>2013</option>
-                                                        </select>
-                                                    </div><!-- /.form-group -->
-
-                                                    <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6">
-                                                        <select name="model" class="form-control">
-                                                            <option>Model 1</option>
-                                                            <option>Model 2</option>
-                                                            <option>Model 3</option>
-                                                        </select>
-                                                    </div><!-- /.form-group -->
-
-                                                    <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6">
-                                                        <select name="model" class="form-control">
-                                                            <option>Model 1</option>
-                                                            <option>Model 2</option>
-                                                            <option>Model 3</option>
-                                                        </select>
-                                                    </div><!-- /.form-group -->
-                                                </div><!-- /.row -->
-
-                                                <div class="form-group">
-                                                    <button class="send btn btn-primary btn-primary-color">
-                                                        Search sales <i class="icon icon-normal-right-arrow-small"></i>
-                                                    </button>
-                                                </div><!-- /.form-group -->
-                                            </form>
-                                        </div><!-- /.tab-pane -->
-
                                         <div class="tab-pane" id="search-rent">
                                             <form method="post" action="http://html.carat.pragmaticmates.com/filter.html">
                                                 <div class="row">
 
                                                     <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6">
                                                         <select name="maker" class="form-control">
-                                                            <option>Audi</option>
-                                                            <option>Toyota</option>
                                                             <option>BMW</option>
+                                                            <option>Honda</option>
+                                                            <option>Tesla</option>
                                                         </select>
                                                     </div><!-- /.form-group -->
 
                                                     <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6">
                                                         <select name="model" class="form-control">
-                                                            <option>Model 1</option>
-                                                            <option>Model 2</option>
-                                                            <option>Model 3</option>
+                                                            <option>Zona 1</option>
+                                                            <option>Zona 2</option>
+                                                            <option>Zona 3</option>
                                                         </select>
                                                     </div><!-- /.form-group -->
-
-                                                    <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-6 year-from">
-                                                        <select name="year-from" class="form-control">
-                                                            <option>2009</option>
-                                                            <option>2010</option>
-                                                            <option>2011</option>
-                                                            <option>2012</option>
-                                                            <option>2013</option>
-                                                        </select>
-                                                    </div><!-- /.form-group -->
-
-                                                    <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-6 year-to">
-                                                        <select name="year-to" class="form-control">
-                                                            <option>2009</option>
-                                                            <option>2010</option>
-                                                            <option>2011</option>
-                                                            <option>2012</option>
-                                                            <option>2013</option>
-                                                        </select>
-                                                    </div><!-- /.form-group -->
-
+                                                    
                                                     <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6">
                                                         <select name="model" class="form-control">
-                                                            <option>Model 1</option>
-                                                            <option>Model 2</option>
-                                                            <option>Model 3</option>
-                                                        </select>
-                                                    </div><!-- /.form-group -->
-
-                                                    <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6">
-                                                        <select name="model" class="form-control">
-                                                            <option>Model 1</option>
-                                                            <option>Model 2</option>
-                                                            <option>Model 3</option>
+                                                            <option>Carga > 75%</option>
+                                                            <option>Carga > 50%</option>
+                                                            <option>Carga > 26%</option>
                                                         </select>
                                                     </div><!-- /.form-group -->
                                                 </div><!-- /.row -->
 
                                                 <div class="form-group">
                                                     <button class="send btn btn-primary btn-primary-color">
-                                                        Search rental <i class="icon icon-normal-right-arrow-small"></i>
+                                                        Buscar <i class="icon icon-normal-right-arrow-small"></i>
                                                     </button>
                                                 </div><!-- /.form-group -->
                                             </form>
@@ -1466,8 +1349,8 @@
 					</div><!-- /.col-md-5 -->
 
 					<div class="col-xs-12 col-md-7">
-						<h3>Grandes precios</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque dolor, placerat mattis justo id, convallis porta nulla</p>
+						<h3>Ecologicos</h3>
+						<p>Contribuye con el planeta de la mejor manera, con coches 0 emisiones</p>
 					</div><!-- /.col-md-7 -->
 				</div><!-- /.row -->
 			</div><!-- /.col-md-4 -->
@@ -1489,8 +1372,8 @@
 					</div><!-- /.col-md-5 -->
 
 					<div class="col-xs-12 col-md-7">
-						<h3>Amplia selección</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque dolor, placerat mattis justo id, convallis porta nulla</p>
+						<h3>Precios</h3>
+						<p>Ofrecemos opciones con tres rangos de precios diferentes para el que mejor se adapte a tus necesidades</p>
 					</div><!-- /.col-md-7 -->
 				</div><!-- /.row -->
 			</div><!-- /.col-md-4 -->
@@ -1512,8 +1395,8 @@
 					</div><!-- /.col-md-5 -->
 
 					<div class="col-xs-12 col-md-7">
-						<h3>24/7 Ayuda</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque dolor, placerat mattis justo id, convallis porta nulla</p>
+						<h3>24/7 Siempre</h3>
+						<p>Con el sistema de alquiler online puedes usar el coche a cualquier hora.</p>
 					</div><!-- /.col-md-7 -->
 				</div><!-- /.row -->
 			</div><!-- /.col-md-4 -->

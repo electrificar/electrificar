@@ -4,7 +4,7 @@
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="block random-cars">
 					<div class="title">
-						<h2>Coches populares</h2>
+						<h2>Proximos Modelos</h2>
 					</div><!-- /.title -->
 
 
@@ -12,10 +12,10 @@
 						<div class="teaser-item-wrapper">
 							<div class="teaser-item">
 							    <div class="title">
-							        <a href="detail.html">Toyota Landcruiser</a>
+							        <a href="detail.html">Volskwagen Golf GTI</a>
 							    </div><!-- /.title -->
 
-		    					<div class="subtitle">Windsor Locks, CT </div><!-- /.subtitle -->
+		    					<div class="subtitle">Autonomia 100KM</div><!-- /.subtitle -->
 
 							    <div class="row">
 							        <div class="picture-wrapper col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -33,8 +33,8 @@
 							        </div><!-- /.picture-wrapper -->
 
 							        <div class="content-wrapper col-lg-8 col-md-8 col-sm-8 col-xs-8">
-							            <div class="price">$9,799</div>
-							            <p>Lorem fistrum torpedo benemeritaar mamaar te voy a borrar el cerito torpedo quietooor benemeritaar.</p>
+							            <div class="price">5€/hora</div>
+							            <p>5 Puertas, hatchback, AC, Sistema Multimedia Tactil. </p>
 							        </div><!-- /.picture-content -->
 							    </div><!-- /.row -->
 							</div><!-- /.teaser-item -->
