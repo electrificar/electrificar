@@ -45,7 +45,7 @@
 							{if $tarifas!=null}
 								{foreach from=$tarifas key=cid item=tarifa}
 									<tr>
-										<td><img style="width: 40px; border: 2px solid rgb(238, 238, 238); border-radius: 40px;" src= />{$tarifa->nombre}</td>
+										<td>{$tarifa->nombre}</td>
 										<td>{$tarifa->precio}</td>
 										<td>{$tarifa->precio_descuento}</td>
 										<td>{$tarifa->duracion}</td>
@@ -56,7 +56,7 @@
 													class="fa fa-gear"></i> </a>
 												<ul class="dropdown-menu pull-right">
 													<li><a href="/admin/editar-tarifa/{$tarifa->id_tarifa}/">Editar tarifa <i class="fa fa-edit"></i></a></li>
-													<li><a href="/admin/borrar-tarifa/{$vehicle->id_tarifa}/">Borrar tarifa <i class="fa fa-trash"></i></a></li>
+													<li><a href="/admin/borrar-tarifa/{$tarifa->id_tarifa}/">Borrar tarifa <i class="fa fa-trash"></i></a></li>
 												</ul>
 											</div>
 										</td>

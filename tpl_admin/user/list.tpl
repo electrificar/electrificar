@@ -89,7 +89,7 @@
 					                            	<i class="fa fa-info-circle icon-muted"></i>&nbsp;
 					                            	{$usuario->nif}
 					                          	</a>
-					                          	<a href="#" class="list-group-item">
+					                          	<a style="cursor:help;" title="Fecha permiso conducir" href="#" class="list-group-item">
 					                            	<i class="fa fa-calendar icon-muted"></i>&nbsp;
 					                            	{$usuario->fecha_permiso}
 					                          	</a>

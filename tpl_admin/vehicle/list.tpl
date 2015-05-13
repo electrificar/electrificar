@@ -66,7 +66,7 @@
 							{if $vehicles!=null}
 								{foreach from=$vehicles key=cid item=vehicle}
 									<tr>
-										<td><img style="width: 40px; border: 2px solid rgb(238, 238, 238); border-radius: 40px;" src="/repositorio/{$vehicle->imagen}" />{$vehicle->marca} {$vehicle->modelo}{$vehicle->id_vehiculo}</td>
+										<td><img style="height:30px;width: 30px; border: 2px solid rgb(238, 238, 238); border-radius: 40px;" src="/repositorio/{$vehicle->imagen}" />{$vehicle->marca} {$vehicle->modelo}{$vehicle->id_vehiculo}</td>
 										<td>{$vehicle->matricula}</td>
 										<td>
 											<div
