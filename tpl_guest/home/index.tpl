@@ -221,7 +221,7 @@
             </div><!-- /.line -->
 
             <div class="heading">
-                <h2>Coches destacados a tu disposición</h2>
+                <h2>Nuestros Coches</h2>
             </div><!-- /.heading -->
 
             <div class="line">
@@ -242,16 +242,16 @@
             <div class="image-slider">
                 
                                     <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota6.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/tesla-curve.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/tesla-interior.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/tesla-seats.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/tesla-sun.jpg" alt="#">
                     </a><!-- /.slide -->
                 
                 <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -263,17 +263,17 @@
         </div><!-- /.like -->
 
         <h3>
-            <a href="detail.html">Toyota Landcruiser</a>
+            <a href="detail.html">Tesla</a>
         </h3>
 
-        <div class="subtitle">MX 234</div><!-- /.subtitle -->
+        <div class="subtitle">Model S</div><!-- /.subtitle -->
 
-        <div class="price">19,888$</div><!-- /.price -->
+        <div class="price">10€/Hora</div><!-- /.price -->
 
         <div class="meta">
             <ul class="clearfix ">
                 <li>
-                    <i class="icon icon-normal-dashboard"></i> 2011                </li>
+                    <i class="icon icon-normal-dashboard"></i> 2014                </li>
 
                 <li>
                     <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
@@ -291,16 +291,16 @@
             <div class="image-slider">
                 
                                     <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/honda-ext.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/honda-front.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/honda-interior.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/honda-seats.jpg" alt="#">
                     </a><!-- /.slide -->
                 
                 <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -312,12 +312,12 @@
         </div><!-- /.like -->
 
         <h3>
-            <a href="detail.html">Toyota Verso</a>
+            <a href="detail.html">Honda</a>
         </h3>
 
-        <div class="subtitle">DPF Active</div><!-- /.subtitle -->
+        <div class="subtitle">EVN</div><!-- /.subtitle -->
 
-        <div class="price">20,888$</div><!-- /.price -->
+        <div class="price">7€/Hora</div><!-- /.price -->
 
         <div class="meta">
             <ul class="clearfix ">
@@ -328,7 +328,7 @@
                     <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
 
                 <li>
-                    <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
+                    <i class="icon icon-normal-cog-wheel"></i> 1000               </li>
             </ul>
         </div><!-- /.meta -->
     </div><!-- /.inner -->
@@ -340,16 +340,16 @@
             <div class="image-slider">
                 
                                     <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/bmw-back.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota6.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/bmw-ext.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/bmw-ext2.jpg" alt="#">
                     </a><!-- /.slide -->
                                     <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+                        <img src="/tpl_guest/assets/img/content/bmw-interior.jpg" alt="#">
                     </a><!-- /.slide -->
                 
                 <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -361,23 +361,23 @@
         </div><!-- /.like -->
 
         <h3>
-            <a href="detail.html">Toyota Yaris</a>
+            <a href="detail.html">BMW</a>
         </h3>
 
-        <div class="subtitle">Active</div><!-- /.subtitle -->
+        <div class="subtitle">i8</div><!-- /.subtitle -->
 
-        <div class="price">10,290$</div><!-- /.price -->
+        <div class="price">15€/Hora</div><!-- /.price -->
 
         <div class="meta">
             <ul class="clearfix ">
                 <li>
-                    <i class="icon icon-normal-dashboard"></i> 2010                </li>
+                    <i class="icon icon-normal-dashboard"></i> 2015                </li>
 
                 <li>
                     <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
 
                 <li>
-                    <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
+                    <i class="icon icon-normal-cog-wheel"></i> 2000                </li>
             </ul>
         </div><!-- /.meta -->
     </div><!-- /.inner -->
@@ -476,151 +476,7 @@
             </ul>
         </div><!-- /.meta -->
     </div><!-- /.inner -->
-</div><!-- /.grid-item -->                        </div><!-- /.inner -->
-                                            <div class="inner">
-                            <div class="grid-item">
-    <div class="inner">
-        <div class="picture">
-            <div class="image-slider">
-                
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
-                    </a><!-- /.slide -->
-                
-                <div class="cycle-pager"></div><!-- /.cycle-pager -->
-            </div><!-- /.image-slider -->
-        </div><!-- /.picture -->
-
-        <div class="like">
-            <a href="detail.html"><i class="icon icon-outline-thumb-up"></i></a>
-        </div><!-- /.like -->
-
-        <h3>
-            <a href="detail.html">Toyota Verso</a>
-        </h3>
-
-        <div class="subtitle">DPF Active</div><!-- /.subtitle -->
-
-        <div class="price">20,888$</div><!-- /.price -->
-
-        <div class="meta">
-            <ul class="clearfix ">
-                <li>
-                    <i class="icon icon-normal-dashboard"></i> 2013                </li>
-
-                <li>
-                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
-
-                <li>
-                    <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
-            </ul>
-        </div><!-- /.meta -->
-    </div><!-- /.inner -->
-</div><!-- /.grid-item -->                        </div><!-- /.inner -->
-                                            <div class="inner">
-                            <div class="grid-item">
-    <div class="inner">
-        <div class="picture">
-            <div class="image-slider">
-                
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota6.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
-                    </a><!-- /.slide -->
-                
-                <div class="cycle-pager"></div><!-- /.cycle-pager -->
-            </div><!-- /.image-slider -->
-        </div><!-- /.picture -->
-
-        <div class="like">
-            <a href="detail.html"><i class="icon icon-outline-thumb-up"></i></a>
-        </div><!-- /.like -->
-
-        <h3>
-            <a href="detail.html">Toyota Landcruiser</a>
-        </h3>
-
-        <div class="subtitle">MX 234</div><!-- /.subtitle -->
-
-        <div class="price">19,888$</div><!-- /.price -->
-
-        <div class="meta">
-            <ul class="clearfix ">
-                <li>
-                    <i class="icon icon-normal-dashboard"></i> 2011                </li>
-
-                <li>
-                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
-
-                <li>
-                    <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
-            </ul>
-        </div><!-- /.meta -->
-    </div><!-- /.inner -->
-</div><!-- /.grid-item -->                        </div><!-- /.inner -->
-                                            <div class="inner">
-                            <div class="grid-item">
-    <div class="inner">
-        <div class="picture">
-            <div class="image-slider">
-                
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
-                    </a><!-- /.slide -->
-                
-                <div class="cycle-pager"></div><!-- /.cycle-pager -->
-            </div><!-- /.image-slider -->
-        </div><!-- /.picture -->
-
-        <div class="like">
-            <a href="detail.html"><i class="icon icon-outline-thumb-up"></i></a>
-        </div><!-- /.like -->
-
-        <h3>
-            <a href="detail.html">Toyota Verso</a>
-        </h3>
-
-        <div class="subtitle">Valvematic Active</div><!-- /.subtitle -->
-
-        <div class="price">16,999</div><!-- /.price -->
-
-        <div class="meta">
-            <ul class="clearfix ">
-                <li>
-                    <i class="icon icon-normal-dashboard"></i> 2013                </li>
-
-                <li>
-                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
-
-                <li>
-                    <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
-            </ul>
-        </div><!-- /.meta -->
-    </div><!-- /.inner -->
-</div><!-- /.grid-item -->                        </div><!-- /.inner -->
+</div><!-- /.grid-item -->                    </div><!-- /.inner -->
                                     </div><!-- /.grid-carousel -->
             </div><!-- /.inner-block -->
         </div><!-- /.col-md-12 -->
