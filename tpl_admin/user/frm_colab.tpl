@@ -32,7 +32,7 @@
                                 <div class="inline">
                                   <div class="easypiechart" data-percent="100" data-line-width="6" data-bar-color="#2796de" data-track-Color="#fff" data-scale-Color="false" data-size="140" data-line-cap='butt' data-animate="1000">
                                     <div class="thumb-lg avatar">
-                                      <a onclick="$('#imagen').click();" href="javascript:;"><img src="/admin/images/default-user.png" style="width:80px;" class="dker"></a>
+                                      <a onclick="$('#imagen').click();" href="javascript:;"><img src="/admin/images/default-user.png" style="width:80px;height:80px;" class="dker"></a>
                                     </div>
                                   </div>
                                   <div class="imagen_vehiculo h4 m-t m-b-xs font-bold text-lt"><a onclick="$('#imagen').click();$('#literal_foto').html('Cambiar');" href="javascript:;"><i class="fa fa-plus"></i> <span id="literal_foto">Añadir</span> foto</a></div>
@@ -45,7 +45,7 @@
                                 <div class="inline">
                                   <div class="easypiechart" data-percent="100" data-line-width="6" data-bar-color="#2796de" data-track-Color="#fff" data-scale-Color="false" data-size="140" data-line-cap='butt' data-animate="1000">
                                     <div class="thumb-lg avatar">
-                                      <a onclick="$('#imagen').click();" href="javascript:;"><img src="/repositorio/{$usuario->imagen}" style="width:170px;" class="dker"></a>
+                                      <a onclick="$('#imagen').click();" href="javascript:;"><img src="/repositorio/{$usuario->imagen}" style="width:170px;height:130px;" class="dker"></a>
                                     </div>
                                   </div>
                                   <div class="imagen_vehiculo h4 m-t m-b-xs font-bold text-lt"><a onclick="$('#imagen').click();$('#literal_foto').html('Cambiar');" href="javascript:;"><i class="fa fa-plus"></i> <span id="literal_foto">Cambiar</span> foto</a></div>
