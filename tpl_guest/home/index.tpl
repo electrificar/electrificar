@@ -381,237 +381,17 @@
             </ul>
         </div><!-- /.meta -->
     </div><!-- /.inner -->
-</div><!-- /.grid-item -->                        </div><!-- /.inner -->
-                                            <div class="inner">
-                            <div class="grid-item">
-    <div class="inner">
-        <div class="picture">
-            <div class="image-slider">
-                
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota6.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
-                    </a><!-- /.slide -->
-                
-                <div class="cycle-pager"></div><!-- /.cycle-pager -->
-            </div><!-- /.image-slider -->
-        </div><!-- /.picture -->
-
-        <div class="like">
-            <a href="detail.html"><i class="icon icon-outline-thumb-up"></i></a>
-        </div><!-- /.like -->
-
-        <h3>
-            <a href="detail.html">Toyota Landcruiser</a>
-        </h3>
-
-        <div class="subtitle">MX 234</div><!-- /.subtitle -->
-
-        <div class="price">19,888$</div><!-- /.price -->
-
-        <div class="meta">
-            <ul class="clearfix ">
-                <li>
-                    <i class="icon icon-normal-dashboard"></i> 2011                </li>
-
-                <li>
-                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
-
-                <li>
-                    <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
-            </ul>
-        </div><!-- /.meta -->
-    </div><!-- /.inner -->
-</div><!-- /.grid-item -->                        </div><!-- /.inner -->
-                                            <div class="inner">
-                            <div class="grid-item">
-    <div class="inner">
-        <div class="picture">
-            <div class="image-slider">
-                
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
-                    </a><!-- /.slide -->
-                                    <a href="detail.html" class="slide">
-                        <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
-                    </a><!-- /.slide -->
-                
-                <div class="cycle-pager"></div><!-- /.cycle-pager -->
-            </div><!-- /.image-slider -->
-        </div><!-- /.picture -->
-
-        <div class="like">
-            <a href="detail.html"><i class="icon icon-outline-thumb-up"></i></a>
-        </div><!-- /.like -->
-
-        <h3>
-            <a href="detail.html">Toyota Verso</a>
-        </h3>
-
-        <div class="subtitle">Valvematic Active</div><!-- /.subtitle -->
-
-        <div class="price">16,999</div><!-- /.price -->
-
-        <div class="meta">
-            <ul class="clearfix ">
-                <li>
-                    <i class="icon icon-normal-dashboard"></i> 2013                </li>
-
-                <li>
-                    <i class="icon icon-normal-car-door"></i> Eléctrico                </li>
-
-                <li>
-                    <i class="icon icon-normal-cog-wheel"></i> 1500                </li>
-            </ul>
-        </div><!-- /.meta -->
-    </div><!-- /.inner -->
-</div><!-- /.grid-item -->                    </div><!-- /.inner -->
+</div><!-- /.grid-item -->             
                                     </div><!-- /.grid-carousel -->
             </div><!-- /.inner-block -->
         </div><!-- /.col-md-12 -->
     </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <div id="grid-carousel-pager">
-                <div class="prev"></div><!-- /.prev -->
-                <div class="next"></div><!-- /.next -->
-            </div><!-- /.grid-carousel-pager -->
-        </div><!-- /.col-md-12 -->
-    </div><!-- /.row -->
-</div><!-- /.grid-block -->
                 </div><!-- /.col-md-12 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
     </div><!-- /.section -->
 
-    <div class="section white">
-        <div class="container">
-            <div class="category-boxes">
-                <div class="row">
-                    <div class="category-box col-lg-3 col-md-3 col-sm-6">
-                        <div class="wrapper">
-                            <div class="picture">
-                                <a href="detail.html">
-                                    <img src="/tpl_guest/assets/img/filter/sedan.png" class="cover-me" alt="#">
-                                </a>
-                            </div><!-- /.picture -->
-
-                            <div class="meta">
-                                <div class="title">
-                                    <a href="detail.html">Sedans</a>
-                                </div><!-- /.title -->
-
-                                <div class="offers">133 offers</div><!-- /.offers -->
-                            </div><!-- /.meta -->
-
-                            <div class="options">
-                                <ul>
-                                    <li><a href="detail.html">Notchback</a></li>
-                                    <li><a href="detail.html">Fastback</a></li>
-                                    <li><a href="detail.html">Hardtop</a></li>
-                                    <li><a href="detail.html">Hatchback</a></li>
-                                    <li><a href="detail.html">Chauffeured</a></li>
-                                </ul>
-                            </div><!-- /.options -->
-                        </div><!-- /.wrapper -->
-                    </div><!-- /.category-box -->
-
-                    <div class="category-box col-lg-3 col-md-3 col-sm-6">
-                        <div class="wrapper">
-                            <div class="picture">
-                                <a href="detail.html">
-                                    <img src="/tpl_guest/assets/img/filter/bike.png" class="cover-me" alt="#">
-                                </a>
-                            </div><!-- /.picture -->
-
-                            <div class="meta">
-                                <div class="title"><a href="filter.html">Motorcycles</a></div><!-- /.title -->
-                                <div class="offers">55 offers</div><!-- /.offers -->
-                            </div><!-- /.meta -->
-
-                            <div class="options">
-                                <ul>
-                                    <li><a href="detail.html">Standard</a></li>
-                                    <li><a href="detail.html">Cruiser</a></li>
-                                    <li><a href="detail.html">Sport bike</a></li>
-                                    <li><a href="detail.html">Touring</a></li>
-                                    <li><a href="detail.html">Sport touring</a></li>
-                                    <li><a href="detail.html">Dual-sport</a></li>
-                                </ul>
-                            </div><!-- /.options -->
-                        </div><!-- /.wrapper -->
-                    </div><!-- /.category-box -->
-
-                    <div class="category-box col-lg-3 col-md-3 col-sm-6">
-                        <div class="wrapper">
-                            <div class="picture">
-                                <a href="filter.html"><img src="/tpl_guest/assets/img/filter/suv.png" alt="#" class="cover-me"></a>
-                            </div><!-- /.picture -->
-                            
-                            <div class="meta">
-                                <div class="title">
-                                    <a href="detail.html">Pickup &amp; SUVs</a>
-                                </div><!-- /.title -->
-
-                                <div class="offers">24 offers</div><!-- /.offers -->
-                            </div><!-- /.meta -->
-
-                            <div class="options">
-                                <ul>
-                                    <li><a href="detail.html">Mini SUV</a></li>
-                                    <li><a href="detail.html">Compact SUV</a></li>
-                                    <li><a href="detail.html">Mid-size SUV</a></li>
-                                    <li><a href="detail.html">Full-size SUV</a></li>
-                                    <li><a href="detail.html">Extended-length SUV</a></li>
-                                </ul>
-                            </div><!-- /.options -->
-                        </div><!-- /.wrapper -->
-                    </div><!-- /.col-md-3 -->
-
-                    <div class="category-box col-lg-3 col-md-3 col-sm-6">
-                        <div class="wrapper">
-                            <div class="picture">
-                                <a href="detail.html">
-                                    <img src="/tpl_guest/assets/img/filter/sportcar.png" alt="#" class="cover-me">
-                                </a>
-                            </div>
-                            <div class="meta">
-                                <div class="title">
-                                    <a href="detail.html">Sport cars</a>
-                                </div><!-- /.title -->
-                                <div class="offers">89 offers</div><!-- /.offers-->
-                            </div><!-- /.meta -->
-
-                            <div class="options">
-                                <ul>
-                                    <li><a href="detail.html">Sports car</a></li>
-                                    <li><a href="detail.html">Grand tourer</a></li>
-                                    <li><a href="detail.html">Supercar</a></li>
-                                    <li><a href="detail.html">Muscle car</a></li>
-                                    <li><a href="detail.html">Pony car</a></li>
-                                </ul>
-                            </div><!-- /.options -->
-
-
-                        </div><!-- /.wrapper -->
-                    </div><!-- /.category-box -->
-                </div><!-- /.row -->
-            </div><!-- /.category-boxes-->
-        </div><!-- /.container -->
-    </div><!-- /.section -->
-
+   
     <div class="section gray-light">
         <div class="container">
             <div class="row">
@@ -621,7 +401,7 @@
 	<div class="page-header">
 		<div class="page-header-inner">
 			<div class="heading">
-				<h2>Mejores ofertas</h2>
+				<h2>Como Funciona</h2>
 			</div><!-- /.heading -->
 
 			<div class="line">
@@ -644,15 +424,6 @@
                                                                             <a href="detail.html" class="slide">
                                 <img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
                             </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
-                            </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
-                            </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
-                            </a><!-- /.slide -->
                         
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
                     </div><!-- /.image-slider -->
@@ -662,27 +433,14 @@
             <div class="col-lg-8 col-md-7 col-sm-7">
 
                 <div class="content-inner">
-                    <h3>
-                        <a href="detail.html">Toyota Verso</a>
-                    </h3>
-                    <div class="subtitle">DPF Active</div><!-- /.subtitle -->
-
-                    <div class="price">$16,999</div><!-- /.price -->
+                    <h1>
+                        <a href="detail.html">Registrate</a>
+                    </h1>
 
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vulputate neque. Fusce hendrerit fermentum elementum.</p>
+                        <p>
+                            Entra en la sección Usuarios y crea una cuenta nueva con tus datos personales y bancarios, no te preocupes, no haremos ningún cobro hasta que utilices uno de nuestros coches.</p>
                     </div><!-- /.description -->
-
-                    <div class="meta">
-                        <ul>
-                            <li>
-                                <i class="icon icon-normal-dashboard"></i> 2013                            </li>
-                            <li>
-                                <i class="icon icon-normal-car-door"></i> Eléctrico                            </li>
-                            <li>
-                                <i class="icon icon-normal-cog-wheel"></i> 1500                            </li>
-                        </ul>
-                    </div><!-- /.meta -->
                 </div><!-- /.content-inner -->
             </div><!-- /.col-md-8 -->
         </div><!-- /.row -->
@@ -696,15 +454,6 @@
                                                                             <a href="detail.html" class="slide">
                                 <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                             </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
-                            </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
-                            </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota6.jpg" alt="#">
-                            </a><!-- /.slide -->
                         
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
                     </div><!-- /.image-slider -->
@@ -714,27 +463,14 @@
             <div class="col-lg-8 col-md-7 col-sm-7">
 
                 <div class="content-inner">
-                    <h3>
-                        <a href="detail.html">Toyota Yaris</a>
-                    </h3>
-                    <div class="subtitle">Active</div><!-- /.subtitle -->
-
-                    <div class="price">$16,999</div><!-- /.price -->
-
+                    <h1>
+                        <a href="detail.html">Busca</a>
+                    </h1>
+                    
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vulputate neque. Fusce hendrerit fermentum elementum.</p>
+                        <p>
+                            Busca en tu area nuestros coches disponibles y mira su estado. </p>
                     </div><!-- /.description -->
-
-                    <div class="meta">
-                        <ul>
-                            <li>
-                                <i class="icon icon-normal-dashboard"></i> 2010                            </li>
-                            <li>
-                                <i class="icon icon-normal-car-door"></i> Eléctrico                            </li>
-                            <li>
-                                <i class="icon icon-normal-cog-wheel"></i> 1500                            </li>
-                        </ul>
-                    </div><!-- /.meta -->
                 </div><!-- /.content-inner -->
             </div><!-- /.col-md-8 -->
         </div><!-- /.row -->
@@ -748,16 +484,6 @@
                                                                             <a href="detail.html" class="slide">
                                 <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                             </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota6.jpg" alt="#">
-                            </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
-                            </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
-                            </a><!-- /.slide -->
-                        
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
                     </div><!-- /.image-slider -->
                 </div><!-- /.picture -->
@@ -766,27 +492,13 @@
             <div class="col-lg-8 col-md-7 col-sm-7">
 
                 <div class="content-inner">
-                    <h3>
-                        <a href="detail.html">Toyota Yaris</a>
-                    </h3>
-                    <div class="subtitle">Active</div><!-- /.subtitle -->
-
-                    <div class="price">$16,999</div><!-- /.price -->
-
+                    <h1>
+                        <a href="detail.html">Elige</a>
+                    </h1>
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vulputate neque. Fusce hendrerit fermentum elementum.</p>
+                        <p>
+                            Selecciona el coche disponible de tu preferencia y has click en reservar. </p>
                     </div><!-- /.description -->
-
-                    <div class="meta">
-                        <ul>
-                            <li>
-                                <i class="icon icon-normal-dashboard"></i> 2010                            </li>
-                            <li>
-                                <i class="icon icon-normal-car-door"></i> Eléctrico                            </li>
-                            <li>
-                                <i class="icon icon-normal-cog-wheel"></i> 1500                            </li>
-                        </ul>
-                    </div><!-- /.meta -->
                 </div><!-- /.content-inner -->
             </div><!-- /.col-md-8 -->
         </div><!-- /.row -->
@@ -800,13 +512,6 @@
                                                                             <a href="detail.html" class="slide">
                                 <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
                             </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
-                            </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
-                            </a><!-- /.slide -->
-                        
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
                     </div><!-- /.image-slider -->
                 </div><!-- /.picture -->
@@ -815,27 +520,13 @@
             <div class="col-lg-8 col-md-7 col-sm-7">
 
                 <div class="content-inner">
-                    <h3>
-                        <a href="detail.html">Toyota Verso</a>
-                    </h3>
-                    <div class="subtitle">Valvematic Active</div><!-- /.subtitle -->
-
-                    <div class="price">$16,999</div><!-- /.price -->
-
+                    <h1>
+                        <a href="detail.html">Encuentra</a>
+                    </h1>
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vulputate neque. Fusce hendrerit fermentum elementum.</p>
+                        <p>
+                            Encuentra nuestro coche siguiendo las direcciones que te damos.</p>
                     </div><!-- /.description -->
-
-                    <div class="meta">
-                        <ul>
-                            <li>
-                                <i class="icon icon-normal-dashboard"></i> 2013                            </li>
-                            <li>
-                                <i class="icon icon-normal-car-door"></i> Eléctrico                            </li>
-                            <li>
-                                <i class="icon icon-normal-cog-wheel"></i> 1500                            </li>
-                        </ul>
-                    </div><!-- /.meta -->
                 </div><!-- /.content-inner -->
             </div><!-- /.col-md-8 -->
         </div><!-- /.row -->
@@ -849,16 +540,6 @@
                                                                             <a href="detail.html" class="slide">
                                 <img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
                             </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
-                            </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
-                            </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
-                            </a><!-- /.slide -->
-                        
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
                     </div><!-- /.image-slider -->
                 </div><!-- /.picture -->
@@ -867,27 +548,14 @@
             <div class="col-lg-8 col-md-7 col-sm-7">
 
                 <div class="content-inner">
-                    <h3>
-                        <a href="detail.html">Toyota Verso</a>
-                    </h3>
-                    <div class="subtitle">DPF Active</div><!-- /.subtitle -->
-
-                    <div class="price">$16,999</div><!-- /.price -->
+                    <h1>
+                        <a href="detail.html">Abre</a>
+                    </h1>
 
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vulputate neque. Fusce hendrerit fermentum elementum.</p>
+                        <p>
+                            Cuando te encuentres al lado del coche, selecciona la opción de desbloquear y súbete! Disfruta de tu paseo!.</p>
                     </div><!-- /.description -->
-
-                    <div class="meta">
-                        <ul>
-                            <li>
-                                <i class="icon icon-normal-dashboard"></i> 2013                            </li>
-                            <li>
-                                <i class="icon icon-normal-car-door"></i> Eléctrico                            </li>
-                            <li>
-                                <i class="icon icon-normal-cog-wheel"></i> 1500                            </li>
-                        </ul>
-                    </div><!-- /.meta -->
                 </div><!-- /.content-inner -->
             </div><!-- /.col-md-8 -->
         </div><!-- /.row -->
@@ -913,14 +581,14 @@
       </div>
 
       <div class="form-group">
-        <button class="send btn btn-primary btn-primary-color">Subscribirse</button>
+        <button class="send btn btn-primary btn-primary-color">Informame</button>
       </div>
     </form>
   </div>
 </div>                        <div class="latest-reviews block block-shadow white">
 	<div class="block-inner">
 		<div class="block-title">
-			<h3>Últimas críticas</h3>
+			<h3>Nuestro Twitter</h3>
 		</div><!-- /.block-title -->
 
 		<div class="inner">
@@ -929,19 +597,19 @@
 					<div class="item">
 						<div class="picture hidden-sm">
 							<a href="detail.html">
-								<img src="/tpl_guest/assets/img/review.png" alt="#">
+								<img src="/tpl_guest/assets/img/twitter-icon.jpg" alt="#">
 							</a>
 						</div><!-- /.picture -->
 
 						<div class="title">
-							<a href="detail.html">Toyota Landcruiser</a>
+							<a href="detail.html">@Jselaj39</a>
 						</div><!-- /.title -->
 
-						<div class="date">10/12/2013</div><!-- /.date -->
+						<div class="date">10/02/2015</div><!-- /.date -->
 
 						<div class="description">
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vulputate...
+								Increible, lo mejor del mundo, bravo chicos, os merecéis un 10!.
 							</p>
 						</div><!-- /.description -->
 					</div><!-- /.item -->
@@ -950,14 +618,14 @@
 				<div class="item-wrapper col-lg-12 col-md-12 col-sm-4">
 					<div class="item">
 						<div class="title">
-							<a href="detail.html">Toyota RAV</a>
+							<a href="detail.html">@ELTP495</a>
 						</div><!-- /.title -->
 
-						<div class="date">12/12/2013</div><!-- /.date -->
+						<div class="date">12/02/2015</div><!-- /.date -->
 
 						<div class="description">
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vulputate...
+								Si esto fuera un proyecto de IS seguro que tendría la maxima calificación!
 							</p>
 						</div><!-- /.description -->
 					</div><!-- /.item -->	
@@ -966,14 +634,14 @@
 				<div class="item-wrapper col-lg-12 col-md-12 col-sm-4">
 					<div class="item">
 						<div class="title">
-							<a href="detail.html">Toyota 4Runner</a>
+							<a href="detail.html">@SaLesc594</a>
 						</div><!-- /.title -->
 
-						<div class="date">20/12/2013</div><!-- /.date -->
+						<div class="date">20/02/2015</div><!-- /.date -->
 
 						<div class="description">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu vulputate...
+						Genial idea!, mi billetera agrecede cada dia desde que esto existe.
 					</p>
 				</div><!-- /.description -->
 					</div><!-- /.item -->			
