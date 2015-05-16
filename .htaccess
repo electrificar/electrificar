@@ -68,6 +68,17 @@
   	
   	#incidencias
     
+    RewriteRule ^admin/incidencias/coches/?$ /admin/index.php?controller=incidencia&action=list_incidencias&type_incidence_label=coches&label_incidence=coches&%{QUERY_STRING} [L]
+    RewriteRule ^admin/incidencias/puntos_de_carga/?$ /admin/index.php?controller=incidencia&action=list_incidencias&type_incidence_label=puntos_de_carga&label_incidence=puntos_de_carga&%{QUERY_STRING} [L]
+    RewriteRule ^admin/incidencias/limpieza/?$ /admin/index.php?controller=incidencia&action=list_incidencias&type_incidence_label=limpieza&label_incidence=limpieza&%{QUERY_STRING} [L]
+    RewriteRule ^admin/incidencias/accidentes/?$ /admin/index.php?controller=incidencia&action=list_incidencias&type_incidence_label=accidentes&label_incidence=accidentes&%{QUERY_STRING} [L]
+   
+    RewriteRule ^admin/añadir-incidencia/coches/?$ /admin/index.php?controller=incidencia&action=frm_incidencia&type_incidence=1&type_incidence_label=coches&label_incidence=coches&%{QUERY_STRING} [L]
+    RewriteRule ^admin/añadir-incidencia/puntos_de_carga/?$ /admin/index.php?controller=incidencia&action=frm_incidencia&type_incidence=2&type_incidence_label=puntos_de_carga&label_incidence=puntos_de_carga&%{QUERY_STRING} [L]
+    RewriteRule ^admin/añadir-incidencia/limpieza/?$ /admin/index.php?controller=incidencia&action=frm_incidencia&type_incidence=3&type_incidence_label=limpieza&label_incidence=limpieza&%{QUERY_STRING} [L]
+    RewriteRule ^admin/añadir-incidencia/accidentes/?$ /admin/index.php?controller=incidencia&action=frm_incidencia&type_incidence=4&type_incidence_label=accidentes&label_incidence=accidentes&%{QUERY_STRING} [L]
+   
+    
     RewriteRule ^admin/do_logout/?$ /admin/index.php?controller=perfil&action=do_logout&%{QUERY_STRING} [L]
     RewriteRule ^admin/logout/?$ /admin/index.php?controller=perfil&action=do_logout&%{QUERY_STRING} [L]
     RewriteRule ^admin/login/?$ /admin/index.php?controller=perfil&action=do_login&%{QUERY_STRING} [L]
