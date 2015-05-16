@@ -43,10 +43,10 @@
 						<div class="teaser-item-wrapper">
 							<div class="teaser-item">
 							    <div class="title">
-							        <a href="detail.html">Toyota Landcruiser</a>
+							        <a href="detail.html">Toyota GT86</a>
 							    </div><!-- /.title -->
 
-		    					<div class="subtitle">Windsor Locks, CT </div><!-- /.subtitle -->
+		    					<div class="subtitle">Autonomia 80km </div><!-- /.subtitle -->
 
 							    <div class="row">
 							        <div class="picture-wrapper col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -64,8 +64,8 @@
 							        </div><!-- /.picture-wrapper -->
 
 							        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 content-wrapper">
-							            <div class="price">$9,799</div>
-							            <p>A peich diodeno me cago en tus muelas pupita me cago en tus muelas de la pradera ese hombree de la pradera se calle ustée a gramenawer sexuarl.</p>
+							            <div class="price">9€/hora</div>
+							            <p>2 puertas, deportivo, alto rendimiento y comodidad. Proximamente</p>
 							        </div><!-- /.content-wrapper -->
 							    </div><!-- /.row -->
 							</div><!-- /.teaser-item -->
@@ -147,7 +147,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 											<span class="badge">Destacado</span>
 										</a>
 									</div><!-- /.col-md-4 -->
@@ -198,7 +198,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 											<span class="badge">Mejor precio</span>
 										</a>
 									</div><!-- /.col-md-4 -->
@@ -225,7 +225,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 											<span class="badge">Más alquilado</span>
 										</a>
 									</div><!-- /.col-md-4 -->
@@ -291,7 +291,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 								</div><!-- /.row -->
@@ -305,7 +305,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 

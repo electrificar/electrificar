@@ -421,11 +421,9 @@
             <div class="col-lg-4 col-md-5 col-sm-5">
                 <div class="picture">
                     <div class="image-slider">
-                                                                            <a href="detail.html" class="slide">
+                            <a>
                                 <img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
                             </a><!-- /.slide -->
-                        
-                        <div class="cycle-pager"></div><!-- /.cycle-pager -->
                     </div><!-- /.image-slider -->
                 </div><!-- /.picture -->
             </div><!-- /.col-md-4 -->
@@ -434,7 +432,7 @@
 
                 <div class="content-inner">
                     <h1>
-                        <a href="detail.html">Registrate</a>
+                        <a>Registrate</a>
                     </h1>
 
                     <div class="description">
@@ -451,11 +449,9 @@
             <div class="col-lg-4 col-md-5 col-sm-5">
                 <div class="picture">
                     <div class="image-slider">
-                                                                            <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota5.jpg" alt="#">
+                            <a>
+                                <img src="/tpl_guest/assets/img/stock-footage-search-map-loop.jpg" alt="#">
                             </a><!-- /.slide -->
-                        
-                        <div class="cycle-pager"></div><!-- /.cycle-pager -->
                     </div><!-- /.image-slider -->
                 </div><!-- /.picture -->
             </div><!-- /.col-md-4 -->
@@ -464,7 +460,7 @@
 
                 <div class="content-inner">
                     <h1>
-                        <a href="detail.html">Busca</a>
+                        <a>Busca</a>
                     </h1>
                     
                     <div class="description">
@@ -481,10 +477,9 @@
             <div class="col-lg-4 col-md-5 col-sm-5">
                 <div class="picture">
                     <div class="image-slider">
-                                                                            <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
+                            <a>
+                                <img src="/tpl_guest/assets/img/Insurance-friendly-cars.jpg" alt="#">
                             </a><!-- /.slide -->
-                        <div class="cycle-pager"></div><!-- /.cycle-pager -->
                     </div><!-- /.image-slider -->
                 </div><!-- /.picture -->
             </div><!-- /.col-md-4 -->
@@ -493,7 +488,7 @@
 
                 <div class="content-inner">
                     <h1>
-                        <a href="detail.html">Elige</a>
+                        <a>Elige</a>
                     </h1>
                     <div class="description">
                         <p>
@@ -509,10 +504,9 @@
             <div class="col-lg-4 col-md-5 col-sm-5">
                 <div class="picture">
                     <div class="image-slider">
-                                                                            <a href="detail.html" class="slide">
-                                <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+                            <a>
+                                <img src="/tpl_guest/assets/img/drivenow.jpg" alt="#">
                             </a><!-- /.slide -->
-                        <div class="cycle-pager"></div><!-- /.cycle-pager -->
                     </div><!-- /.image-slider -->
                 </div><!-- /.picture -->
             </div><!-- /.col-md-4 -->
@@ -521,7 +515,7 @@
 
                 <div class="content-inner">
                     <h1>
-                        <a href="detail.html">Encuentra</a>
+                        <a>Encuentra</a>
                     </h1>
                     <div class="description">
                         <p>
@@ -537,10 +531,9 @@
             <div class="col-lg-4 col-md-5 col-sm-5">
                 <div class="picture">
                     <div class="image-slider">
-                                                                            <a href="detail.html" class="slide">
+                            <a>
                                 <img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
-                            </a><!-- /.slide -->
-                        <div class="cycle-pager"></div><!-- /.cycle-pager -->
+                            </a><!-- /.slide -->                      
                     </div><!-- /.image-slider -->
                 </div><!-- /.picture -->
             </div><!-- /.col-md-4 -->
@@ -549,7 +542,7 @@
 
                 <div class="content-inner">
                     <h1>
-                        <a href="detail.html">Abre</a>
+                        <a>Conduce</a>
                     </h1>
 
                     <div class="description">
@@ -581,7 +574,7 @@
       </div>
 
       <div class="form-group">
-        <button class="send btn btn-primary btn-primary-color">Informame</button>
+        <button class="send btn btn-primary btn-primary-color">Informáme</button>
       </div>
     </form>
   </div>
@@ -651,105 +644,7 @@
 	</div><!-- /.block-inner -->
 </div><!-- /.block -->                        <div id="random-cars" class="random-cars block block-shadow white">
 
-	<div class="block-inner">
-		<div class="block-title">
-			<h3>Coches recientes</h3>
-		</div><!-- /.block-title -->
 
-		
-		<div class="row">
-							<div class="teaser-item-wrapper col-lg-12 col-md-12 col-sm-4">
-					<div class="teaser-item">
-    <div class="title">
-        <a href="detail.html">Toyota Landcruiser</a>
-    </div><!-- /.title -->
-
-    <div class="subtitle">
-        MX 234    </div><!-- /.subtitle -->
-
-    <div class="row">
-        <div class="col-sm-5 col-md-5 picture-wrapper">
-            <div class="picture">
-                                <a href="detail.html">
-                    <span class="hover">
-                        <span class="hover-inner">
-                            <i class="icon icon-normal-link"></i>
-                        </span><!-- /.hover-inner -->
-                    </span><!-- /.hover -->
-
-                    <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
-                </a>
-            </div><!-- /.picture -->
-        </div><!-- /.picture-wrapper -->
-
-        <div class="col-sm-7 col-md-7 content-wrapper ">
-            <div class="price">$9,799</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div><!-- /.content-wrapper -->
-    </div><!-- /.row -->
-</div><!-- /.teaser-item -->				</div><!-- /.teaser-item-wrapper -->
-							<div class="teaser-item-wrapper col-lg-12 col-md-12 col-sm-4">
-					<div class="teaser-item">
-    <div class="title">
-        <a href="detail.html">Toyota Verso</a>
-    </div><!-- /.title -->
-
-    <div class="subtitle">
-        DPF Active    </div><!-- /.subtitle -->
-
-    <div class="row">
-        <div class="col-sm-5 col-md-5 picture-wrapper">
-            <div class="picture">
-                                <a href="detail.html">
-                    <span class="hover">
-                        <span class="hover-inner">
-                            <i class="icon icon-normal-link"></i>
-                        </span><!-- /.hover-inner -->
-                    </span><!-- /.hover -->
-
-                    <img src="/tpl_guest/assets/img/content/toyota7.jpg" alt="#">
-                </a>
-            </div><!-- /.picture -->
-        </div><!-- /.picture-wrapper -->
-
-        <div class="col-sm-7 col-md-7 content-wrapper ">
-            <div class="price">$9,799</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div><!-- /.content-wrapper -->
-    </div><!-- /.row -->
-</div><!-- /.teaser-item -->				</div><!-- /.teaser-item-wrapper -->
-							<div class="teaser-item-wrapper col-lg-12 col-md-12 col-sm-4">
-					<div class="teaser-item">
-    <div class="title">
-        <a href="detail.html">Toyota Verso</a>
-    </div><!-- /.title -->
-
-    <div class="subtitle">
-        Valvematic Active    </div><!-- /.subtitle -->
-
-    <div class="row">
-        <div class="col-sm-5 col-md-5 picture-wrapper">
-            <div class="picture">
-                                <a href="detail.html">
-                    <span class="hover">
-                        <span class="hover-inner">
-                            <i class="icon icon-normal-link"></i>
-                        </span><!-- /.hover-inner -->
-                    </span><!-- /.hover -->
-
-                    <img src="/tpl_guest/assets/img/content/toyota4.jpg" alt="#">
-                </a>
-            </div><!-- /.picture -->
-        </div><!-- /.picture-wrapper -->
-
-        <div class="col-sm-7 col-md-7 content-wrapper ">
-            <div class="price">$9,799</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div><!-- /.content-wrapper -->
-    </div><!-- /.row -->
-</div><!-- /.teaser-item -->				</div><!-- /.teaser-item-wrapper -->
-					</div><!-- /.row -->
-	</div><!-- /.block-inner -->
 </div><!-- /.block -->                    </div><!-- /.sidebar -->
                 </div><!-- /.col-md-3 -->
             </div><!-- /.row -->
@@ -765,7 +660,7 @@
 			</div>
 
 			<div class="heading">
-				<h2>Nuestros clientes satisfechos</h2>
+				<h2>Opiniones de críticos</h2>
 			</div><!-- /.heading -->
 
 			<div class="line">
@@ -781,7 +676,7 @@
 					<div class="row">
 						<div class="col-sm-3 col-md-4">
 							<div class="picture">
-								<img src="/tpl_guest/assets/img/testimonials-1.png" alt="#">
+								<img src="/tpl_guest/assets/img/oracle-logo.png" alt="#">
 							</div><!-- /.picture -->
 						</div><!-- /.col-md-4 -->
 
@@ -789,8 +684,7 @@
 							<div class="description quote">
 								<p>
 									<i>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula ipsum, ornare ac augue
-										in, suscipit pretium purus. Vestibulum turpis felis, gravida ac justo.
+										Revolucionaria idea y muy bien implementada, especialmente en el aspecto de planificación e Ingeniería de Software, Excelente!.
 									</i>
 								</p>
 							</div><!-- /.description -->
@@ -804,7 +698,7 @@
 							</div><!-- /.star-rating -->
 
 							<div class="author">
-								<strong>Fanny Harley</strong>
+								<strong>Oracle</strong>
 							</div><!-- /.author -->
 						</div><!-- /.col-md-8 -->
 					</div><!-- /.row -->
@@ -819,7 +713,7 @@
 					<div class="row">
 						<div class="col-sm-3 col-md-4">
 							<div class="picture">
-								<img src="/tpl_guest/assets/img/testimonials-2.png" alt="#">
+								<img src="/tpl_guest/assets/img/WiredLogo.png" alt="#">
 							</div><!-- /.picture -->
 						</div><!-- /.col-md-4 -->
 
@@ -827,8 +721,8 @@
 							<div class="description quote">
 								<p>
 									<i>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula ipsum, ornare ac augue
-										in, suscipit pretium purus. Vestibulum turpis felis, gravida ac justo.
+										
+                                        Es el futuro de la movilidad, visionarios y emprendedores, deseamos todo lo mejor al equipo de Electrificar! 
 									</i>
 								</p>
 							</div><!-- /.description -->
@@ -837,12 +731,12 @@
 								<input name="star1" type="radio" class="star icon-normal-star" checked="checked" disabled="disabled">
 								<input name="star1" type="radio" class="star icon-normal-star" checked="checked" disabled="disabled">
 								<input name="star1" type="radio" class="star icon-normal-star" checked="checked" disabled="disabled">
-								<input name="star1" type="radio" class="star icon-normal-star" disabled="disabled">
-								<input name="star1" type="radio" class="star icon-normal-star" disabled="disabled">
+								<input name="star1" type="radio" class="star icon-normal-star" checked="checked" disabled="disabled">
+								<input name="star1" type="radio" class="star icon-normal-star" checked="checked" disabled="disabled">
 							</div><!-- /.star-rating -->
 
 							<div class="author">
-								<strong>Chavi Ernanéz</strong>
+								<strong>WIRED MAGAZINE</strong>
 							</div><!-- /.author -->
 						</div><!-- /.col-md-8 -->
 					</div><!-- /.row -->
@@ -955,47 +849,47 @@
 		<div class="row">
 			<div class="col-sm-2 col-md-2">
 				<div class="partner">
-					<a href="#">
-						<img src="/tpl_guest/assets/img/partners/volkswagen.png" alt="#">
+					<a href="http://www.intel.com">
+						<img src="/tpl_guest/assets/img/partners/intel.jpg" alt="#">
 					</a>
 				</div><!-- /.partner -->
 			</div><!-- /.col-md-2 -->
 
 			<div class="col-sm-2 col-md-2">
 				<div class="partner">
-					<a href="#">
-						<img src="/tpl_guest/assets/img/partners/ford.png" alt="#">
+					<a href="http://www.teslamotors.com">
+						<img src="/tpl_guest/assets/img/partners/tesla.png" alt="#">
 					</a>
 				</div><!-- /.partner -->
 			</div><!-- /.col-md-2 -->
 
 			<div class="col-sm-2 col-md-2">
 				<div class="partner">
-					<a href="#">
-						<img src="/tpl_guest/assets/img/partners/honda.png" alt="#">
+					<a href="http://www.honda.com">
+						<img src="/tpl_guest/assets/img/partners/honda.gif" alt="#">
 					</a>
 				</div><!-- /.partner -->
 			</div><!-- /.col-md-2 -->
 
 			<div class="col-sm-2 col-md-2">
 				<div class="partner">
-					<a href="#">
-						<img src="/tpl_guest/assets/img/partners/mercedes.png" alt="#">
+					<a href="http://www.ucm.es">
+						<img src="/tpl_guest/assets/img/partners/logo-ucm.jpg" alt="#">
 					</a>
 				</div><!-- /.partner -->
 			</div><!-- /.col-md-2 -->
 
 			<div class="col-sm-2 col-md-2">
 				<div class="partner">
-					<a href="#">
-						<img src="/tpl_guest/assets/img/partners/toyota.png" alt="#">
+					<a href="http://www.madrid.org">
+						<img src="/tpl_guest/assets/img/partners/madrid.jpg" alt="#">
 					</a>
 				</div><!-- /.partner -->
 			</div><!-- /.col-md-2 -->
 
 			<div class="col-sm-2 col-md-2">
 				<div class="partner">
-					<a href="#">
+					<a href="http://www.bmw.com">
 						<img src="/tpl_guest/assets/img/partners/bmw.png" alt="#">
 					</a>
 				</div><!-- /.partner -->
