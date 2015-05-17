@@ -4,7 +4,7 @@
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="block random-cars">
 					<div class="title">
-						<h2>Proximos Modelos</h2>
+						<h2>Próximos Modelos</h2>
 					</div><!-- /.title -->
 
 
@@ -15,7 +15,7 @@
 							        <a href="detail.html">Volskwagen Golf GTI</a>
 							    </div><!-- /.title -->
 
-		    					<div class="subtitle">Autonomia 100KM</div><!-- /.subtitle -->
+		    					<div class="subtitle">Autonomía 100KM</div><!-- /.subtitle -->
 
 							    <div class="row">
 							        <div class="picture-wrapper col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -46,7 +46,7 @@
 							        <a href="detail.html">Toyota GT86</a>
 							    </div><!-- /.title -->
 
-		    					<div class="subtitle">Autonomia 80km </div><!-- /.subtitle -->
+		    					<div class="subtitle">Autonomía 80KM </div><!-- /.subtitle -->
 
 							    <div class="row">
 							        <div class="picture-wrapper col-lg-4 col-md-4 col-sm-4 col-xs-4">

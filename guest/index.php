@@ -14,7 +14,7 @@
 
 	// La parte de cliente estará libre de caracteres raros en sus entradas de datos
 	prevent_sqlinjection ();
-	
+
 	// Recuperamos el controlador
 	$ack = load_controller($_REQUEST["controller"],"guest");
 	if($ack->resultado == false){

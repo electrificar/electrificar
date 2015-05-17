@@ -176,7 +176,7 @@
 				<ol class="breadcrumb pull-left">
 		  			<li><a href="#">Inicio</a></li>
 		  			<li><a href="#">Coches destacados</a></li>
-		  			<li class="active">Buy</li>
+		  			<li class="active">Alquiler</li>
 				</ol>
 
 				<div class="contact pull-right">

@@ -1,71 +1,36 @@
 {include file="../common/header.tpl"}
 
-<div class="infobar">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<ol class="breadcrumb pull-left">
-		  			<li><a href="#">Home</a></li>
-		  			<li><a href="#">Featured Cars</a></li>
-		  			<li class="active">Buy</li>
-				</ol>
-
-				<div class="contact pull-right">
-					<div class="contact-item phone">
-						<div class="label"><i class="icon icon-normal-mobile-phone"></i></div><!-- /.label -->
-						<div class="value">123-456-789</div><!-- /.value -->
-					</div><!-- /.phone -->
-
-					<div class="contact-item mail">
-						<div class="label"><i class="icon icon-normal-mail"></i></div><!-- /.label -->
-						<div class="value"><a href="mailto:example@example.com">example@example.com</a></div><!-- /.value -->
-					</div><!-- /.mail -->
-
-					<div class="contact-item opening">
-						<div class="label"><i class="icon icon-normal-clock"></i></div><!-- /.label -->
-						<div class="value">Mon - Sun: 8:00 - 16:00</div><!-- /.value -->
-					</div><!-- /.opening -->
-				</div><!-- /.contact -->
-			</div><!-- /.col-md-12 -->
-		</div><!-- /.row -->
-	</div><!-- /.container -->
-</div><!-- /.infobar -->  <div id="content" class="page-rental">
+<div id="content" class="page-rental">
     <div id="progress" class="section">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-md-3">
                     <a class="progress-step done" href="rental-1.html">
                         <div class="circle"><i class="icon icon-normal-mark-tick"></i></div>
-                        <div class="title">Request</div>
+                        <div class="title">Usuario validado</div>
                     </a>
                 </div>
 
                 <div class="col-sm-3 col-md-3">
                     <a class="progress-step active" href="rental-2.html">
                         <div class="circle">2</div>
-                        <div class="title">Select your car</div>
+                        <div class="title">Escoge tu coche</div>
                     </a>
                 </div>
 
                 <div class="col-sm-3 col-md-3">
                     <a class="progress-step inactive" href="rental-3.html">
                         <div class="active circle">3</div>
-                        <div class="title">Extras</div>
-                    </a>
-                </div>
-
-                <div class="col-sm-3 col-md-3">
-                    <a class="progress-step inactive" href="rental-4.html">
-
-                        <div class="circle">4</div>
                         <div class="title">Checkout</div>
                     </a>
                 </div>
+
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </div>
+    
     <div class="section gray-light">
         <div class="container">
             <div class="col-md-9">
@@ -79,17 +44,17 @@
                                     <div class="form-group">
                                         <div class="col-lg-5 col-md-5 col-sm-5 ">
                                             <p>
-                                                56 results found
+                                                56 resultados encontrados
                                             </p>
                                         </div>
 
-                                        <label class="control-label col-lg-3 col-md-3 col-sm-3">Order by</label>
+                                        <label class="control-label col-lg-3 col-md-3 col-sm-3">Ordenar por:</label>
 
                                         <div class="col-lg-4 col-md-4 col-sm-4">
                                             <select id="sort" class="form-control" name="sort">
-                                                <option>Price</option>
-                                                <option>Year</option>
-                                                <option>Engine</option>
+                                                <option>Precio</option>
+                                                <option>Año</option>
+                                                <option>Nivel de carga</option>
                                             </select>
                                         </div>
                                     </div>
@@ -111,14 +76,14 @@
             <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
                 <div class="picture">
                     <div class="image-slider">
-                                                    <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota3.jpg" alt="#">
+                            <a href="detail.html" class="slide">
+                                <img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
                             </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota4.jpg" alt="#">
+                            <a href="detail.html" class="slide">
+                                <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                             </a><!-- /.slide -->
-                                                    <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota5.jpg" alt="#">
+                            <a href="detail.html" class="slide">
+                                <img src="tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                             </a><!-- /.slide -->
                         
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -126,7 +91,7 @@
 
 
                     <div class="favorite">
-                        <a href="#"><i class="icon icon-outline-thumb-up"></i> Favorite</a>
+                        <a href="#"><i class="icon icon-outline-thumb-up"></i> Favorito</a>
                     </div><!-- /.like -->
                 </div><!-- /.picture -->
             </div><!-- /.col-md-4 -->
@@ -134,7 +99,7 @@
             <div class="col-lg-8 col-md-7 cols-sm-12 col-xs-12">
                 <div class="content-inner">
                     <div class="select-car">
-                        <a href="rental-3.html" class="btn btn-primary">Select</a>
+                        <a href="rental-3.html" class="btn btn-primary">Seleccionar</a>
 
                         <p>Lorem ipsum dolor site amet.</p>
                     </div><!-- /.picture -->
@@ -145,10 +110,10 @@
 
                     <div class="subtitle">Valvematic Active</div><!-- /.subtitle -->
 
-                    <div class="show-on-map"><i class="icon icon-normal-pointer"></i> Show on map</div>
+                    <div class="show-on-map"><i class="icon icon-normal-pointer"></i> Localizar en mapa</div>
 
                     <div class="price">$16,999</div><!-- /.price -->
-                    <div class="class"><span class="label">Class:</span> Sport</div><!-- /.class -->
+                    <div class="class"><span class="label">Clase:</span> Deportivo</div><!-- /.class -->
 
                     <div class="meta">
                         <ul>
@@ -173,16 +138,16 @@
                 <div class="picture">
                     <div class="image-slider">
                                                     <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota.jpg" alt="#">
+                                <img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota1.jpg" alt="#">
+                                <img src="tpl_guest/assets/img/content/toyota1.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota2.jpg" alt="#">
+                                <img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota7.jpg" alt="#">
+                                <img src="tpl_guest/assets/img/content/toyota7.jpg" alt="#">
                             </a><!-- /.slide -->
                         
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -190,7 +155,7 @@
 
 
                     <div class="favorite">
-                        <a href="#"><i class="icon icon-outline-thumb-up"></i> Favorite</a>
+                        <a href="#"><i class="icon icon-outline-thumb-up"></i> Favorito</a>
                     </div><!-- /.like -->
                 </div><!-- /.picture -->
             </div><!-- /.col-md-4 -->
@@ -198,7 +163,7 @@
             <div class="col-lg-8 col-md-7 cols-sm-12 col-xs-12">
                 <div class="content-inner">
                     <div class="select-car">
-                        <a href="rental-3.html" class="btn btn-primary">Select</a>
+                        <a href="rental-3.html" class="btn btn-primary">Seleccionar</a>
 
                         <p>Lorem ipsum dolor site amet.</p>
                     </div><!-- /.picture -->
@@ -209,10 +174,10 @@
 
                     <div class="subtitle">DPF Active</div><!-- /.subtitle -->
 
-                    <div class="show-on-map"><i class="icon icon-normal-pointer"></i> Show on map</div>
+                    <div class="show-on-map"><i class="icon icon-normal-pointer"></i> Localizar en mapa</div>
 
                     <div class="price">$16,999</div><!-- /.price -->
-                    <div class="class"><span class="label">Class:</span> Economic</div><!-- /.class -->
+                    <div class="class"><span class="label">Clase:</span> Económico</div><!-- /.class -->
 
                     <div class="meta">
                         <ul>
@@ -223,7 +188,7 @@
                                 <i class="icon  icon-normal-car-door"></i> 5                            </li>
 
                             <li>
-                                <i class="icon  icon-normal-transmission"></i> Automatic                            </li>
+                                <i class="icon  icon-normal-transmission"></i> Automático                            </li>
                         </ul>
                     </div><!-- /.meta -->
                 </div><!-- /.content-inner -->
@@ -237,16 +202,16 @@
                 <div class="picture">
                     <div class="image-slider">
                                                     <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota3.jpg" alt="#">
+                                <img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota4.jpg" alt="#">
+                                <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota5.jpg" alt="#">
+                                <img src="tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota6.jpg" alt="#">
+                                <img src="tpl_guest/assets/img/content/toyota6.jpg" alt="#">
                             </a><!-- /.slide -->
                         
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -254,7 +219,7 @@
 
 
                     <div class="favorite">
-                        <a href="#"><i class="icon icon-outline-thumb-up"></i> Favorite</a>
+                        <a href="#"><i class="icon icon-outline-thumb-up"></i> Favorito</a>
                     </div><!-- /.like -->
                 </div><!-- /.picture -->
             </div><!-- /.col-md-4 -->
@@ -262,7 +227,7 @@
             <div class="col-lg-8 col-md-7 cols-sm-12 col-xs-12">
                 <div class="content-inner">
                     <div class="select-car">
-                        <a href="rental-3.html" class="btn btn-primary">Select</a>
+                        <a href="rental-3.html" class="btn btn-primary">Seleccionar</a>
 
                         <p>Lorem ipsum dolor site amet.</p>
                     </div><!-- /.picture -->
@@ -273,10 +238,10 @@
 
                     <div class="subtitle">Active</div><!-- /.subtitle -->
 
-                    <div class="show-on-map"><i class="icon icon-normal-pointer"></i> Show on map</div>
+                    <div class="show-on-map"><i class="icon icon-normal-pointer"></i> Localizar en mapa</div>
 
                     <div class="price">$16,999</div><!-- /.price -->
-                    <div class="class"><span class="label">Class:</span> Economic</div><!-- /.class -->
+                    <div class="class"><span class="label">Clase:</span> Económico</div><!-- /.class -->
 
                     <div class="meta">
                         <ul>
@@ -301,13 +266,13 @@
                 <div class="picture">
                     <div class="image-slider">
                                                     <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota3.jpg" alt="#">
+                                <img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota4.jpg" alt="#">
+                                <img src="tpl_guest/assets/img/content/toyota4.jpg" alt="#">
                             </a><!-- /.slide -->
                                                     <a href="detail.html" class="slide">
-                                <img src="assets/img/content/toyota5.jpg" alt="#">
+                                <img src="tpl_guest/assets/img/content/toyota5.jpg" alt="#">
                             </a><!-- /.slide -->
                         
                         <div class="cycle-pager"></div><!-- /.cycle-pager -->
@@ -315,7 +280,7 @@
 
 
                     <div class="favorite">
-                        <a href="#"><i class="icon icon-outline-thumb-up"></i> Favorite</a>
+                        <a href="#"><i class="icon icon-outline-thumb-up"></i> Favorito</a>
                     </div><!-- /.like -->
                 </div><!-- /.picture -->
             </div><!-- /.col-md-4 -->
@@ -323,7 +288,7 @@
             <div class="col-lg-8 col-md-7 cols-sm-12 col-xs-12">
                 <div class="content-inner">
                     <div class="select-car">
-                        <a href="rental-3.html" class="btn btn-primary">Select</a>
+                        <a href="rental-3.html" class="btn btn-primary">Seleccionar</a>
 
                         <p>Lorem ipsum dolor site amet.</p>
                     </div><!-- /.picture -->
@@ -334,10 +299,10 @@
 
                     <div class="subtitle">Valvematic Active</div><!-- /.subtitle -->
 
-                    <div class="show-on-map"><i class="icon icon-normal-pointer"></i> Show on map</div>
+                    <div class="show-on-map"><i class="icon icon-normal-pointer"></i> Localizar en mapa</div>
 
                     <div class="price">$16,999</div><!-- /.price -->
-                    <div class="class"><span class="label">Class:</span> Sport</div><!-- /.class -->
+                    <div class="class"><span class="label">Clase:</span> Deportivo</div><!-- /.class -->
 
                     <div class="meta">
                         <ul>
@@ -368,7 +333,7 @@
                 <div class="block block-shadow white filter-cars">
                     <div class="block-inner">
                         <div class="block-title">
-                            <h3>Your Search Criteria</h3>
+                            <h3>Tu criterio de búsqueda</h3>
                         </div>
                         <!-- /.block-title -->
 
@@ -378,13 +343,13 @@
                             <div class="form-section">
 
                                     <div class="form-group">
-                                        <label for="pickup-date">Pickup Date</label>
+                                        <label for="pickup-date">Fecha de inicio de alquiler</label>
                                         <input type="date" id="pickup-date" class="form-control">
                                     </div>
 
 
                                     <div class="form-group">
-                                        <label for="return-date">Return Date</label>
+                                        <label for="return-date">Fecha de fin de alquiler</label>
                                         <input type="date" id="return-date" class="form-control">
                                     </div>
 
@@ -409,16 +374,16 @@
 
                                 <div class="form-group">
                                     <select class="form-control" name="model">
-                                        <option>Model</option>
-                                        <option>Model 1</option>
-                                        <option>Model 2</option>
-                                        <option>Model 3</option>
+                                        <option>Modelo</option>
+                                        <option>Modelo 1</option>
+                                        <option>Modelo 2</option>
+                                        <option>Modelo 3</option>
                                     </select>
                                 </div>
 
                                 <div class="form-group">
                                     <select class="form-control" name="year">
-                                        <option>Year</option>
+                                        <option>Año</option>
                                         <option>2000</option>
                                         <option>2001</option>
                                         <option>2002</option>
@@ -439,10 +404,10 @@
 
                             <div class="form-section">
                                 <div class="checkbox">
-                                    <input type="checkbox"><label>Return car to same location</label>
+                                    <input type="checkbox"><label>Devolver coche al mismo punto de recogida</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox"><label>25+ age</label>
+                                    <input type="checkbox"><label>25+ años</label>
                                 </div>
                             </div>
 
@@ -462,20 +427,19 @@
                                 <div class="form-group">
                                     <div class="checkbox">
                                         <input type="checkbox" name="compact" id="type-compact"><label
-                                            for="type-compact">Compact
-                                            cars</label>
+                                            for="type-compact">Compacto</label>
                                     </div>
                                     <div class="checkbox">
-                                        <input type="checkbox" name="sport" id="type-sport"><label for="type-sport">Sport
-                                            cars</label>
+                                        <input type="checkbox" name="sport" id="type-sport"><label
+                                        	for="type-sport">Deportivo</label>
                                     </div>
                                     <div class="checkbox">
-                                        <input type="checkbox" name="sedan" id="type-sedan"><label for="type-sedan">Sedan
-                                            cars</label>
+                                        <input type="checkbox" name="sedan" id="type-sedan"><label
+                                        	for="type-sedan">Sedán</label>
                                     </div>
                                     <div class="checkbox">
                                         <input type="checkbox" name="van-and-mini" id="type-van-and-mini"><label
-                                            for="type-van-and-mini">Van & Minibus</label>
+                                            for="type-van-and-mini">Van y/o Minibus</label>
                                     </div>
                                 </div>
                             </div>
@@ -517,7 +481,7 @@
                             </div>
 
                             <div class="form-group">
-                                <button class="btn btn-primary">Search</button>
+                                <button class="btn btn-primary">Buscar</button>
                             </div>
                         </form>
                     </div>
