@@ -28,7 +28,7 @@
         	$Usuario = new Usuario($this->conn);
         	
         	//fuerzo el tipo
-        	$_REQUEST['tipo'] = $_REQUEST['type_user'];
+        	$_REQUEST['tipo'] = 3;
         	
         	//si no viene la activacion es que lo han desactivado
         	if(!isset($_REQUEST['activacion'])){
@@ -81,7 +81,7 @@
         	}
         	
         	//redirijo
-        	header("location: /guest/usuarios/".$_REQUEST['type_user_label']);
+        	header("location: /crear_usuario/");
         	die();
         }       
         
