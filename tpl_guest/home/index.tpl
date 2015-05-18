@@ -902,5 +902,6 @@
         </div><!-- /.container -->
     </div><!-- /.section -->
 </div><!-- /#content -->
-
+    </div>
+</div>
 {include file="../common/footer.tpl"}
