@@ -25,7 +25,7 @@
                             </div>
                             <!-- /.block-title -->
 
-                            <form method="post" action="http://html.carat.pragmaticmates.com/rental-1.html?">
+                            <form method="post" action="/guardar_usuario/">
                                 <div class="row">
                                 
                                     <div class="col-md-6">
@@ -38,7 +38,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="return-date">Password</label>
-                                            <input value="{$usuario->password}" data-required="true" name="password" class="input-sm input-s form-control" size="16" type="text"  >
+                                            <input value="{$usuario->password}" data-required="true" name="password" class="input-sm input-s form-control" size="16" type="password">
                                         </div>
                                     </div>
                                     
@@ -129,7 +129,7 @@
                                 </div>
 
                                 <div class="form-group button-group">
-                                    <a href="rental-2.html" class="btn btn-primary">Continuar</a>
+                                    <button type="submit" class="btn btn-primary">Guardar</button>
                                 </div>
                             </form>
                         </div>

@@ -105,6 +105,8 @@
     RewriteRule ^magazine_coche/$ /guest/index.php?controller=magazine&action=magazine&%{QUERY_STRING} [L]
     RewriteRule ^info_contacto/$ /guest/index.php?controller=aboutUs&action=aboutUs&%{QUERY_STRING} [L]
     
+    RewriteRule ^guardar_usuario/$ /guest/index.php?controller=usuario&action=update_user&%{QUERY_STRING} [L]
+    
 
 </IfModule>
 

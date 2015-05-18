@@ -11,7 +11,7 @@
         <div class="col-sm-8 col-md-8">
             <div id="magazine-slider">
                 <div class="slide">                    
-                    <img src="tpl_guest/assets/img/magazine/magazine-slider-1.jpg" class="img-responsive" alt="#">
+                    <img src="/tpl_guest/assets/img/magazine/magazine-slider-1.jpg" class="img-responsive" alt="#">
 
                     <div class="inline-description">
                         <div class="title">Test Drive Toyota Hilux</div>
@@ -20,7 +20,7 @@
                 </div><!-- /.slide -->
 
                 <div class="slide">
-                    <img src="tpl_guest/assets/img/magazine/magazine-slider-2.jpg" class="img-responsive" alt="#">
+                    <img src="/tpl_guest/assets/img/magazine/magazine-slider-2.jpg" class="img-responsive" alt="#">
 
                     <div class="inline-description">
                         <div class="title">Toyota Landcruiser</div>
@@ -29,7 +29,7 @@
                 </div><!-- /.slide -->
 
                 <div class="slide">
-                    <img src="tpl_guest/assets/img/magazine/magazine-slider-3.jpg" class="img-responsive" alt="#">
+                    <img src="/tpl_guest/assets/img/magazine/magazine-slider-3.jpg" class="img-responsive" alt="#">
 
                     <div class="inline-description">
                         <div class="title">Toyota GT 910 Ratings</div>
@@ -38,7 +38,7 @@
                 </div><!-- /.slide -->
 
                 <div class="slide">
-                    <img src="tpl_guest/assets/img/magazine/magazine-slider-4.jpg" class="img-responsive" alt="#">
+                    <img src="/tpl_guest/assets/img/magazine/magazine-slider-4.jpg" class="img-responsive" alt="#">
 
                     <div class="inline-description">
                         <div class="title">Toyota Yaris Price Drop</div>
@@ -47,7 +47,7 @@
                 </div><!-- /.slide -->
 
                 <div class="slide">
-                    <img src="tpl_guest/assets/img/magazine/magazine-slider-1.jpg" class="img-responsive" alt="#">
+                    <img src="/tpl_guest/assets/img/magazine/magazine-slider-1.jpg" class="img-responsive" alt="#">
 
                     <div class="inline-description">
                         <div class="title">Toyota Hilux</div>

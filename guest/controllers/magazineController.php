@@ -9,7 +9,7 @@
         	$this->layout->assign('mensaje', $mensaje);
         	
         	
-            $this->display('/magazine/magazine.tpl');
+            $this->display('/vehicle/magazine.tpl');
         }
         
 	}
