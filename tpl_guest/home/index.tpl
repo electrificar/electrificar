@@ -1,4 +1,5 @@
 {include file="../common/header.tpl"}
+
 <div class="highlighted-wrapper gray">
     <div class="highlighted section">
         <div class="container">
@@ -185,7 +186,7 @@
                                                         <select name="model" class="form-control">
                                                             <option>Carga > 75%</option>
                                                             <option>Carga > 50%</option>
-                                                            <option>Carga > 26%</option>
+                                                            <option>Carga > 25%</option>
                                                         </select>
                                                     </div><!-- /.form-group -->
                                                 </div><!-- /.row -->
@@ -901,4 +902,5 @@
         </div><!-- /.container -->
     </div><!-- /.section -->
 </div><!-- /#content -->
+
 {include file="../common/footer.tpl"}

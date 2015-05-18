@@ -27,7 +27,7 @@
 							                		</span><!-- /.hover-inner -->
 							                	</span><!-- /.hover -->
 
-							                    <img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+							                    <img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
 							                </a>
 							            </div><!-- /.picture -->
 							        </div><!-- /.picture-wrapper -->
@@ -58,7 +58,7 @@
 							                		</span><!-- /.hover-inner -->
 							                	</span><!-- /.hover -->
 
-							                    <img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+							                    <img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 							                </a>
 							            </div><!-- /.picture -->
 							        </div><!-- /.picture-wrapper -->
@@ -147,7 +147,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 											<span class="badge">Destacado</span>
 										</a>
 									</div><!-- /.col-md-4 -->
@@ -160,7 +160,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota1.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -172,7 +172,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 								</div><!-- /.row -->
@@ -186,7 +186,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -198,7 +198,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 											<span class="badge">Mejor precio</span>
 										</a>
 									</div><!-- /.col-md-4 -->
@@ -211,7 +211,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota1.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 								</div><!-- /.row -->
@@ -225,7 +225,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 											<span class="badge">Más alquilado</span>
 										</a>
 									</div><!-- /.col-md-4 -->
@@ -238,7 +238,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota1.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -250,7 +250,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 								</div><!-- /.row -->
@@ -266,7 +266,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -278,7 +278,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
 											<span class="badge">Calidad A+</span>
 										</a>
 									</div><!-- /.col-md-4 -->
@@ -291,7 +291,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 								</div><!-- /.row -->
@@ -305,7 +305,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -317,7 +317,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota1.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -329,7 +329,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 											<span class="badge">Más valorado</span>
 										</a>
 									</div><!-- /.col-md-4 -->
@@ -344,7 +344,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 											<span class="badge">Certificado</span>
 										</a>
 									</div><!-- /.col-md-4 -->
@@ -357,7 +357,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -369,7 +369,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 								</div><!-- /.row -->
@@ -385,7 +385,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
 											<span class="badge">Más alquilado</span>
 										</a>
 									</div><!-- /.col-md-4 -->
@@ -398,7 +398,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -410,7 +410,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota1.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 								</div><!-- /.row -->
@@ -424,7 +424,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota2.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota2.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -436,7 +436,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
 											<span class="badge">Mejor precio</span>
 										</a>
 									</div><!-- /.col-md-4 -->
@@ -449,7 +449,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 								</div><!-- /.row -->
@@ -463,7 +463,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota3.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota3.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -475,7 +475,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota.jpg" alt="#">
 										</a>
 									</div><!-- /.col-md-4 -->
 
@@ -487,7 +487,7 @@
 						                		</span><!-- /.hover-inner -->
 						                	</span><!-- /.hover -->
 
-											<img src="tpl_guest/assets/img/content/toyota1.jpg" alt="#">
+											<img src="/tpl_guest/assets/img/content/toyota1.jpg" alt="#">
 											<span class="badge">Alta calidad</span>
 										</a>
 									</div><!-- /.col-md-4 -->																		
@@ -517,13 +517,13 @@
 					</div><!-- /.pull-left -->
 
 					<ul class="nav nav-pills">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Usuarios</a></li>
+						<li><a href="/home/">Inicio</a></li>
+						<li><a href="/crear_usuario/">Usuarios</a></li>
 						<li><a href="#">Alquileres</a></li>
-						<li><a href="#">Vehículos</a></li>
+						<li><a href="/magazine_coche/">Vehículos</a></li>
 						<li><a href="#">Zonas</a></li>
 						<li><a href="#">Tarifas</a></li>
-						<li><a href="#">Contacto</a></li>
+						<li><a href="/info_contacto/">Contacto</a></li>
 					</ul><!-- /.nav -->
 				</div><!-- /.col-md-12 -->
 			</div><!-- /.row -->
@@ -532,25 +532,25 @@
 </footer><!-- /#footer -->
 
 
-<script src="tpl_guest/assets/js/jquery.js"></script>
+<script src="/tpl_guest/assets/js/jquery.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.js"></script>
-<script src="tpl_guest/assets/js/jquery.ui.js"></script>
-<script src="tpl_guest/assets/js/bootstrap.js"></script>
-<script src="tpl_guest/assets/js/cycle.js"></script>
-<script src="tpl_guest/libraries/jquery.bxslider/jquery.bxslider.js"></script>
-<script src="tpl_guest/libraries/easy-tabs/lib/jquery.easytabs.min.js"></script>
-<script src="tpl_guest/libraries/chosen/chosen.jquery.js"></script>
-<script src="tpl_guest/libraries/star-rating/jquery.rating.js"></script>
-<script src="tpl_guest/libraries/colorbox/jquery.colorbox-min.js"></script>
-<script src="tpl_guest/libraries/jslider/bin/jquery.slider.min.js"></script>
-<script src="tpl_guest/libraries/ezMark/js/jquery.ezmark.js"></script>
+<script src="/tpl_guest/assets/js/jquery.ui.js"></script>
+<script src="/tpl_guest/assets/js/bootstrap.js"></script>
+<script src="/tpl_guest/assets/js/cycle.js"></script>
+<script src="/tpl_guest/libraries/jquery.bxslider/jquery.bxslider.js"></script>
+<script src="/tpl_guest/libraries/easy-tabs/lib/jquery.easytabs.min.js"></script>
+<script src="/tpl_guest/libraries/chosen/chosen.jquery.js"></script>
+<script src="/tpl_guest/libraries/star-rating/jquery.rating.js"></script>
+<script src="/tpl_guest/libraries/colorbox/jquery.colorbox-min.js"></script>
+<script src="/tpl_guest/libraries/jslider/bin/jquery.slider.min.js"></script>
+<script src="/tpl_guest/libraries/ezMark/js/jquery.ezmark.js"></script>
 
-<script type="text/javascript" src="tpl_guest/libraries/flot/jquery.flot.js"></script>
-<script type="text/javascript" src="tpl_guest/libraries/flot/jquery.flot.canvas.js"></script>
-<script type="text/javascript" src="tpl_guest/libraries/flot/jquery.flot.resize.js"></script>
-<script type="text/javascript" src="tpl_guest/libraries/flot/jquery.flot.time.js"></script>
+<script type="text/javascript" src="/tpl_guest/libraries/flot/jquery.flot.js"></script>
+<script type="text/javascript" src="/tpl_guest/libraries/flot/jquery.flot.canvas.js"></script>
+<script type="text/javascript" src="/tpl_guest/libraries/flot/jquery.flot.resize.js"></script>
+<script type="text/javascript" src="/tpl_guest/libraries/flot/jquery.flot.time.js"></script>
 
 
 <script src="http://maps.googleapis.com/maps/api/js?sensor=true&amp;v=3.13"></script>
-<script src="tpl_guest/js/carat.js"></script></body>
+<script src="/tpl_guest/js/carat.js"></script></body>
 </html>

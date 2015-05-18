@@ -7,7 +7,7 @@
                 <div class="col-md-6">
                     <div class="teaser">
                         <div class="title">
-                            <h1>Creaté tu<br/>propio usuario</h1>
+                            <h1>Modifica tus<br/>datos de usuario</h1>
                         </div><!-- /.title -->
 
                         <p>

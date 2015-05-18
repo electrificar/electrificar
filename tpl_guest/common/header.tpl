@@ -105,15 +105,15 @@
 
 					<nav class="collapse navbar-collapse navbar-collapse" role="navigation">
 						<ul class="navigation">
-						<li><a href="index.html">Inicio</a></li>
+						<li><a href="/home/">Inicio</a></li>
 						
 						<li class="menuparent has-regularmenu">
 							<a href="#">Usuarios</a>
 
 							<div class="regularmenu">
 								<ul class="regularmenu-inner">
-									<li><a href="frm_user.tpl"><strong>1.</strong> Crear usuario</a></li>
-									<li><a href="rental-1.html"><strong>2.</strong> Editar datos del usuario</a></li>
+									<li><a href="/crear_usuario/"><strong>1.</strong> Crear usuario</a></li>
+									<li><a href="/modificar_usuario/"><strong>2.</strong> Editar datos del usuario</a></li>
 								</ul><!-- /.regularmenu-inner -->
 							</div><!-- /.regularmenu -->
 						</li>						
@@ -123,7 +123,7 @@
 
 							<div class="regularmenu">
 								<ul class="regularmenu-inner">
-									<li><a href="rental-1.html"><strong>1.</strong> Solicitar alquiler</a></li>
+									<li><a href="/seleccionar_coche/"><strong>1.</strong> Solicitar alquiler</a></li>
 									<li><a href="rental-2.html"><strong>2.</strong> Ver historial de alquileres</a></li>
 								</ul><!-- /.regularmenu-inner -->
 							</div><!-- /.regularmenu -->
@@ -134,7 +134,7 @@
 
 							<div class="regularmenu">
 								<ul class="regularmenu-inner">
-									<li><a href="rental-1.html"><strong>1.</strong> Ver flota de vehículos</a></li>
+									<li><a href="/magazine_coche/"><strong>1.</strong> Ver flota de vehículos</a></li>
 								</ul><!-- /.regularmenu-inner -->
 							</div><!-- /.regularmenu -->
 						</li>
@@ -159,7 +159,7 @@
 							</div><!-- /.regularmenu -->
 						</li>
 
-						<li><a href="contact.html">Contacto</a></li>
+						<li><a href="/info_contacto/">Contacto</a></li>
 						</ul><!-- /.nav -->
 					</nav>
 				</div><!-- /.col-md-12 -->

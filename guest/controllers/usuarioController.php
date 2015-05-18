@@ -12,5 +12,16 @@
             $this->display('/user/frm_user.tpl');
         }
         
+		function frm_edit_user(){
+        	//trato las variables en el modelo
+        	$mensaje = "Hola Mundo";
+        	
+        	//enlace el modelo con la vista
+        	$this->layout->assign('mensaje', $mensaje);
+        	
+        	
+            $this->display('/user/frm_edit_user.tpl');
+        }
+        
 	}
 ?>
