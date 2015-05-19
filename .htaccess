@@ -113,6 +113,8 @@
     RewriteRule ^checkout_coche/$ /guest/index.php?controller=alquiler&action=frm_checkout&%{QUERY_STRING} [L]
     RewriteRule ^magazine_coche/$ /guest/index.php?controller=magazine&action=magazine&%{QUERY_STRING} [L]
     RewriteRule ^info_contacto/$ /guest/index.php?controller=aboutUs&action=aboutUs&%{QUERY_STRING} [L]
+    RewriteRule ^tarifas/$ /guest/index.php?controller=tarifa&action=list_tarifas&%{QUERY_STRING} [L]
+    RewriteRule ^zonas/?$ /guest/index.php?controller=zona&action=list_zonas&%{QUERY_STRING} [L]
     
     RewriteRule ^guardar_usuario/$ /guest/index.php?controller=usuario&action=update_user&%{QUERY_STRING} [L]
     

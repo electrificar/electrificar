@@ -144,7 +144,7 @@
 
 							<div class="regularmenu">
 								<ul class="regularmenu-inner">
-									<li><a href="rental-1.html"><strong>1.</strong> Consultar zonas</a></li>
+									<li><a href="/zonas/"><strong>1.</strong> Consultar zonas</a></li>
 								</ul><!-- /.regularmenu-inner -->
 							</div><!-- /.regularmenu -->
 						</li>
@@ -154,7 +154,7 @@
 
 							<div class="regularmenu">
 								<ul class="regularmenu-inner">
-									<li><a href="rental-1.html"><strong>1.</strong> Consultar tarifas</a></li>
+									<li><a href="/tarifas/"><strong>1.</strong> Consultar tarifas</a></li>
 								</ul><!-- /.regularmenu-inner -->
 							</div><!-- /.regularmenu -->
 						</li>

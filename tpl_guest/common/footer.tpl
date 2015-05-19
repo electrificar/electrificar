@@ -521,8 +521,8 @@
 						<li><a href="/crear_usuario/">Usuarios</a></li>
 						<li><a href="#">Alquileres</a></li>
 						<li><a href="/magazine_coche/">Vehículos</a></li>
-						<li><a href="#">Zonas</a></li>
-						<li><a href="#">Tarifas</a></li>
+						<li><a href="/zonas/">Zonas</a></li>
+						<li><a href="/tarifas/">Tarifas</a></li>
 						<li><a href="/info_contacto/">Contacto</a></li>
 					</ul><!-- /.nav -->
 				</div><!-- /.col-md-12 -->
