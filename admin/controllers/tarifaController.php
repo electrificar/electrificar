@@ -28,7 +28,7 @@ class tarifaController extends CController{
 		//asocio las variables a la vista
 		$this->layout->assign("filtros", $_REQUEST);
 		$this->layout->assign("tarifas", $tarifas);
-		$this->layout->assign("tarifa", "active");
+		$this->layout->assign("tarife", "active");
 		 
 		//cargo la vista
 		$this->display('/tarife/list.tpl'); 

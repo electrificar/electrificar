@@ -18,7 +18,9 @@
 				<div class="col-sm-12">
 					<section class="panel panel-default"> 
 					<header class="panel-heading header-busqueda"> 
-						<span class="label bg-danger pull-right m-t-xs">1 Alquilado</span> 
+						{if $alquilados>0}
+							<span class="label bg-danger pull-right m-t-xs">{$alquilados} Alquilado{if $alquilados>1}s{/if}</span>
+						{/if} 
 						<h4><i class="fa fa-search"></i> Búsqueda</h4>
 						<form id="vehicles-filter" role="form" class="form-inline" method="post" action="/admin/vehiculos/">
 							<input type="hidden" name="filtrar" value="true" />
@@ -66,13 +68,11 @@
 							{if $vehicles!=null}
 								{foreach from=$vehicles key=cid item=vehicle}
 									<tr>
-										<td><img style="height:30px;width: 30px; border: 2px solid rgb(238, 238, 238); border-radius: 40px;" src="/repositorio/{$vehicle->imagen}" />{$vehicle->marca} {$vehicle->modelo}{$vehicle->id_vehiculo}</td>
+										<td><img style="height:30px;width: 30px; border: 2px solid rgb(238, 238, 238); border-radius: 40px;" src="/repositorio/{$vehicle->imagen}" />{$vehicle->marca} {$vehicle->modelo} {$vehicle->id_vehiculo}</td>
 										<td>{$vehicle->matricula}</td>
 										<td>
-											<div
-												class="progress progress-xs active m-t-xs m-b-none">
-												<div class="progress-bar bg-{$vehicle->carga}" data-toggle="tooltip"
-													data-original-title="{$vehicle->porcentaje_carga}" style="width: {$vehicle->porcentaje_carga}"></div>
+											<div class="progress progress-xs active m-t-xs m-b-none">
+												<div class="progress-bar bg-{$vehicle->carga}" data-toggle="tooltip" data-original-title="{$vehicle->porcentaje_carga}" style="width: {$vehicle->porcentaje_carga}"></div>
 											</div>
 										</td>
 										<td {if $vehicle->seguro_pasado}title="Seguro caducado" style="cursor:help;" style="color:red;" class="bg-danger"{/if}>{$vehicle->fecha_vigencia_seguro}</td>

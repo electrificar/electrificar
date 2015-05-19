@@ -19,6 +19,13 @@
         var $current = index+1;
         var $percent = ($current/$total) * 100;
         $('#wizardform').find('.progress-bar').css({width:$percent+'%'});
+        if($current == 3){
+        	$(".next").hide();
+        	$(".last").show();
+        }else{
+        	$(".next").show();
+        	$(".last").hide();
+        }
       }
     });
 

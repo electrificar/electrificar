@@ -1,6 +1,48 @@
 <?php
 	class vehiculoController extends CController{
         
+		function search_vehicle(){
+			require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Vehiculo.php");
+        	$Vehiculo = new Vehiculo($this->conn);
+        	
+        	$filtros=array();
+        	anade_filtrado($filtros, "CONCAT(`modelo`, ' ', `marca`, ' ', `matricula`)", $_REQUEST['q'], "like");
+        	anade_filtrado($filtros, "disponible", 1, "="); //coches disponibles
+        	anade_filtrado($filtros, "mantenimiento", 0, "="); //que no estén en mantenimiento
+        	
+			$ack_vehiculos = $Vehiculo->get_vehiculos($filtros);
+			
+        	if($ack_vehiculos->resultado){
+        		$res_vehiculos = $ack_vehiculos->datos;
+        		
+        		$vehiculos = array();
+        		foreach($res_vehiculos as $key=>$vehiculo){
+        			$vehiculos[$key] 	 	 = array();
+        			$vehiculos[$key]['id_vehiculo'] 	= $vehiculo->id_vehiculo;
+        			$vehiculos[$key]['imagen'] 	 		= "/repositorio/".$vehiculo->imagen;
+        			$vehiculos[$key]['nombre'] 	 		= $vehiculo->marca." ".$vehiculo->modelo;
+        			$vehiculos[$key]['matricula'] 	 	= $vehiculo->matricula;
+        			$vehiculos[$key]['fecha_permiso']	= convertir_fecha_espanol($vehiculo->fecha_vigencia_seguro);
+	        		
+        			//carga simulada
+	        		$vehiculos[$key]['porcentaje_carga'] = rand(0, 100)."%";
+	        		if($vehiculos[$key]['porcentaje_carga'] < 100 and $vehiculos[$key]['porcentaje_carga'] >75){
+	        			$vehiculos[$key]['carga'] = "bg-success";
+	        		}else if($vehiculos[$key]['porcentaje_carga'] < 75 and $vehiculos[$key]['porcentaje_carga'] >50){
+	        			$vehiculos[$key]['carga'] = "bg-info";
+	        		}else if($vehiculos[$key]['porcentaje_carga'] < 50 and $vehiculos[$key]['porcentaje_carga'] >25){
+	        			$vehiculos[$key]['carga'] = "bg-warning";
+	        		}else if($vehiculos[$key]['porcentaje_carga'] < 25 and $vehiculos[$key]['porcentaje_carga'] >0){
+	        			$vehiculos[$key]['carga'] = "bg-danger";
+	        		}
+        		}
+        	}else{
+        		$vehiculos = array();
+        	}
+        	
+        	print_r(json_encode($vehiculos));
+		}
+		
 		/**
 		 * Sección de listado de vehículos
 		 */
@@ -67,7 +109,6 @@
         		}
         	}
         	
-        	//asocio las variables a la vista
         	$this->layout->assign("filtros", $_REQUEST);
         	$this->layout->assign("vehicles", $vehiculos);
         	$this->layout->assign("vehicle", "active");
@@ -157,8 +198,13 @@
         		$_REQUEST['imagen'] = uploadFile($_FILES['imagen']);
         	}
         	
+        	if($_REQUEST['id_vehiculo'] == ''){
+        		unset($_REQUEST['id_vehiculo']);
+        	}
+        	
         	//inserto/actualizo en base de datos
         	$ackVehiculo = $Vehiculo->update_vehiculo($_REQUEST);
+        	
         	//añado una notificacion
         	$this->add_notification($ackVehiculo);
         	

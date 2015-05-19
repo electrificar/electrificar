@@ -58,6 +58,19 @@ class CController {
         $this->layout->assign('languages', $languages);
         $this->layout->assign('language_selected', $_SESSION["lang"]);
 
+        //para saber los alquileres activos
+        require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Alquiler.php");
+        $Alquiler = new Alquiler($this->conn);
+        $filtros = array();
+        anade_filtrado($filtros, "fecha_fin_alquiler", "null", "is");
+         
+        $ack_alquileres = $Alquiler->get_alquileres($filtros);
+         
+         
+         
+        //asocio las variables a la vista
+        $this->layout->assign("alquilados", sizeof($ack_alquileres->datos));
+        
         // 
         $this->uri = $this->navigation->get_url_fija();
         $this->layout->assign('uri', $this->uri);

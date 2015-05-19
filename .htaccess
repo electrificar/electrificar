@@ -16,8 +16,16 @@
     # Redirecciones
     
     #alquileres
+    RewriteRule ^admin/alquilar-coche/?$ /admin/index.php?controller=alquiler&action=rent_car&%{QUERY_STRING} [L]
+    RewriteRule ^admin/alquileres/?$ /admin/index.php?controller=alquiler&action=list_rentals&%{QUERY_STRING} [L]
+    RewriteRule ^admin/añadir-alquiler/?$ /admin/index.php?controller=alquiler&action=frm_rental&%{QUERY_STRING} [L]
+    RewriteRule ^admin/editar-alquiler/(.*)/?$ /admin/index.php?controller=alquiler&action=frm_rental&id_alquiler=$1%{QUERY_STRING} [L]
+    RewriteRule ^admin/guardar-alquiler/?$ /admin/index.php?controller=alquiler&action=update_rental&%{QUERY_STRING} [L]
+    RewriteRule ^admin/finalizar-alquiler/(.*)/?$ /admin/index.php?controller=alquiler&action=stop_rental&id_alquiler=$1&%{QUERY_STRING} [L]
+    
     
     #vehiculos
+    RewriteRule ^admin/buscar-vehiculo/?$ /admin/index.php?controller=vehiculo&action=search_vehicle&%{QUERY_STRING} [L]
     RewriteRule ^admin/vehiculos/?$ /admin/index.php?controller=vehiculo&action=list_vehicles&%{QUERY_STRING} [L]
     RewriteRule ^admin/añadir-vehiculo/?$ /admin/index.php?controller=vehiculo&action=frm_vehicle&%{QUERY_STRING} [L]
     RewriteRule ^admin/editar-vehiculo/(.*)/?$ /admin/index.php?controller=vehiculo&action=frm_vehicle&id_vehiculo=$1%{QUERY_STRING} [L]
@@ -25,6 +33,7 @@
     RewriteRule ^admin/guardar-vehiculo/?$ /admin/index.php?controller=vehiculo&action=update_vehicle&%{QUERY_STRING} [L]
     
     #usuarios
+    RewriteRule ^admin/buscar-usuario/?$ /admin/index.php?controller=usuario&action=search_user&%{QUERY_STRING} [L]
     RewriteRule ^admin/comprobar-email/?$ /admin/index.php?controller=usuario&action=check_mail&%{QUERY_STRING} [L]
     RewriteRule ^admin/usuarios/administracion/?$ /admin/index.php?controller=usuario&action=list_users&type_user_label=administracion&type_user=1&label_user=administradores&%{QUERY_STRING} [L]
     RewriteRule ^admin/usuarios/colaborador/?$ /admin/index.php?controller=usuario&action=list_users&type_user_label=colaborador&type_user=2&label_user=colaboradores&%{QUERY_STRING} [L]

@@ -43,14 +43,17 @@
                         <span class="font-bold">Inicio</span>
                       </a>
                     </li>
-                    <li>
-                      <a class="auto" href="#">
+                    <li class="{$rental}">
+                      <a class="auto" href="/admin/alquileres/">
                         <span class="pull-right text-muted">
                           <i class="i i-circle-sm-o text"></i>
                           <i class="i i-circle-sm text-active"></i>
                         </span>
                         <i class="fa fa-flash"></i>
                         <span class="font-bold">Alquileres</span>
+                        {if $alquilados>0}
+                        	<b class="badge bg-success pull-right">{$alquilados}</b>
+                        {/if}
                       </a>
                     </li>
                     <li class="{$vehicle}">
@@ -106,7 +109,7 @@
                         <span class="font-bold">Zonas</span>
                       </a>
                     </li>
-                    <li>
+                    <li class="{$tarife}">
                       <a class="auto" href="/admin/tarifas/">
                         <span class="pull-right text-muted">
                           <i class="i i-circle-sm-o text"></i>

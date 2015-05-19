@@ -1,6 +1,39 @@
 <?php
 	class usuarioController extends CController{
         
+		function search_user(){
+			require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Usuario.php");
+        	$Usuario = new Usuario($this->conn);
+        	
+        	$filtros=array();
+        	anade_filtrado($filtros, "tipo", 3, "=");
+        	anade_filtrado($filtros, "CONCAT(`nombre`, ' ', `apellido1`, ' ', `email`, ' ', `nif`)", $_REQUEST['q'], "like");
+        	anade_filtrado($filtros, "activacion", 1, "="); //usuario activado
+        	anade_filtrado($filtros, "validado", 1, "=");//usuario validado
+        	
+			$ack_usuarios = $Usuario->get_usuario($filtros);
+			
+        	if($ack_usuarios->resultado){
+        		$res_usuarios = $ack_usuarios->datos;
+        		
+        		$usuarios = array();
+        		foreach($res_usuarios as $key=>$usuario){
+        			$usuarios[$key] 	 	 = array();
+        			$usuarios[$key]['id_usuario'] 	= $usuario->id_usuario;
+        			$usuarios[$key]['imagen'] 	 	= "/repositorio/".$usuario->imagen;
+        			$usuarios[$key]['nif'] 	 		= $usuario->nif;
+        			$usuarios[$key]['nombre'] 	 	= $usuario->nombre." ".$usuario->apellido1." ".$Usuario->apellido2;
+        			$usuarios[$key]['email'] 	 	= $usuario->email;
+        			$usuarios[$key]['telefono'] 	= $usuario->telefono;
+        			$usuarios[$key]['fecha_permiso']= convertir_fecha_espanol($usuario->fecha_permiso);
+        		}
+        	}else{
+        		$usuarios = array();
+        	}
+        	
+        	print_r(json_encode($usuarios));
+		}
+		
 		/**
 		 * Sección de listado de vehículos
 		 */

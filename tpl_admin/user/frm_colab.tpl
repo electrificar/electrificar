@@ -1,5 +1,4 @@
 {include file="../common/header.tpl"}
-
 {include file="../common/sidebar.tpl"}
 
 <link rel="stylesheet" href="/admin/css/jquery.range.css">
