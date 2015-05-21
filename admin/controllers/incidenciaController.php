@@ -79,11 +79,57 @@
          */
         function frm_incidencia(){
         	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Incidencia.php");
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Usuario.php");
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Vehiculo.php");
+        	$Vehiculo = new Vehiculo($this->conn);
+        	$Usuario = new Usuario($this->conn);
         	$incidencia = new Incidencia($this->conn);
         	
-//         	global $tipo_colaboradores, $empresas;
-// 			print_r($_REQUEST);
-// 			exit();
+        	global $estados;
+			
+        	//busco los colaboradores
+        	$filtros = array();
+        	anade_filtrado($filtros, "tipo", 2, "=");//colaborador es tipo usuario 2
+        	
+        	$ack_usuarios = $Usuario->get_usuario($filtros);
+        	 
+        	if($ack_usuarios->resultado){
+        		$usuarios = $ack_usuarios->datos;
+        	
+        		foreach($usuarios as $usuario){
+        			$ack_colaborador = $Usuario->getColaborador ( $usuario->id_usuario );
+					if ($ack_colaborador->resultado) {
+						$colaborador = $ack_colaborador->datos [0];
+						$usuario->id_colaborador = $colaborador->id_colaborador;
+						$usuario->tipo_colaborador = $tipo_colaboradores [$colaborador->tipo_colaborador] ['tipo'];
+						$usuario->descripcion = $colaborador->descripcion;
+						$usuario->empresa = $empresas [$colaborador->empresa] ['empresa'];
+					}
+        		}
+        	}
+        	
+        	$this->layout->assign("colaboradores", $usuarios);
+        	
+        	$filtros = array();
+        	anade_filtrado($filtros, "tipo", 3, "=");//colaborador es tipo usuario 2
+        	
+        	$ack_usuarios = $Usuario->get_usuario($filtros);
+        	
+        	if($ack_usuarios->resultado){
+        		$usuarios = $ack_usuarios->datos;
+        	}	 
+
+        	$this->layout->assign("usuarios", $usuarios);
+        	
+        	$filtros = array();
+        	 
+        	$ack_vehiculos = $Vehiculo->get_vehiculos($filtros);
+        	 
+        	if($ack_vehiculos->resultado){
+        		$vehiculos = $ack_vehiculos->datos;
+        	}
+        	
+        	$this->layout->assign("vehiculos", $vehiculos);
         	
         	//si viene id_vehiculo es que estoy editando
         	if(isset($_REQUEST['id_incidencia'])){
@@ -133,6 +179,7 @@
         	$this->layout->assign("label_type_incidence", $_REQUEST['label_incidence']);
         	$this->layout->assign("type_incidence", $_REQUEST['type_incidence_label']);
         	$this->layout->assign("type_incidence_id", $_REQUEST['type_incidence']);
+        	$this->layout->assign("estados", $estados);
         	//cargo la vista
         	
         	switch($_REQUEST['type_incidence']){

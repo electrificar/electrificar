@@ -68,6 +68,12 @@
 		,'3'=>array("id_empresa"=>"3","empresa"=>"Samsung")
 	);
 	
+	$estados = array(
+			'1'=>'pendiente',
+			'2'=>'abierto',
+			'3'=>'cerrado',
+			'4'=>'en revision'
+	);
 
 
 ?>
