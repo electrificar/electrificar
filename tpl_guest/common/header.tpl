@@ -173,13 +173,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<ol class="breadcrumb pull-left">
-		  			<li><a href="#">Inicio</a></li>
-		  			<li><a href="#">Coches destacados</a></li>
-		  			<li class="active">Alquiler</li>
-				</ol>
 
-				<div class="contact pull-right">
+				<div class="contact pull-left">
 					<div class="contact-item phone">
 						<div class="label"><i class="icon icon-normal-mobile-phone"></i></div><!-- /.label -->
 						<div class="value">123-456-789</div><!-- /.value -->
@@ -187,14 +182,17 @@
 
 					<div class="contact-item mail">
 						<div class="label"><i class="icon icon-normal-mail"></i></div><!-- /.label -->
-						<div class="value"><a href="mailto:example@example.com">contacto@electrificar.com</a></div><!-- /.value -->
+						<div class="value"><a href="mailto:contacto@electrificar.com">contacto@electrificar.com</a></div><!-- /.value -->
 					</div><!-- /.mail -->
 
 					<div class="contact-item opening">
 						<div class="label"><i class="icon icon-normal-clock"></i></div><!-- /.label -->
 						<div class="value">Lunes - Sábado: 9:00 - 18:00</div><!-- /.value -->
 					</div><!-- /.opening -->
+								
+					
 				</div><!-- /.contact -->
+				
 			</div><!-- /.col-md-12 -->
 		</div><!-- /.row -->
 	</div><!-- /.container -->

@@ -1,4 +1,5 @@
 {include file="../common/header.tpl"}
+
 <link rel="stylesheet" href="/admin/js/slider/slider.css" type="text/css" />
 <section id="content">
 	<section class="vbox">
@@ -7,9 +8,6 @@
             	<h3 class="m-b-none">
             		<i class="fa fa-car"></i>
             		Vehículos
-            		<a title="Añadir vehículo" style="width:40px;font-size:20px;" class="pull-right btn btn-rounded btn-sm btn-icon btn-default" href="/admin/añadir-vehiculo/">
-            			<i class="fa fa-plus"></i>
-            		</a>
             	</h3>
             </div>
             <div class="row">
@@ -20,7 +18,7 @@
 							<span class="label bg-danger pull-right m-t-xs">{$alquilados} Alquilado{if $alquilados>1}s{/if}</span>
 						{/if} 
 						<h4><i class="fa fa-search"></i> Búsqueda</h4>
-						<form id="vehicles-filter" role="form" class="form-inline" method="post" action="/admin/vehiculos/">
+						<form id="vehicles-filter" role="form" class="form-inline" method="post" action="#">
 							<input type="hidden" name="filtrar" value="true" />
 		                    <div class="form-group">
 		                      <label for="exampleInputEmail2" class="sr-only">Matrícula</label>
@@ -37,7 +35,7 @@
 		                    </div>
 		                    <a data-toggle="modal" class="btn btn-success bfb" href="javascript:$('#vehicles-filter').submit()"><i class="fa fa-refresh"></i> Buscar</a>
 		                    {if $filtros['filtrar']!=null}
-		                    	<a data-toggle="modal" class="btn btn-danger bfb" href="/admin/vehiculos/"><i class="fa fa-cross"></i> Borrar filtros</a>
+		                    	<a data-toggle="modal" class="btn btn-danger bfb" href="#"><i class="fa fa-cross"></i> Borrar filtros</a>
 		                    {/if}
 		            	</form>
 					</header>
@@ -50,7 +48,6 @@
 								<th width="70">Seguro</th>
 								<th width="65">Disponible</th>
 								<th width="68">Mantenimiento</th>
-								<th width="70">Acciones</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -78,14 +75,6 @@
 											</a>
 										</td>
 										<td class="text-center">
-											<div class="btn-group">
-												<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-													class="fa fa-gear"></i> </a>
-												<ul class="dropdown-menu pull-right">
-													<li><a href="/admin/editar-vehiculo/{$vehicle->id_vehiculo}/">Editar vehículo <i class="fa fa-edit"></i></a></li>
-													<li><a href="/admin/borrar-vehiculo/{$vehicle->id_vehiculo}/">Borrar vehículo <i class="fa fa-trash"></i></a></li>
-												</ul>
-											</div>
 										</td>
 									</tr>
 								{/foreach}
@@ -100,5 +89,6 @@
 				</div>
 		</section>
 	</section>
-</section>		        	
+</section>
+        	
 {include file="../common/footer.tpl"}
