@@ -57,23 +57,22 @@
         	if(isset($_REQUEST['filtrar'])){
 
         		//por si hay que filtrar por matricula
-        		if($_REQUEST['matricula']){
-        			anade_filtrado($filtros, "matricula", $_REQUEST['matricula'], "like");
+        		if($_REQUEST['marca']){
+        			anade_filtrado($filtros, "marca", $_REQUEST['marca'], "like");
         		}
         		
         		//filtro por disponibilidad
-        		if($_REQUEST['disponible'] == 'on'){
+        		if($_REQUEST['zona'] == 'on'){
         			anade_filtrado($filtros, "disponible", 1, "=");
         		}else{
         			anade_filtrado($filtros, "disponible", 0, "=");
         		}
         		
-        		//filtro por mantenimiento
-        		if($_REQUEST['mantenimiento'] == 'on'){
-        			anade_filtrado($filtros, "mantenimiento", 1, "=");
-        		}else{
-        			anade_filtrado($filtros, "mantenimiento", 0, "=");
+        		//por si hay que filtrar por zona
+        		if($_REQUEST['zona']){
+        			anade_filtrado($filtros, "zona", $_REQUEST['zona'], "like");
         		}
+        		
         	}
         	
         	//obtengo los vehículos
