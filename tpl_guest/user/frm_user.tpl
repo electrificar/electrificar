@@ -179,7 +179,7 @@
 
                     <div class="col-xs-12 col-md-7">
                         <h3>Grandes precios</h3>
-                        <p>Va usté muy cargadoo diodeno sexuarl apetecan te voy a borrar el cerito diodenoo caballo blanco caballo negroorl torpedo ese hombree.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula ipsum, ornare ac augue in, suscipit pretium purus. Vestibulum turpis felis, gravida ac justo</p>
                     </div><!-- /.col-md-7 -->
                 </div><!-- /.row -->
             </div><!-- /.col-md-4 -->
@@ -202,7 +202,7 @@
 
                     <div class="col-xs-12 col-md-7">
                         <h3>Amplia selección</h3>
-                        <p>Va usté muy cargadoo diodeno sexuarl apetecan te voy a borrar el cerito diodenoo caballo blanco caballo negroorl torpedo ese hombree.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula ipsum, ornare ac augue in, suscipit pretium purus. Vestibulum turpis felis, gravida ac justo</p>
                     </div><!-- /.col-md-7 -->
                 </div><!-- /.row -->
             </div><!-- /.col-md-4 -->
@@ -225,7 +225,7 @@
 
                     <div class="col-xs-12 col-md-7">
                         <h3>24/7 Ayuda</h3>
-                        <p>Va usté muy cargadoo diodeno sexuarl apetecan te voy a borrar el cerito diodenoo caballo blanco caballo negroorl torpedo ese hombree.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula ipsum, ornare ac augue in, suscipit pretium purus. Vestibulum turpis felis, gravida ac justo</p>
                     </div><!-- /.col-md-7 -->
                 </div><!-- /.row -->
             </div><!-- /.col-md-4 -->

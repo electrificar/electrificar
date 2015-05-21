@@ -85,13 +85,13 @@
                       </div>
                       <label class="col-sm-2 control-label">Marca</label>
                       <div class="col-sm-10">
-                        <input type="text" value="{$vehiculo->marca}" data-required="true" placeholder="Renault" name="marca" class="form-control">
+                        <input type="text" value="{$vehiculo->marca}" data-required="true" name="marca" class="form-control">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="input-id-1" class="col-sm-2 control-label">Modelo</label>
                       <div class="col-sm-10">
-                        <input type="text" value="{$vehiculo->modelo}" data-required="true" placeholder="Twizy" name="modelo" id="input-id-1" class="form-control">
+                        <input type="text" value="{$vehiculo->modelo}" data-required="true" name="modelo" id="input-id-1" class="form-control">
                       </div>
                     </div>
                     <div class="form-group">

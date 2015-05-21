@@ -160,7 +160,7 @@
                     <div class="filter-block">
                         <div class="block">
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="#search-rent" data-toggle="tab">Buscar</a></li>
+                                <li class="active"><a href="/seleccionar_coche/" data-toggle="tab">Buscar</a></li>
                             </ul><!-- /.nav -->
                                         <div class="tab-pane" id="search-rent">
                                             <form method="post" action="http://html.carat.pragmaticmates.com/filter.html">
@@ -264,7 +264,7 @@
         </div><!-- /.like -->
 
         <h3>
-            <a href="detail.html">Tesla</a>
+            <a href="http://www.tesla.com">Tesla</a>
         </h3>
 
         <div class="subtitle">Model S</div><!-- /.subtitle -->
@@ -313,7 +313,7 @@
         </div><!-- /.like -->
 
         <h3>
-            <a href="detail.html">Honda</a>
+            <a href="http://www.honda.com">Honda</a>
         </h3>
 
         <div class="subtitle">EVN</div><!-- /.subtitle -->
@@ -362,7 +362,7 @@
         </div><!-- /.like -->
 
         <h3>
-            <a href="detail.html">BMW</a>
+            <a href="http://www.bmw.com">BMW</a>
         </h3>
 
         <div class="subtitle">i8</div><!-- /.subtitle -->
