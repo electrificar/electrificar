@@ -30,12 +30,12 @@
 						<form id="incidencia-filter" role="form" class="form-inline" method="post" action="/admin/incidencia/{$type_incidence}/">
 							<input type="hidden" name="filtrar" value="true" />
 		                    <div class="form-group">
-		                      <label for="exampleInputEmail2" class="sr-only">ID de incidencia</label>
+		                      <label for="exampleInputEmail2" class="sr-only">Incidencia</label>
 		                      <input type="text" placeholder="ID incidencia" value="{$filtros['id_incidencia']}" name="id_incidencia" class="form-control">
 		                    </div>
 		                    <div class="form-group">
-		                      <label for="exampleInputEmail2" class="sr-only">Estado</label>
-		                      <input type="text" placeholder="Estado" value="{$filtros['estado']}" name="estado" class="form-control">
+		                      <label for="exampleInputEmail2" class="sr-only">Colaborador</label>
+		                      <input type="text" placeholder="Colaborador" value="{$filtros['id_colaborador']}" name="estado" class="form-control">
 		                    </div>
 		                    <a data-toggle="modal" class="btn btn-success bfb" href="javascript:$('#incidencias-filter').submit()"><i class="fa fa-refresh"></i> Buscar</a>
 		                    {if $filtros['filtrar']!=null}
