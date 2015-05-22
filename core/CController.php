@@ -78,9 +78,14 @@ class CController {
         $this->layout->assign("alquilados", sizeof($ack_alquileres->datos));
         $this->layout->assign("incidencias_n", sizeof($ack_incidencias->datos));
         
+        $this->layout->assign('id_usuario', $_SESSION['mi_usuario']->id_usuario);
+       	$this->layout->assign('nombre', $_SESSION['mi_usuario']->nombre);
+        
         $num_incidencias = array(1=>0,2=>0,3=>0,4=>0);
-        foreach($ack_incidencias->datos as $incidencia){
-        	$num_incidencias[$incidencia->tipo]++;
+        if($ack_incidencias->resultado){
+	        foreach($ack_incidencias->datos as $incidencia){
+	        	$num_incidencias[$incidencia->tipo]++;
+	        }
         }
         
         $this->layout->assign("incidencia_array", $num_incidencias);

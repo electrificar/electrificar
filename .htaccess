@@ -121,6 +121,7 @@
     RewriteRule ^zonas/?$ /guest/index.php?controller=zona&action=list_zonas&%{QUERY_STRING} [L]
     RewriteRule ^buscar_coche/$ /guest/index.php?controller=vehiculo&action=list_vehicles&%{QUERY_STRING} [L]
     RewriteRule ^login_user/$ /guest/index.php?controller=usuario&action=do_login&%{QUERY_STRING} [L]
+    RewriteRule ^do_logout/?$ /guest/index.php?controller=usuario&action=do_logout&%{QUERY_STRING} [L]
     
     
     RewriteRule ^guardar_usuario/$ /guest/index.php?controller=usuario&action=update_user&%{QUERY_STRING} [L]

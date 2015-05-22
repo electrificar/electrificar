@@ -6,7 +6,6 @@
         	$mensaje = "Hola Mundo";
         	
         	//enlace el modelo con la vista
-        	$this->layout->assign('mensaje', $mensaje);
         	
         	
             $this->display('/home/index.tpl');

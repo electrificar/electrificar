@@ -50,7 +50,7 @@
                 header("Location: /");
                 die();
             } else {
-                header("Location: /");
+                header("Location: /?error=TRUE");
                 die();
             }
         }
@@ -63,7 +63,8 @@
             session_unset();
             session_destroy();
 
-            $this->display('/register/login_form.tpl');
+            header("Location: /");
+                die();
         }
 	}
 		function update_user(){
