@@ -66,13 +66,13 @@
 						                      <div class="row pull-out">
 						                        <div class="col-xs-6">
 						                          <div class="padder-v">
-						                            <span class="m-b-xs h3 block text-white">4</span>
+						                            <span class="m-b-xs h3 block text-white">{$incidencias}</span>
 						                            <small class="text-lt">Abiertas</small>
 						                          </div>
 						                        </div>
 						                        <div class="col-xs-6 dk" style="background-color:#bf4436">
 						                          <div class="padder-v">
-						                            <span class="m-b-xs h3 block text-white">200</span>
+						                            <span class="m-b-xs h3 block text-white">{$historial_incidencias}</span>
 						                            <small class="text-lt">Cerradas</small>
 						                          </div>
 						                        </div>
