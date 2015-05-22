@@ -160,10 +160,10 @@
                     <div class="filter-block">
                         <div class="block">
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="/buscar_coche/" data-toggle="tab">Buscar</a></li>
+                                <li class="active"><a href="/seleccionar_coche/" data-toggle="tab">Buscar</a></li>
                             </ul><!-- /.nav -->
                                         <div class="tab-pane" id="search-rent">
-                                            <form method="post" action="list_vehicles">
+                                            <form method="post" action="/seleccionar_coche/">
                                                 <div class="row">
 
                                                     <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6">
