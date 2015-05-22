@@ -30,12 +30,12 @@
 						<form id="incidencia-filter" role="form" class="form-inline" method="post" action="/admin/incidencia/{$type_incidence}/">
 							<input type="hidden" name="filtrar" value="true" />
 		                    <div class="form-group">
-		                      <label for="exampleInputEmail2" class="sr-only">Incidencia</label>
-		                      <input type="text" placeholder="ID incidencia" value="{$filtros['id_incidencia']}" name="id_incidencia" class="form-control">
+		                      <label for="exampleInputEmail2" class="sr-only">Asunto</label>
+		                      <input type="text" placeholder="Asunto" value="{$filtros['asunto']}" name="asunto" class="form-control">
 		                    </div>
 		                    <div class="form-group">
-		                      <label for="exampleInputEmail2" class="sr-only">Colaborador</label>
-		                      <input type="text" placeholder="Colaborador" value="{$filtros['id_colaborador']}" name="estado" class="form-control">
+		                      <label for="exampleInputEmail2" class="sr-only">Descripcion</label>
+		                      <input type="text" placeholder="Descripcion" value="{$filtros['descripcion']}" name="descripcion" class="form-control">
 		                    </div>
 		                    <a data-toggle="modal" class="btn btn-success bfb" href="javascript:$('#incidencias-filter').submit()"><i class="fa fa-refresh"></i> Buscar</a>
 		                    {if $filtros['filtrar']!=null}
@@ -52,12 +52,34 @@
 				                        <header class="panel-heading bg-light no-border">
 				                          <div class="clearfix">
 				                            <div class="clear">
+				                              {$incidencia->asunto}<br>
+				                              </div>
+				                              <small class="text-muted">{$type_incidence|@ucfirst}</small>
 				                              <div class="h3 m-t-xs m-b-xs">
-				                                {$incidencia->id_incidencia}<br>{$incidencia->estado} 
+				                                {$incidencia->descripcion}<br> 
 				                              </div>
 				                            </div>
-				                          </div>
 				                        </header>
+				                        <div class="list-group no-radius alt">
+					                         {if $label_type_user=='colaboradores'}
+					                          	<a href="#" class="list-group-item">
+					                            	<i class="fa fa-info-circle icon-muted"></i>&nbsp;
+					                            	{$usuario->empresa}
+					                          	</a>
+					                         {/if}
+				                          <a href="mailto:{$incidencia->fecha_inicio_incidencia}" class="list-group-item">
+				                            <i class="fa fa-calendar icon-muted"></i>&nbsp;
+				                            {$incidencia->fecha_inicio_incidencia}
+				                          </a>
+				                          <a href="tel:{$usuario->telefono}" class="list-group-item">
+				                            <i class="fa fa-calendar-o icon-muted"></i>&nbsp;
+				                            {$incidencia->fecha_fin_incidencia}
+				                          </a>
+				                            <div class="btn-group btn-group-justified">
+							                  <a class="btn btn-primary" href="/admin/editar-incidencia/{$type_incidence}/{$incidencia->id_incidencia}/">Editar</a>
+							                  <a class="btn btn-danger" href="/admin/borrar-incidencia/{$type_incidence}/{$incidencia->id_incidencia}/">Borrar</a>
+							                </div>
+				                        </div>
 				                      </section>
 				                    </div>
 				                {/foreach}
