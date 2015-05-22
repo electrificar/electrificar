@@ -127,7 +127,4 @@
         	header("location: /crear_usuario/");
         	die();
         }       
-        
-        
-	}
 ?>

@@ -73,7 +73,7 @@
 					</div><!-- /.items -->
 				</div><!-- /.block -->				
 			</div><!-- /.col-md-4 -->
-            <div class = "contact pull-left">
+            
 			<div class="col-lg-4 col-md-4 col-sm-6 col-sm ">
 				<div class="block">
 					<div class="title">
@@ -122,13 +122,7 @@
 					</div><!-- /.opening-hours -->
 				</div><!-- /.block -->
 			</div><!-- /.col-md-4 -->
-
-
-				</div><!-- /.block -->
-			</div><!-- /.col-md-4 -->			
-		</div><!-- /.row -->
-	</div><!-- /.container -->
-
+            
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="row">

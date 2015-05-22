@@ -15,7 +15,7 @@
 
 
                                 <div class="item tags">
-                                    <div class="price">15€/Hora</div>
+                                    <div class="price">Consulta Tarifas</div>
                                     <div class="type">Alquiler</div>
                                 </div><!-- /.item -->
 
@@ -62,7 +62,7 @@
                                 </div><!-- /.item -->
 
                                 <div class="item tags">
-                                    <div class="price">7€/Hora</div>
+                                    <div class="price">Consulta Tarifas</div>
                                     <div class="type">Alquiler</div>
                                 </div><!-- /.item -->
 
@@ -97,7 +97,7 @@
                                 </div><!-- /.item -->
 
                                 <div class="item tags">
-                                    <div class="price">10€/Hora</div>
+                                    <div class="price">Consulta Tarifas</div>
                                     <div class="type">Alquiler</div>
                                 </div><!-- /.item -->
 
@@ -163,7 +163,7 @@
                                 <li class="active"><a href="/seleccionar_coche/" data-toggle="tab">Buscar</a></li>
                             </ul><!-- /.nav -->
                                         <div class="tab-pane" id="search-rent">
-                                            <form method="post" action="http://html.carat.pragmaticmates.com/filter.html">
+                                            <form method="post" action="list_vehicles">
                                                 <div class="row">
 
                                                     <div class="form-group col-lg-12 col-md-12 col-sm-6 col-xs-6">
@@ -269,7 +269,7 @@
 
         <div class="subtitle">Model S</div><!-- /.subtitle -->
 
-        <div class="price">10€/Hora</div><!-- /.price -->
+        <div class="price">Consulta Tarifas</div><!-- /.price -->
 
         <div class="meta">
             <ul class="clearfix ">
@@ -318,7 +318,7 @@
 
         <div class="subtitle">EVN</div><!-- /.subtitle -->
 
-        <div class="price">7€/Hora</div><!-- /.price -->
+        <div class="price">Consulta Tarifas</div><!-- /.price -->
 
         <div class="meta">
             <ul class="clearfix ">
@@ -367,7 +367,7 @@
 
         <div class="subtitle">i8</div><!-- /.subtitle -->
 
-        <div class="price">15€/Hora</div><!-- /.price -->
+        <div class="price">Consulta Tarifas</div><!-- /.price -->
 
         <div class="meta">
             <ul class="clearfix ">
