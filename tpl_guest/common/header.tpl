@@ -112,8 +112,8 @@
 
 							<div class="regularmenu">
 								<ul class="regularmenu-inner">
-									<li><a href="/crear_usuario/"><strong>1.</strong> Crear usuario</a></li>
-									<li><a href="/modificar_usuario/"><strong>2.</strong> Editar datos del usuario</a></li>
+									<li><a href="/crear_usuario/"><strong>Crear usuario</strong></a></li>
+									<li><a href="/modificar_usuario/"><strong>Editar datos del usuario</strong></a></li>
 								</ul><!-- /.regularmenu-inner -->
 							</div><!-- /.regularmenu -->
 						</li>						
@@ -123,8 +123,7 @@
 
 							<div class="regularmenu">
 								<ul class="regularmenu-inner">
-									<li><a href="/seleccionar_coche/"><strong>1.</strong> Solicitar alquiler</a></li>
-									<li><a href="rental-2.html"><strong>2.</strong> Ver historial de alquileres</a></li>
+									<li><a href="rental-2.html"><strong>Ver historial de alquileres</strong></a></li>
 								</ul><!-- /.regularmenu-inner -->
 							</div><!-- /.regularmenu -->
 						</li>
@@ -134,7 +133,7 @@
 
 							<div class="regularmenu">
 								<ul class="regularmenu-inner">
-									<li><a href="/magazine_coche/"><strong>1.</strong> Ver flota de vehículos</a></li>
+									<li><a href="/magazine_coche/"><strong>Ver flota de vehículos</strong></a></li>
 								</ul><!-- /.regularmenu-inner -->
 							</div><!-- /.regularmenu -->
 						</li>
@@ -144,7 +143,7 @@
 
 							<div class="regularmenu">
 								<ul class="regularmenu-inner">
-									<li><a href="/zonas/"><strong>1.</strong> Consultar zonas</a></li>
+									<li><a href="/zonas/"><strong>Consultar zonas</strong></a></li>
 								</ul><!-- /.regularmenu-inner -->
 							</div><!-- /.regularmenu -->
 						</li>
@@ -154,7 +153,7 @@
 
 							<div class="regularmenu">
 								<ul class="regularmenu-inner">
-									<li><a href="/tarifas/"><strong>1.</strong> Consultar tarifas</a></li>
+									<li><a href="/tarifas/"><strong>Consultar tarifas</strong> </a></li>
 								</ul><!-- /.regularmenu-inner -->
 							</div><!-- /.regularmenu -->
 						</li>

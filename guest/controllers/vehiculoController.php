@@ -115,6 +115,63 @@
         	//cargo la vista
             $this->display('/vehicle/list.tpl');
         }
-        
+        function frm_rental(){
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Vehiculo.php");
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Zona.php");
+        	
+        	$Vehiculo 	= new Vehiculo($this->conn);
+        	$Zona		= new Zona($this->conn);
+        	
+        	//si viene id_alquiler es que estoy editando
+        	if(isset($_REQUEST['id_alquiler'])){
+        		
+        		//filtro el vehículo para encontrarlo
+	        	$filtros = array();       
+	        	anade_filtrado($filtros, "id_alquiler", $_REQUEST['id_alquiler'], "=");
+	        	$ack_alquileres = $Vehiculo->get_alquileres($filtros);
+	        	
+	        	//si lo encuentro
+	        	if($ack_alquileres->resultado){
+	        		//me guardo el vehículo y parseo la fecha
+	        		$alquiler = $ack_alquileres->datos[0];
+	        		$alquiler->fecha_vigencia_seguro = convertir_fecha_espanol($alquiler->fecha_vigencia_seguro);
+	        	}else{
+	        		//si no lo encuentro, genero una notificacion
+	        		$ack_alquileres = new ACK();
+	        		$ack_alquileres->resultado = false;
+	        		$ack_alquileres->mensaje	  = "El alquiler indicado no existe";
+	        		
+	        		//la añado
+	        		$this->add_notification($ack_alquileres);
+	        		
+	        		//redirijo el listado
+	        		header("location: /admin/alquileres/");
+	        		die();
+	        	}        	
+	        	
+	        	$this->layout->assign("alquiler", $alquiler);
+        	}
+        	
+			$Zona = new Zona($this->conn);
+	
+			$filtros = array();
+			
+			//obtengo los vehículos
+			$ack_zona = $Zona->get_zonas($filtros);
+			 
+			//si hay
+			if($ack_zona->resultado){
+				//me guardo esa parte
+				$tarifas = $ack_tarifas->datos;
+			}else{
+				$tarifas = array();
+			}
+			 
+			//asocio las variables a la vista
+			$this->layout->assign("zonas", $zonas);
+        	//si todo sale bien o es un nuevo vehículo
+        	$this->layout->assign("rental", "active");//variable de activación de menú
+        	$this->display('/rental/frm_rental.tpl');//cargo la vista
+        }
 	}
 ?>
