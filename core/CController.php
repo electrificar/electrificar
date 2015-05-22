@@ -66,10 +66,24 @@ class CController {
          
         $ack_alquileres = $Alquiler->get_alquileres($filtros);
          
+        //para saber los alquileres activos
+        require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Incidencia.php");
+        $Incidencia = new Incidencia($this->conn);
+        $filtros = array();
+        anade_filtrado($filtros, "estado", "3", "!=");
          
+        $ack_incidencias = $Incidencia->get_incidencias($filtros); 
          
         //asocio las variables a la vista
         $this->layout->assign("alquilados", sizeof($ack_alquileres->datos));
+        $this->layout->assign("incidencias_n", sizeof($ack_incidencias->datos));
+        
+        $num_incidencias = array(1=>0,2=>0,3=>0,4=>0);
+        foreach($ack_incidencias->datos as $incidencia){
+        	$num_incidencias[$incidencia->tipo]++;
+        }
+        
+        $this->layout->assign("incidencia_array", $num_incidencias);
         
         // 
         $this->uri = $this->navigation->get_url_fija();

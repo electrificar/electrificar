@@ -126,37 +126,45 @@
                           <i class="i i-circle-sm-o text"></i>
                           <i class="i i-circle-sm text-active"></i>
                         </span>
-                        <b class="badge bg-danger pull-right">4</b>
+                        <b class="badge bg-danger pull-right">{$incidencias_n}</b>
                         <i class="fa fa-exclamation-triangle">
                         </i>
                         <span class="font-bold">Incidencias</span>
                       </a>
                       <ul class="nav dk" style="{if $incidencias!='active'}display: none;{else}display: block;{/if}">
                         <li class="{$incidenciasCoches}">
-                          <a class="auto" href="/admin/incidencias/coches/"> 
-                          <b class="badge bg-primary pull-right">1</b>                                                       
+                          <a class="auto" href="/admin/incidencias/coches/">
+                          {if $incidencia_array[1]>0} 
+                          <b class="badge bg-primary pull-right">{$incidencia_array[1]}</b>
+                          {/if}                                                       
                             <i class="fa fa-car"></i>
                             <span>Coches</span>
                           </a>
                         </li>
                         <li class="{$incidenciasPuntosCarga}">
-                          <a class="auto" href="/admin/incidencias/puntos_de_carga/">      
-                          <b class="badge bg-info pull-right">1</b>                                                  
+                          <a class="auto" href="/admin/incidencias/puntos_de_carga/">
+                          {if $incidencia_array[2]>0}      
+                          <b class="badge bg-info pull-right">{$incidencia_array[2]}</b>     
+                          {/if}                                              
                             <i class="fa fa-plug"></i>
                             <span>Puntos Carga</span>
                           </a>
                         </li>
                         <li class="{$incidenciasLimpieza}">
-                          <a class="auto" href="/admin/incidencias/limpieza/">   
-                          <b class="badge bg-success pull-right">1</b>                                                     
+                          <a class="auto" href="/admin/incidencias/limpieza/">
+                          {if $incidencia_array[3]>0}   
+                          <b class="badge bg-success pull-right">{$incidencia_array[3]}</b>   
+                          {/if}                                                   
                             <i class="i i-trashcan"></i>
 
                             <span>Limpieza</span>
                           </a>
                         </li>
                         <li class="{$incidenciasAccidentes}">
-                          <a class="auto" href="/admin/incidencias/accidentes/">   
-                          <b class="badge bg-danger pull-right">1</b>                                                     
+                          <a class="auto" href="/admin/incidencias/accidentes/">
+                          {if $incidencia_array[4]>0}   
+                          	<b class="badge bg-danger pull-right">{$incidencia_array[4]}</b>
+                          {/if}                                                     
                             <i class="fa fa-ambulance"></i>
                             <span>Accidentes</span>
                           </a>
