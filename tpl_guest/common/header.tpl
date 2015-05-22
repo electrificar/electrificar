@@ -189,7 +189,41 @@
 						<div class="label"><i class="icon icon-normal-clock"></i></div><!-- /.label -->
 						<div class="value">Lunes - Sábado: 9:00 - 18:00</div><!-- /.value -->
 					</div><!-- /.opening -->
-								
+					
+					
+					{if $id_usuario==NULL}
+					<div class="col-item user">
+                    	<div class="form-group">
+                            <input value="{$usuario->email}" data-required="true" id="email" name="email" data-type="email" class="input-sm input-s form-control" size="16" type="text" placeholder="Usuario(Email)">
+                        </div>
+                    </div>
+                    
+                    <div class="col-item user">
+                    	<div class="form-group">
+                            <input value="{$usuario->password}" data-required="true" id="password" name="password" data-type="password" class="input-sm input-s form-control" size="16" type="password" placeholder="Password">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                    	<button class="send btn btn-primary btn-primary-color">
+                       		Loguearse <i class="icon icon-normal-right-arrow-small"></i>
+                        </button>
+                    </div>
+                    
+                    {else}
+                    
+                    <div class="contact-item phone">
+						<div class="label"><i class="icon icon-normal-mobile-phone"></i></div><!-- /.label -->
+						<div class="value">Bienvenido {$nombre_usuario}</div><!-- /.value -->
+					</div>
+					
+					<div class="form-group">
+                    	<button class="send btn btn-primary btn-primary-color">
+                       		Desconectarse <i class="icon icon-normal-right-arrow-small"></i>
+                        </button>
+                    </div>
+					
+					{/if}	
 					
 				</div><!-- /.contact -->
 				
