@@ -3,7 +3,6 @@
         print("Web en construccion, en pocos dias estaremos contigo");
         exit;
     }*/
-
 	//Primero algunas variables de configuracion
 
 	// Esta variable nos dara el entorno de trabajo 

@@ -13,14 +13,19 @@
         }
         
 		function frm_edit_user(){
-        	//trato las variables en el modelo
-        	$mensaje = "Hola Mundo";
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Usuario.php");
         	
-        	//enlace el modelo con la vista
-        	$this->layout->assign('mensaje', $mensaje);
+        	$Usuario=new Usuario($this->conn);
         	
+        	$filtros = array();
         	
-            $this->display('/user/frm_edit_user.tpl');
+        	anade_filtrado($filtros, "id_usuario", $_SESSION['mi_usuario']->id_usuario, "=");
+        	
+        	$ack_usuario = $Usuario->get_usuario($filtros);
+        	
+        	$this->layout->assign("usuario", $ack_usuario->datos[0]);
+			
+			$this->display('/user/frm_edit_user.tpl');
         }
         
          function frm_login(){
@@ -64,9 +69,9 @@
             session_destroy();
 
             header("Location: /");
-                die();
+            die();
         }
-	}
+	
 		function update_user(){
         	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Usuario.php");
         	$Usuario = new Usuario($this->conn);
@@ -125,7 +130,9 @@
         	}
         	
         	//redirijo
-        	header("location: /crear_usuario/");
+        	header("location: ".$_SERVER['HTTP_REFERER']);
         	die();
         }       
+        
+	}
 ?>

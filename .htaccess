@@ -119,10 +119,11 @@
     RewriteRule ^tpl/(.*)$ /tpl_guest/$1 [L]
 
     #usuario
+    
+    RewriteRule ^guardar_usuario/$ /guest/index.php?controller=usuario&action=update_user&%{QUERY_STRING} [L]
     RewriteRule ^home/$ /guest/index.php?controller=home&action=home&%{QUERY_STRING} [L]
     RewriteRule ^inicio/$ /guest/index.php?controller=home&action=home2&%{QUERY_STRING} [L]
     RewriteRule ^crear_usuario/$ /guest/index.php?controller=usuario&action=frm_user&%{QUERY_STRING} [L]
-    RewriteRule ^modificar_usuario/$ /guest/index.php?controller=usuario&action=frm_edit_user&%{QUERY_STRING} [L]
     RewriteRule ^seleccionar_coche/$ /guest/index.php?controller=vehiculo&action=list_vehicles&%{QUERY_STRING} [L]
     RewriteRule ^checkout_coche/$ /guest/index.php?controller=alquiler&action=frm_checkout&%{QUERY_STRING} [L]
     RewriteRule ^magazine_coche/$ /guest/index.php?controller=magazine&action=magazine&%{QUERY_STRING} [L]
@@ -132,9 +133,7 @@
     RewriteRule ^buscar_coche/$ /guest/index.php?controller=vehiculo&action=list_vehicles&%{QUERY_STRING} [L]
     RewriteRule ^login_user/$ /guest/index.php?controller=usuario&action=do_login&%{QUERY_STRING} [L]
     RewriteRule ^do_logout/?$ /guest/index.php?controller=usuario&action=do_logout&%{QUERY_STRING} [L]
-    
-    
-    RewriteRule ^guardar_usuario/$ /guest/index.php?controller=usuario&action=update_user&%{QUERY_STRING} [L]
+    RewriteRule ^modificar_usuario/$ /guest/index.php?controller=usuario&action=frm_edit_user&%{QUERY_STRING} [L]
     
 
 </IfModule>
