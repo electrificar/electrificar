@@ -33,7 +33,7 @@
 							        </div><!-- /.picture-wrapper -->
 
 							        <div class="content-wrapper col-lg-8 col-md-8 col-sm-8 col-xs-8">
-							            <div class="price">5€/hora</div>
+							            <div class="price">Proximamente</div>
 							            <p>5 Puertas, hatchback, AC, Sistema Multimedia Tactil. </p>
 							        </div><!-- /.picture-content -->
 							    </div><!-- /.row -->
@@ -64,7 +64,7 @@
 							        </div><!-- /.picture-wrapper -->
 
 							        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 content-wrapper">
-							            <div class="price">9€/hora</div>
+							            <div class="price">Proximamente</div>
 							            <p>2 puertas, deportivo, alto rendimiento y comodidad. Proximamente</p>
 							        </div><!-- /.content-wrapper -->
 							    </div><!-- /.row -->
@@ -74,7 +74,7 @@
 				</div><!-- /.block -->				
 			</div><!-- /.col-md-4 -->
             
-			<div class="col-lg-4 col-md-4 col-sm-6 col-sm ">
+			<div class="col-lg-4 col-md-4 col-sm-6 col-sm " style="float:right !important">
 				<div class="block">
 					<div class="title">
 						<h2>Boletín</h2>
