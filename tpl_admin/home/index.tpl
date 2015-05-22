@@ -34,13 +34,13 @@
 						                      <div class="row pull-out">
 						                        <div class="col-xs-6">
 						                          <div class="padder-v">
-						                            <span class="m-b-xs h3 block text-white">13</span>
-						                            <small class="text-lt">Activos</small>
+						                            <span class="m-b-xs h3 block text-white">{$alquilados}</span>
+						                            <small class="text-lt">Activo{if $alquilados>1}s{/if}</small>
 						                          </div>
 						                        </div>
 						                        <div class="col-xs-6 dk" style="background-color:#126DA7">
 						                          <div class="padder-v">
-						                            <span class="m-b-xs h3 block text-white">13.456</span>
+						                            <span class="m-b-xs h3 block text-white">{$historial_alquilados}</span>
 						                            <small class="text-lt">Historial</small>
 						                          </div>
 						                        </div>
