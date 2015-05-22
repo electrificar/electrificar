@@ -89,7 +89,7 @@
         	$this->layout->assign("colaboradores", $usuarios);
         	
         	$filtros = array();
-        	anade_filtrado($filtros, "tipo", 3, "=");//colaborador es tipo usuario 2
+        	anade_filtrado($filtros, "tipo", 3, "=");//colaborador es tipo usuario 2	
         	
         	$ack_usuarios = $Usuario->get_usuario($filtros);
         	
@@ -100,7 +100,8 @@
         	$this->layout->assign("usuarios", $usuarios);
         	
         	$filtros = array();
-        	 
+        	anade_filtrado($filtros, "disponible", 1, "=");
+        	
         	$ack_vehiculos = $Vehiculo->get_vehiculos($filtros);
         	 
         	if($ack_vehiculos->resultado){
@@ -109,22 +110,26 @@
         	
         	$this->layout->assign("vehiculos", $vehiculos);
         	
-        	//si viene id_vehiculo es que estoy editando
+        	//si viene id_incidencia es que estoy editando
         	if(isset($_REQUEST['id_incidencia'])){
         		
         		//filtro el vehículo para encontrarlo
 	        	$filtros = array();       
-	        	anade_filtrado($filtros, "id_incidencia", $_REQUEST['id_incidencia'], "=");
-	        	$ack_incidencia = $incidencia->get_incidencia($filtros);
+	        	anade_filtrado($filtros, "id_incidencia", intval($_REQUEST['id_incidencia']), "=");
+	        	$ack_incidencia = $incidencia->get_incidencias($filtros);
+	        	
+// 	        	print_r($_REQUEST['id_incidencia']);
+// 	        	exit();
 	        	
 	        	//si lo encuentro
 	        	if($ack_incidencia->resultado){
 	        		//me guardo el vehículo y parseo la fecha
-	        		$incidencia = $ack_incidencia>datos;
+	        		$incidencia = $ack_incidencia->datos[0];
 	        		
 	        		$incidencia->fecha_inicio_incidencia = convertir_fecha_espanol($incidencia->fecha_inicio_incidencia);
 	        		$incidencia->fecha_fin_incidencia = convertir_fecha_espanol($incidencia->fecha_fin_incidencia);
 	        	}else{
+
 	        		//si no lo encuentro, genero una notificacion
 	        		$ack_incidencia = new ACK();
 	        		$ack_incidencia->resultado = false;
@@ -218,5 +223,22 @@
         	header("location: /admin/incidencias/".$_REQUEST['type_incidence_label']);
         	die();
         }
+        
+        function delete_incidencia(){
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Incidencia.php");
+        	 
+        	$incidencia = new Incidencia($this->conn);
+        	 
+        	//borro el vehículo
+        	$ack_borrado = $incidencia->remove_incidencia($_REQUEST['id_incidencia']);
+        	 
+        	//añado notificación
+        	$this->add_notification($ack_borrado);
+        	 
+        	//redirijo
+        	header("location: /admin/incidencias/".$_REQUEST['type_incidence_label']."/");
+        	die();
+        }
+        
 	}
 ?>

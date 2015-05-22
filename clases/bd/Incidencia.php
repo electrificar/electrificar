@@ -178,7 +178,7 @@ class Incidencia {
     }
 
     // Eliminamos de la tabla usuario y si hay dependencias caerian en cascada
-    function remove_incidencia ($id_incidencia){
+    function remove_incidencia($id_incidencia){
         global $log;
         $ack = new ACK();
         $ack->resultado = true;

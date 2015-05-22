@@ -92,6 +92,16 @@
     RewriteRule ^admin/guardar-incidencia/limpieza/?$ /admin/index.php?controller=incidencia&action=update_incidencia&type_incidence_label=limpieza&type_incidence=3&label_incidence=limpieza&%{QUERY_STRING} [L]
     RewriteRule ^admin/guardar-incidencia/accidentes/?$ /admin/index.php?controller=incidencia&action=update_incidencia&type_incidence_label=accidentes&type_incidence=4&label_incidence=accidentes&%{QUERY_STRING} [L]
     
+    RewriteRule ^admin/editar-incidencia/coches/(.*)/?$ /admin/index.php?controller=incidencia&action=frm_incidencia&type_incidence_label=coches&type_incidence=1&label_incidence=coches&id_incidencia=$1&%{QUERY_STRING} [L]
+    RewriteRule ^admin/editar-incidencia/puntos_de_carga/(.*)/?$ /admin/index.php?controller=incidencia&action=frm_incidencia&type_incidence_label=puntos_de_carga&type_incidence=2&label_incidence=puntos_de_carga&id_incidencia=$1&%{QUERY_STRING} [L]
+    RewriteRule ^admin/editar-incidencia/limpieza/(.*)/?$ /admin/index.php?controller=incidencia&action=frm_incidencia&type_incidence_label=limpieza&type_incidence=3&label_incidence=limpieza&id_incidencia=$1&%{QUERY_STRING} [L]
+    RewriteRule ^admin/editar-incidencia/accidentes/(.*)/?$ /admin/index.php?controller=incidencia&action=frm_incidencia&type_incidence_label=accidentes&type_incidence=4&label_incidence=accidentes&id_incidencia=$1&%{QUERY_STRING} [L]
+     
+    RewriteRule ^admin/borrar-incidencia/coches/(.*)/?$ /admin/index.php?controller=incidencia&action=delete_incidencia&type_incidence_label=coches&type_incidence=1&label_incidence=coches&id_incidencia=$1&%{QUERY_STRING} [L]
+    RewriteRule ^admin/borrar-incidencia/puntos_de_carga/(.*)/?$ /admin/index.php?controller=incidencia&action=delete_incidencia&type_incidence_label=puntos_de_carga&type_incidence=2&label_incidence=puntos_de_carga&id_incidencia=$1&%{QUERY_STRING} [L]
+    RewriteRule ^admin/borrar-incidencia/limpieza/(.*)/?$ /admin/index.php?controller=incidencia&action=delete_incidencia&type_incidence_label=limpieza&type_incidence=3&label_incidence=limpieza&id_incidencia=$1&%{QUERY_STRING} [L]
+    RewriteRule ^admin/borrar-incidencia/accidentes/(.*)/?$ /admin/index.php?controller=incidencia&action=delete_incidencia&type_incidence_label=accidentes&type_incidence=4&label_incidence=accidentes&id_incidencia=$1&%{QUERY_STRING} [L]
+    
     RewriteRule ^admin/do_logout/?$ /admin/index.php?controller=perfil&action=do_logout&%{QUERY_STRING} [L]
     RewriteRule ^admin/logout/?$ /admin/index.php?controller=perfil&action=do_logout&%{QUERY_STRING} [L]
     RewriteRule ^admin/login/?$ /admin/index.php?controller=perfil&action=do_login&%{QUERY_STRING} [L]
