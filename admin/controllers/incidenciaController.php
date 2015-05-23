@@ -46,7 +46,7 @@
         	$this->layout->assign($_REQUEST['label_incidence'], "bg-success");
         	$this->layout->assign("label_type_incidence", $_REQUEST['label_incidence']);
         	$this->layout->assign("type_incidence", $_REQUEST['type_incidence_label']);
-
+			$this->layout->assign("incidences", "active");
         	//cargo la vista
             $this->display('/incidencias/list.tpl');
         }
@@ -146,7 +146,7 @@
 	        	$this->layout->assign("incidencia", $incidencia);
         	}
         	
-        	$this->layout->assign("incidencias", "active");
+        	$this->layout->assign("incidences", "active");
         	$this->layout->assign($_REQUEST['label_incidence'], "bg-success");
         	$this->layout->assign("label_type_incidence", $_REQUEST['label_incidence']);
         	$this->layout->assign("type_incidence", $_REQUEST['type_incidence_label']);
@@ -173,9 +173,19 @@
         		$_REQUEST['fecha_inicio_incidencia'] = convertir_fecha_ingles($_REQUEST['fecha_inicio_incidencia']);
         	}
         	
-        	if(isset($_REQUEST['fecha_fin_incidencia'])){
+        	if(isset($_REQUEST['fecha_fin_incidencia']) && $_REQUEST['fecha_fin_incidencia']!=''){
 	        	//parseo la fecha a ingles
 	        	$_REQUEST['fecha_fin_incidencia'] = convertir_fecha_ingles($_REQUEST['fecha_fin_incidencia']);
+        	}else{
+        		unset($_REQUEST['fecha_fin_incidencia']);
+        	}
+        	
+        	if($_REQUEST['id_vehiculo'] == ''){
+        		unset($_REQUEST['id_vehiculo']);
+        	}
+        	
+        	if($_REQUEST['id_usuario'] == ''){
+        		unset($_REQUEST['id_usuario']);
         	}
         	
         	//inserto/actualizo en base de datos

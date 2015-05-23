@@ -66,7 +66,7 @@
 						                      <div class="row pull-out">
 						                        <div class="col-xs-6">
 						                          <div class="padder-v">
-						                            <span class="m-b-xs h3 block text-white">{$incidencias}</span>
+						                            <span class="m-b-xs h3 block text-white">{$incidencias_n}</span>
 						                            <small class="text-lt">Abiertas</small>
 						                          </div>
 						                        </div>

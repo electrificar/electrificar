@@ -213,14 +213,14 @@
     function convertir_fecha_ingles ($fecha){
         // Viene tal que 
         // 20/12/2006
-//        if($fecha!=null){
+        if($fecha!=null){
             $dia = substr($fecha, 0, 2);
             $mes = substr($fecha, 3, 2);
             $ano = substr($fecha, 6, 4);
             return $ano."-".$mes."-".$dia; // ." 00:00:00"
-//        } else {
-//            return "";
-//        }
+        } else {
+            return "";
+        }
     }
 	function objectToArray($d) {
 		if (is_object($d)) {

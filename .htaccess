@@ -31,6 +31,7 @@
     RewriteRule ^admin/editar-vehiculo/(.*)/?$ /admin/index.php?controller=vehiculo&action=frm_vehicle&id_vehiculo=$1%{QUERY_STRING} [L]
     RewriteRule ^admin/borrar-vehiculo/(.*)/?$ /admin/index.php?controller=vehiculo&action=delete_vehicle&id_vehiculo=$1%{QUERY_STRING} [L]
     RewriteRule ^admin/guardar-vehiculo/?$ /admin/index.php?controller=vehiculo&action=update_vehicle&%{QUERY_STRING} [L]
+    RewriteRule ^admin/historial-vehiculo/(.*)/?$ /admin/index.php?controller=alquiler&action=history&id_vehiculo=$1%{QUERY_STRING} [L]
     
     #usuarios
     RewriteRule ^admin/buscar-usuario/?$ /admin/index.php?controller=usuario&action=search_user&%{QUERY_STRING} [L]
@@ -54,6 +55,7 @@
     RewriteRule ^admin/desactivar-usuario/colaborador/(.*)/$ /admin/index.php?controller=usuario&action=change_status&type_user_label=colaborador&type_user=2&label_user=colaboradores&activacion=0&id_usuario=$1&%{QUERY_STRING} [L]
     RewriteRule ^admin/desactivar-usuario/electrificados/(.*)/$ /admin/index.php?controller=usuario&action=change_status&type_user_label=electrificados&type_user=3&label_user=electrificados&activacion=0&id_usuario=$1&%{QUERY_STRING} [L]
     RewriteRule ^admin/validar-usuario/electrificados/(.*)/$ /admin/index.php?controller=usuario&action=validate_user&type_user_label=electrificados&type_user=3&label_user=electrificados&validado=1&id_usuario=$1&%{QUERY_STRING} [L]
+    RewriteRule ^admin/historial-usuario/(.*)/?$ /admin/index.php?controller=alquiler&action=history&id_usuario=$1%{QUERY_STRING} [L]
     
   	#zonas
   	RewriteRule ^admin/zonas/?$ /admin/index.php?controller=zona&action=list_zonas&%{QUERY_STRING} [L]

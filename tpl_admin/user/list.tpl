@@ -117,6 +117,11 @@
 							                  	<a class="btn btn-success" href="/admin/activar-usuario/{$type_user}/{$usuario->id_usuario}/">Activar</a>
 							                  {/if}
 							                </div>
+							                {if $label_type_user=='electrificados'}
+								                <div class="btn-group btn-group-justified">
+								                  	<a class="btn btn-dark" href="/admin/historial-usuario/{$usuario->id_usuario}/">Historial</a>
+								                </div>
+							                {/if}
 							                {if $label_type_user=='electrificados' && !$usuario->validado}
 								                <div class="btn-group btn-group-justified">
 								                  	<a class="btn btn-info" href="/admin/validar-usuario/{$type_user}/{$usuario->id_usuario}/">Validar</a>

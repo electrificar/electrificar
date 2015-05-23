@@ -66,6 +66,69 @@
         	die();
         }
         
+        function history(){
+        	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Alquiler.php");
+        	$Alquiler = new Alquiler($this->conn);
+        	
+        	//filtros a aplicar
+        	$filtros = array();       
+        	
+        	
+        	//por si hay que filtrar por email
+        	if($_REQUEST['id_vehiculo']){
+        		anade_filtrado($filtros, "alquiler.id_vehiculo", $_REQUEST['id_vehiculo'], "=");
+        	}
+        	//por si hay que filtrar por matricula
+        	if($_REQUEST['id_usuario']){
+        		anade_filtrado($filtros, "alquiler.id_usuario", $_REQUEST['id_usuario'], "=");
+        	}
+        	
+        	//obtengo los vehículos
+        	$ack_alquileres = $Alquiler->get_alquileres($filtros);
+        	
+        	//si hay
+        	if($ack_alquileres->resultado){
+        		//me guardo esa parte
+        		$alquileres = $ack_alquileres->datos;
+        	}else{
+        		$alquileres = array();
+        	}
+        	
+        	//recorro cada alquiler
+        	$num_alquilados = 0;
+        	foreach($alquileres as $rental){
+        		if($rental->fecha_fin_alquiler == ""){
+        			$num_alquilados++;
+        		}
+        		$rental->fecha_inicio_alquiler = convertir_fecha_espanol_completa($rental->fecha_inicio_alquiler);
+        		$rental->fecha_fin_alquiler = convertir_fecha_espanol_completa($rental->fecha_fin_alquiler);
+        		$rental->nombre_usuario 	= $rental->{8}." ".$rental->{9};
+        		$rental->imagen_usuario 	= $rental->{16};
+        		$rental->imagen_vehiculo 	= $rental->{39};
+        		$rental->nombre_tarifa 		= $rental->{28};
+        	}
+        	
+        	//asocio las variables a la vista
+        	$this->layout->assign("num_alquileres", $num_alquilados);
+        	$this->layout->assign("rentals", $alquileres);
+        	
+        	if($_REQUEST['id_vehiculo']){
+        		$this->layout->assign("historial", $rental->marca." ".$rental->modelo);
+        		$this->layout->assign("vehicle", "active");
+        		$this->layout->assign("back", "vehiculos");
+        	}else{
+        		$this->layout->assign("back", "usuarios/electrificados");
+        		$this->layout->assign("historial", $rental->nombre_usuario);
+        		$this->layout->assign("users", "active");
+	        	$this->layout->assign("electrificados", "bg-success");
+	        	$this->layout->assign("label_type_user", "electrificados");
+	        	$this->layout->assign("type_user", "electrificados");
+        	}
+        	
+        	//cargo la vista
+            $this->display('/rental/historial.tpl');
+        }
+        
 		/**
 		 * Sección de listado de vehículos
 		 */

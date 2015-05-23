@@ -120,7 +120,7 @@
                         <span class="font-bold">Tarifas</span>
                       </a>
                     </li>
-                    <li class="{$incidencias}">
+                    <li class="{$incidences}">
                       <a class="auto" href="javascript:;">
                         <span class="pull-right text-muted">
                           <i class="i i-circle-sm-o text"></i>
@@ -131,8 +131,8 @@
                         </i>
                         <span class="font-bold">Incidencias</span>
                       </a>
-                      <ul class="nav dk" style="{if $incidencias!='active'}display: none;{else}display: block;{/if}">
-                        <li class="{$incidenciasCoches}">
+                      <ul class="nav dk" style="{if $incidences!='active'}display: none;{else}display: block;{/if}">
+                        <li class="{$coches}">
                           <a class="auto" href="/admin/incidencias/coches/">
                           {if $incidencia_array[1]>0} 
                           <b class="badge bg-primary pull-right">{$incidencia_array[1]}</b>
@@ -141,7 +141,7 @@
                             <span>Coches</span>
                           </a>
                         </li>
-                        <li class="{$incidenciasPuntosCarga}">
+                        <li class="{$puntos_de_carga}">
                           <a class="auto" href="/admin/incidencias/puntos_de_carga/">
                           {if $incidencia_array[2]>0}      
                           <b class="badge bg-info pull-right">{$incidencia_array[2]}</b>     
@@ -150,7 +150,7 @@
                             <span>Puntos Carga</span>
                           </a>
                         </li>
-                        <li class="{$incidenciasLimpieza}">
+                        <li class="{$limpieza}">
                           <a class="auto" href="/admin/incidencias/limpieza/">
                           {if $incidencia_array[3]>0}   
                           <b class="badge bg-success pull-right">{$incidencia_array[3]}</b>   
@@ -160,7 +160,7 @@
                             <span>Limpieza</span>
                           </a>
                         </li>
-                        <li class="{$incidenciasAccidentes}">
+                        <li class="{$accidentes}">
                           <a class="auto" href="/admin/incidencias/accidentes/">
                           {if $incidencia_array[4]>0}   
                           	<b class="badge bg-danger pull-right">{$incidencia_array[4]}</b>

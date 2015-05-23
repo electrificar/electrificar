@@ -334,7 +334,7 @@ class DbConnection {
 	    	//print("hay algún campo requerido que está a null");
 	    }
 	   	
-	    //print($query);exit;
+	   //print($query);exit;
 	    
 	    $result = mysqli_query($this->conn,$query);
 		if( $result ){ 

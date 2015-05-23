@@ -93,8 +93,9 @@
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
 													class="fa fa-gear"></i> </a>
 												<ul class="dropdown-menu pull-right">
-													<li><a href="/admin/editar-vehiculo/{$vehicle->id_vehiculo}/">Editar vehículo <i class="fa fa-edit"></i></a></li>
-													<li><a href="/admin/borrar-vehiculo/{$vehicle->id_vehiculo}/">Borrar vehículo <i class="fa fa-trash"></i></a></li>
+													<li><a href="/admin/historial-vehiculo/{$vehicle->id_vehiculo}/">Historial vehículo <i class="i i-clock2"></i></a></li>
+													<li><a href="/admin/editar-vehiculo/{$vehicle->id_vehiculo}/">Editar vehículo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-edit"></i></a></li>
+													<li><a href="/admin/borrar-vehiculo/{$vehicle->id_vehiculo}/">Borrar vehículo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-trash"></i></a></li>
 												</ul>
 											</div>
 										</td>
