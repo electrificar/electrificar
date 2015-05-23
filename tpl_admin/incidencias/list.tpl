@@ -51,12 +51,14 @@
 				                      <section class="panel panel-default">
 				                        <header class="panel-heading bg-light no-border">
 				                          <div class="clearfix">
+				                          	{foreach from=$colaboradores key=cid item=colaborador}
+					                          	{if $colaborador->id_colaborador == $incidencia->id_colaborador}{$colaborador->nombre} {$colaborador->apellido1}{/if}
+					                         {/foreach}
 				                            <div class="clear">
-				                              {$incidencia->asunto}<br>
 				                              </div>
 				                              <small class="text-muted">{$type_incidence|@ucfirst}</small>
 				                              <div class="h3 m-t-xs m-b-xs">
-				                                {$incidencia->descripcion}<br> 
+				                                {$incidencia->asunto}<br> 
 				                              </div>
 				                            </div>
 				                        </header>
@@ -67,13 +69,15 @@
 					                            	{$usuario->empresa}
 					                          	</a>
 					                         {/if}
-				                          <a href="mailto:{$incidencia->fecha_inicio_incidencia}" class="list-group-item">
+				                          <a href="mailto:{$colaborador->email}" class="list-group-item">
+				                            <i class="i i-mail2 icon-muted"></i>&nbsp;
+				                            {foreach from=$colaboradores key=cid item=colaborador}
+					                          	{if $colaborador->id_colaborador == $incidencia->id_colaborador}{$colaborador->email}{/if}
+					                         {/foreach}
+				                          </a>
+				                          <a href="tel:{$incidencia->fecha_inicio_incidencia}" class="list-group-item">
 				                            <i class="fa fa-calendar icon-muted"></i>&nbsp;
 				                            {$incidencia->fecha_inicio_incidencia}
-				                          </a>
-				                          <a href="tel:{$usuario->telefono}" class="list-group-item">
-				                            <i class="fa fa-calendar-o icon-muted"></i>&nbsp;
-				                            {$incidencia->fecha_fin_incidencia}
 				                          </a>
 				                            <div class="btn-group btn-group-justified">
 							                  <a class="btn btn-primary" href="/admin/editar-incidencia/{$type_incidence}/{$incidencia->id_incidencia}/">Editar</a>

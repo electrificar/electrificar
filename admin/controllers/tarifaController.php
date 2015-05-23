@@ -7,7 +7,7 @@ class tarifaController extends CController{
 	function list_tarifas(){
 		require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Tarifa.php");
 		$Tarifa = new Tarifa($this->conn);
-
+		
 		$filtros = array();
 
 		if(isset($_REQUEST['nombre'])){

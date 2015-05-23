@@ -6,8 +6,32 @@
 		 */
         function list_incidencias(){
         	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Incidencia.php");
+			require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Usuario.php");
+			$Usuario = new Usuario($this->conn);
         	$incidencia = new Incidencia($this->conn);
-        	
+			
+			$filtros = array();
+				anade_filtrado($filtros, "tipo", 2, "=");//colaborador es tipo usuario 2
+				 
+				$ack_usuarios = $Usuario->get_usuario($filtros);
+				
+				if($ack_usuarios->resultado){
+					$usuarios = $ack_usuarios->datos;
+					 
+					foreach($usuarios as $usuario){
+						$ack_colaborador = $Usuario->getColaborador ( $usuario->id_usuario );
+						if ($ack_colaborador->resultado) {
+							$colaborador = $ack_colaborador->datos [0];
+							$usuario->id_colaborador = $colaborador->id_colaborador;
+							$usuario->tipo_colaborador = $tipo_colaboradores [$colaborador->tipo_colaborador] ['tipo'];
+							$usuario->descripcion = $colaborador->descripcion;
+							$usuario->empresa = $empresas [$colaborador->empresa] ['empresa'];
+						}
+					}
+				}
+				 
+			$this->layout->assign("colaboradores", $usuarios);
+			
         	$filtros = array();
         	anade_filtrado($filtros, "tipo", $_REQUEST['type_incidence'], "=");
         	
