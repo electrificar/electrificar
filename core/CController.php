@@ -45,8 +45,7 @@ class CController {
         // $this->add_other_action ("Seleccione una", "");
 
 		//INICIO LA CONEXIÓN A LA BASE DE DATOS
-		$this->conn = new DbConnection(); 
-		$this->conn-> connect();
+		$this->conn = DbConnection::connect();
 
         // Instancio el objeto de navegacion
         $this->navigation = new CNavigation ($this->conn);

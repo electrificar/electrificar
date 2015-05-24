@@ -10,26 +10,21 @@ class DbConnection {
 	/****************************************************/
 	var $entorno = "dev"; // dev | prod
 
-
-
-	var $site = ""; 
-	var $user = "";
-	var $passwd = "";
-	var $database = "";
 	var $id = null;
 	var $conn = null;
+	private static $DbConnection;	
 	
-	
-	function DbConnection(){
-			$this->site = "127.0.0.1"; 
-			$this->user = "root";
-			$this->passwd = "lubina";
-			$this->database = "electrificar";
+	private function DbConnection(){
+		$this->conn = mysqli_connect("127.0.0.1","root","lubina", "electrificar") or die(mysqli_error());
+        mysqli_query($this->conn,"SET NAMES utf8");
 	}
 	
-	function connect (){
-		$this->conn = mysqli_connect($this->site,$this->user,$this->passwd, $this->database) or die(mysqli_error());
-        mysqli_query($this->conn,"SET NAMES utf8");
+	public static function connect (){
+		if(is_null($DbConnection)){
+			$DbConnection = new DbConnection();
+		}
+		
+		return $DbConnection;
 	}
 	function disconnect (){
 			mysqli_close($this->conn);
