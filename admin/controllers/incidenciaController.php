@@ -62,6 +62,7 @@
         		
         		foreach($incidencias as $incidencia){
         			$incidencia->fecha_inicio_incidencia = convertir_fecha_espanol($incidencia->fecha_inicio_incidencia);
+        			$incidencia->fecha_fin_incidencia = convertir_fecha_espanol($incidencia->fecha_fin_incidencia);
         		}
         	}
         	
@@ -258,19 +259,25 @@
         	die();
         }
         
-        function delete_incidencia(){
+        function close_incidencia(){
         	require_once($_SERVER["DOCUMENT_ROOT"]."/clases/bd/Incidencia.php");
         	 
         	$incidencia = new Incidencia($this->conn);
         	 
+        	//genero la fecha
+        	$_REQUEST['fecha_fin_incidencia'] 	= date("Y-m-d H:i:s");
+        	$_REQUEST['estado'] 				= date("3");
+        	$_REQUEST['comentarios'] 			= "Cerrado por administración.";
+        	$_REQUEST['id_incidencia']			= intval($_REQUEST['id_incidencia']);
+        	
         	//borro el vehículo
-        	$ack_borrado = $incidencia->remove_incidencia($_REQUEST['id_incidencia']);
+        	$ack_cerrado = $incidencia->update_incidencia($_REQUEST);
         	 
         	//añado notificación
-        	$this->add_notification($ack_borrado);
+        	$this->add_notification($ack_cerrado);
         	 
         	//redirijo
-        	header("location: /admin/incidencias/".$_REQUEST['type_incidence_label']."/");
+        	header("location: ".$_SERVER['HTTP_REFERER']);
         	die();
         }
         

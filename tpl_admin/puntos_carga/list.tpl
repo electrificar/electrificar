@@ -1,7 +1,6 @@
 {include file="../common/header.tpl"}
 
 {include file="../common/sidebar.tpl"}
-<link rel="stylesheet" href="/admin/js/slider/slider.css" type="text/css" />
 <section id="content">
 	<section class="vbox">
     	<section class="scrollable padder">

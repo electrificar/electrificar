@@ -1,7 +1,6 @@
 {include file="../common/header.tpl"}
 
 {include file="../common/sidebar.tpl"}
-<link rel="stylesheet" href="/admin/js/slider/slider.css" type="text/css" />
 <section id="content">
 	<section class="vbox">
     	<section class="scrollable padder">
@@ -81,8 +80,22 @@
 				                          </a>
 				                            <div class="btn-group btn-group-justified">
 							                  <a class="btn btn-primary" href="/admin/editar-incidencia/{$type_incidence}/{$incidencia->id_incidencia}/">Editar</a>
-							                  <a class="btn btn-danger" href="/admin/borrar-incidencia/{$type_incidence}/{$incidencia->id_incidencia}/">Borrar</a>
 							                </div>
+							                {if $incidencia->fecha_fin_incidencia==''}
+							                	<div class="btn-group btn-group-justified">
+							                		<a class="btn btn-info" href="/admin/cerrar-incidencia/{$incidencia->id_incidencia}/">Cerrar incidencia</a>
+							                	</div>
+							                {else}
+							                	<header>
+						                          <div class="clearfix">
+						                            <div class="clear">
+						                              <div class="h4 m-t-xs m-b-xs">
+						                                <label style="color:#179877;display: inline-block; text-align: center; width: 100%;" id="usuario_nombre">Cerrada el {$incidencia->fecha_fin_incidencia}</label> 
+						                              </div>
+						                            </div>
+						                          </div>
+						                        </header>
+							                {/if}
 				                        </div>
 				                      </section>
 				                    </div>

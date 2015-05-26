@@ -7,70 +7,6 @@ class Incidencia {
         $this->conn = $conn;
     }
 	
-//     function login ($usuario, $clave){
-//         $ack = new ACK();
-//         $ack->resultado = true;
-
-//         //print_r(md5("lubina"));exit;
-// 		$query = "SELECT * FROM usuario WHERE LOWER(email)='".strtolower($usuario)."' AND password='".$clave."' and tipo='1' and activacion=1";
-// 		//print_r($query);exit;
-//         if( ($arr_reg = $this->conn->load($query)) != null ){
-// 			if(sizeof($arr_reg)>0){
-//                 $ack->datos = $arr_reg[0];
-//             } else {
-// 				$ack->resultado = false;
-//                 $ack->mensaje   = "Los datos introducidos no son correctos";
-// 			}
-// 		} else {
-//             $ack->resultado = false;
-//             $ack->mensaje   = "Los datos introducidos no son correctos";
-// 		}
-//         return $ack;
-// 	}
-	
-// 	function loginClient ($usuario, $clave){
-//         $ack = new ACK();
-//         $ack->resultado = true;
-
-//         $clave      = strtoupper($clave);
-//         $clave_orig = $clave;
-
-        
-//         //COMPROBAMOS QUE LA CLAVE NO LLEGA CON MAS DE 16 CARACTERES(15 SON LOS MAXIMOS QUE PUEDE TENER UNA CLAVE)
-//         //SI LLEGA CON MAS LA CLAVE ESTA ENCRIPTADA Y NO HARIA FALTA VOLVER A ENCRIPTARLA
-//         if(strlen($clave)<16){
-//             $clave      = encrypt($clave);
-//         }
-//         //print_r(md5("lubina"));exit;
-// 		$query = "SELECT * FROM usuario WHERE LOWER(email)='".strtolower($usuario)."' AND contrasena='".$clave."' and activado='S'";
-// 		//print_r($query);exit;
-//         if( ($arr_reg = $this->conn->load($query)) != null ){
-
-// 			if(sizeof($arr_reg)>0){
-//                 $ack->datos = $arr_reg[0];
-//             } else {
-// 				$ack->resultado = false;
-//                 $ack->mensaje   = "Los datos introducidos no son correctos";
-// 			}
-			
-// 		} else {
-// 			$query = "SELECT * FROM usuario WHERE LOWER(email)='".strtolower($usuario)."' AND contrasena='".$clave."'";
-// 			//print_r($query);exit;
-// 	        if( ($arr_reg = $this->conn->load($query)) != null ){
-	
-// 				if($arr_reg[0]->activado == 'N'){
-// 	                $ack->resultado = false;
-// 	                $ack->mensaje   = "Tu usuario no ha sido activado, si deseas activarlo revisa tu email.<br>(Si no lo encuentras revisa tu carpeta de Spam)";
-// 	            }
-				
-// 			} else {
-// 	            $ack->resultado = false;
-// 	            $ack->mensaje   = "Usuario/Password incorrectos";
-// 			}
-// 		}
-//         return $ack;
-// 	}
-	
     // Obtengo los elementos de la tabla usuario que cumplen el patron de filtros enviado
     function get_incidencias ($arr_filtros, $limit=null){
         $ack = new ACK();
@@ -89,21 +25,6 @@ class Incidencia {
         }
         return $ack;
     }
-    
-//     function getColaborador($id_usuario){
-//     	$ack = new ACK();
-//         $ack->resultado = true;
-    
-//         $query = "SELECT * FROM colaborador where id_usuario = '".$id_usuario."'";
-//         // print $query;
-//         if( ($arr_reg = $this->conn->load($query)) != null ){
-//             $ack->datos = $arr_reg;
-//         } else {
-//             $ack->resultado = false;
-//             $ack->mensaje   = "Se ha producido un error al obtener usuario, ponte en contacto con tu administrador";
-//         }
-//         return $ack;
-//     }
     
 	// Obtengo los elementos de la tabla usuario que cumplen el patron de filtros enviado
     function get_incidencia ($id_incidencia){
